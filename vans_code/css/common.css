@@ -1,0 +1,21 @@
+:root{
+  --color-white : #fff;
+  --color-black : #000;
+  --color-bacgic : #f1f2ed;
+  --font-12 : 0.75rem;
+  --font-14 : 14px;
+  --font-16 : 1rem;
+  --font-20 : 1.25rem;
+  --font-24 : 1.5rem;
+  --font-28 : 1.75rem;
+  --font-32 : 2rem;
+}
+
+*{
+  max-width: 1920px;
+  text-align: none;
+  color: white;
+}
+a{
+  
+}
