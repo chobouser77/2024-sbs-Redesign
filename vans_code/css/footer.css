@@ -9,7 +9,7 @@ body{
 }
 @media (max-width : 768px) {
   .footerpc{
-    display: none;
+    display: none !important;
   }
 }
 .Information > nav > div > div {
