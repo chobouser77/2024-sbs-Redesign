@@ -46,9 +46,9 @@ footer{
   font-size: var(--font-14);
 }
 @media (max-width : 1161px ) { 
-  .footerpc{
+  /* .footerpc{
     height: 500px;
-  }
+  } */
   .Information > nav > ul{
     gap: 5rem;
   }
@@ -57,9 +57,9 @@ footer{
   }
 }
 @media (max-width : 1003px ) { 
-  .footerpc{
+  /* .footerpc{
     height: 560px;
-  }
+  } */
   .Information > nav > ul{
     gap: 2rem;
   }
@@ -95,6 +95,9 @@ footer{
   /* height: 68px; */
   font-size: var(--font-14);
   border-bottom:1px solid #ffffff50;
+}
+.oc.active{
+  border-bottom : none !important;
 }
 .sub-box{
   display: flex;

@@ -12,6 +12,7 @@ $(document).ready(function() {
     const arrowDown = $(this).find('.arrow-down');
 
     if(submenu.hasClass('active')){
+      open_close.removeClass('active');
       submenu.removeClass('active');
       arrowDown.removeClass('active');
       arrowUp.removeClass('active');
@@ -19,6 +20,7 @@ $(document).ready(function() {
       submenu.css('height','0');
     }
     else {
+      open_close.addClass('active');
       submenu.addClass('active');
       arrowDown.addClass('active');
       arrowUp.addClass('active');
