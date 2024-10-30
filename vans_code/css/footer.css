@@ -2,7 +2,7 @@ body{
   color: var(--color-white) !important;
 }
 footer{
-  background-color: var(--color-black);
+  background-color: var(--color-footer) !important;
 }
 @media (max-width : 768px) {
   .footerpc{
@@ -142,4 +142,8 @@ footer{
 .Information-mo > nav > p{
   font-size: var(--font-12) ;
   opacity: 0.7;
+}
+.junwha{
+  font-size: 14px;
+  
 }
