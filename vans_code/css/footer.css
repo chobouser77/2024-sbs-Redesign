@@ -4,10 +4,8 @@ body{
 /* PC 본문 */
 footer{
   background-color: var(--color-black);
-  padding: 60px 40px;
+  padding: 60px 48px;
   padding-bottom: 100px;
-  gap: 100px;
-
 }
 .Information > nav > div > div {
   color: var(--color-white);
@@ -35,6 +33,22 @@ footer{
 }
 .Information > nav > ul > li > a{
   font-size: var(--font-14);
+}
+@media (max-width : 1161px ) { 
+  .Information > nav > ul{
+    gap: 5rem;
+  }
+  .number > p {
+    font-size: 20px;
+  }
+}
+@media (max-width : 1003px ) { 
+  .Information > nav > ul{
+    gap: 2rem;
+  }
+  .number > p {
+    font-size: 15px;
+  }
 }
 .sns > ul > li > a {
   display: flex;

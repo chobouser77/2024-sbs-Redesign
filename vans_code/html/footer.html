@@ -11,7 +11,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <footer class="flex justify-center w-[1920px] h-[478px] relative border border-[white]">
+    <footer class="flex justify-center w-[100%] relative border border-[white]" style="min-height: 478px;">
       <img
         class="w-[100px] h-[56.1px]"
         src="/vans_img/Mask group.svg"
@@ -40,7 +40,7 @@
             </li>
           </ul>
           <div class="flex flex-col" style="gap: 20px">
-            <div class="flex w-[790px] flex-wrap">
+            <div class="flex w-[100%] flex-wrap" style="max-width: 790px;">
               <p class="">유한책임회사 브에이프코리아</p>
               <p>|</p>
               <p class="">대표 SANUSI SYLYANI</p>
@@ -62,14 +62,15 @@
           </div>
         </nav>
       </div>
+      <div class="flex flex-grow"></div>
       <div class="flex flex-col ml-[43px]" style="gap: 20px">
         <div class="flex flex-col">
           <p class="border w-[107px] h-[39px] flex items-center justify-center">
             CS CENTER
           </p>
-          <div class="flex flex-col mt-[20px]" style="gap: 14px">
-            <p class="text-[30px]">
-              1522-1822 <br />
+          <div class="flex flex-col mt-[20px] number" style="gap: 14px">
+            <p class="text-[30px] w-[100%] " style="flex-wrap:wrap;">
+              1522-1822 <br/>
               Vansjr_online@vfc.com
             </p>
             <p class="text-[14px]" style="opacity: 0.6">평일 09:00 ~ 18:00</p>
