@@ -2,10 +2,15 @@ body{
   color: var(--color-white) !important;
 }
 /* PC 본문 */
-footer{
+.footerpc{
   background-color: var(--color-black);
   padding: 60px 48px;
   padding-bottom: 100px;
+}
+@media (max-width : 768px) {
+  .footerpc{
+    display: none;
+  }
 }
 .Information > nav > div > div {
   color: var(--color-white);
@@ -35,6 +40,9 @@ footer{
   font-size: var(--font-14);
 }
 @media (max-width : 1161px ) { 
+  .footerpc{
+    height: 500px;
+  }
   .Information > nav > ul{
     gap: 5rem;
   }
@@ -43,11 +51,14 @@ footer{
   }
 }
 @media (max-width : 1003px ) { 
+  .footerpc{
+    height: 560px;
+  }
   .Information > nav > ul{
     gap: 2rem;
   }
   .number > p {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 .sns > ul > li > a {
@@ -62,5 +73,4 @@ footer{
   width: 1rem;
   height: 1rem;
 }
-
 /* 모바일 */
