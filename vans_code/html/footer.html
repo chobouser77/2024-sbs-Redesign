@@ -4,11 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>footer</title>
+
     <link rel="stylesheet" href="/vans_code/css/footer.css" />
     <link rel="stylesheet" href="/vans_code/css/common.css" />
-    <script src="/vans_code/js/nav_footer.js"></script>
+
     <!-- 테일윈드 최신버전 불러오기-->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <script src="/vans_code/js/nav_footer.js"></script>
   </head>
   <body>
     <!-- pc footer -->
@@ -104,25 +109,73 @@
       </div>
     </footer>
     <!-- 모바일 footer -->
-     <footer class="footermo flex flex-col w-[100%] " style="min-height: 620px;">
-        <nav class="tag w-[100%] h-[272px] bg-[gray]">
+     <footer class="footermo hidden flex-col w-[100%] " style="min-height: 620px; gap: 40px ;">
+        <nav class="tag w-[100%] ">
           <ul class="flex flex-col w-[100%]">
-            <li class="">
+            <li class="oc">
               <p class="">ABOUT</p>
               <img class="arrow-down arrow" src="/vans_img/footer_img/arrow_down.svg" alt="에로우 아래">
-              <img class="arrow-up arrow" src="/vans_img/footer_img/arrow_up.svg" alt="에로우 위">
-              <div class="sub-box">
-                <a href="#" class=""></a>
-                <a href="#" class=""></a>
-              </div>
-              
+              <img class="arrow-up arrow" src="/vans_img/footer_img/arrow_up.svg" alt="에로우 위">              
             </li>
-            <li class=""><a href="#" class=""></a></li>
-            <li class=""><a href="#" class=""></a></li>
-            <li class=""><a href="#" class=""></a></li>
+            <div class="sub-box">
+              <a href="#" class="">반스에 대하여</a>
+              <a href="#" class="">고객센터</a>
+            </div>
+            <li class="oc">
+              <p class="">ACCOUNT</p>
+              <img class="arrow-down arrow" src="/vans_img/footer_img/arrow_down.svg" alt="에로우 아래">
+              <img class="arrow-up arrow" src="/vans_img/footer_img/arrow_up.svg" alt="에로우 위">              
+            </li>
+            <div class="sub-box">
+              <a href="#" class="">Login</a>
+              <a href="#" class="">회원가입</a>
+              <a href="#" class="">주문/배송조회</a>
+              <a href="#" class="">Lige List</a>
+            </div>
+            <li class="oc">
+              <p class="">LEGAL</p>
+              <img class="arrow-down arrow" src="/vans_img/footer_img/arrow_down.svg" alt="에로우 아래">
+              <img class="arrow-up arrow" src="/vans_img/footer_img/arrow_up.svg" alt="에로우 위">              
+            </li>
+            <div class="sub-box">
+              <a href="#" class="">이용약관</a>
+              <a href="#" class="">개인정보처리방침</a>
+              <a href="#" class="">청소년 보호정책</a>            
+            </div>
+            <li class="lan oc">
+              <button class="w-[100%] h-[100%] flex justify-between">
+                <p>언어설정</p>
+                <img class="arrow" src="/vans_img/footer_img/kr 1.png" alt="태극기">
+              </button>
+            </li>
           </ul>
         </nav>
-        <div class="Information-mo"></div>  
+        <div class="Information-mo">
+          <nav class="flex flex-col sns" style="gap: 1rem;">
+            <ul class="flex" style="gap: 4px;">
+              <li><a href="#">
+                <img src="/vans_img/footer_img/facebook.svg" alt="페이스북">
+              </a></li>
+              <li><a href="#">
+                <img src="/vans_img/footer_img/twitter.svg" alt="트위터">
+              </a></li>
+              <li><a href="#">
+                <img src="/vans_img/footer_img/Combined Shape.svg" alt="유튜브">
+              </a></li>
+              <li><a href="#">
+                <img src="/vans_img/footer_img/Subtract.svg" alt="라인">
+              </a></li>
+            </ul>
+            <p>유한책임회사 브에이프 코리아</p>
+          </nav>
+          <div class="flex flex-col junwha ">
+            <p>
+              고객센터 1522-1822<br>
+              Vansjr_online@vfc.com<br>
+              <span class="">평일 09:00 ~ 18:00</span>
+            </p>
+          </div>
+        </div>  
      </footer>
   </body>
 </html>
