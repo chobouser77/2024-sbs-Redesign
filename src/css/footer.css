@@ -1,3 +1,6 @@
+footer{
+  color: #fff;
+}
 
 @media (max-width : 768px) {
   .footerpc{
@@ -8,36 +11,35 @@
   }
 }
 /* PC 본문 */
-.footerpc{
+/* .footerpc{
   padding: 60px 48px;
   padding-bottom: 100px;
-}
+} */
 
-.Information > nav > div > div {
-  color: var(--color-white);
+.information > nav > div > div {
   font-size: var(--font-12);
   gap: 5px;
 }
-.Information > nav > div > div > p {
+.information > nav > div > div > p {
   opacity: 0.7 ;
 }
-.Information > nav > div > div > a {
+.information > nav > div > div > a {
   font-weight: 700;
 }
-.Information > nav > ul{
+.information > nav > ul{
   gap: 10rem;
 }
-.Information > nav > ul > li {
+.information > nav > ul > li {
   gap: 18px;
   display: flex;
   flex-direction: column;
 }
-.Information > nav > ul > li > p{
+.information > nav > ul > li > p{
   font-size: var(--font-16);
   padding-bottom: 12px;
   font-weight: 600;
 }
-.Information > nav > ul > li > a{
+.information > nav > ul > li > a{
   font-size: var(--font-14);
 }
 @media (max-width : 1161px ) { 
