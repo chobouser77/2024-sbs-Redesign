@@ -1,4 +1,6 @@
-
+footer{
+  color: #fff;
+}
 @media (max-width : 768px) {
   .footerpc{
     display: none !important;
@@ -7,60 +9,43 @@
     display: flex !important;
   }
 }
-/* PC 본문 */
-.footerpc{
-  padding: 60px 48px;
-  padding-bottom: 100px;
-}
-
-.Information > nav > div > div {
-  color: var(--color-white);
-  font-size: var(--font-12);
-  gap: 5px;
-}
-.Information > nav > div > div > p {
-  opacity: 0.7 ;
-}
-.Information > nav > div > div > a {
-  font-weight: 700;
-}
-.Information > nav > ul{
-  gap: 10rem;
-}
-.Information > nav > ul > li {
-  gap: 18px;
-  display: flex;
-  flex-direction: column;
-}
-.Information > nav > ul > li > p{
-  font-size: var(--font-16);
-  padding-bottom: 12px;
-  font-weight: 600;
-}
-.Information > nav > ul > li > a{
-  font-size: var(--font-14);
-}
 @media (max-width : 1161px ) { 
-  /* .footerpc{
-    height: 500px;
-  } */
-  .Information > nav > ul{
-    gap: 5rem;
+  .information > nav > ul{
+    gap: 4rem !important;
   }
   .number > p {
-    font-size: 20px;
+    font-size: 20px !important;
   }
 }
 @media (max-width : 1003px ) { 
-  /* .footerpc{
-    height: 560px;
-  } */
-  .Information > nav > ul{
-    gap: 2rem;
+  .information > nav > ul{
+    gap: 2rem !important;
   }
   .number > p {
-    font-size: 20px;
+    font-size: 20px !important  ;
   }
+}
+/* PC 본문 */
+.information > nav > div > div > p {
+  opacity: 0.7 ;
+}
+.information > nav > div > div > a {
+  font-weight: 700;
+}
+.information > nav > ul > li {
+  width: 111px;
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.information > nav > ul > li > p{
+  @apply text-[16px];
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+.information > nav > ul > li > a{
+  @apply text-[14px];
 }
 .sns > ul > li > a {
   display: flex;
@@ -75,19 +60,13 @@
   height: 1rem;
 }
 /* 모바일 */
-.footermo{
-  padding: 28px 48px;
-  padding-bottom: 60px;
-  gap: 40px;
-}
-.tag > ul > .oc{
+.oc{
   display: flex;
   position: relative;
   align-items: center;
   padding: 24px 0;
   justify-content: space-between;
   width: 100%;
-  /* height: 68px; */
   font-size: var(--font-14);
   border-bottom:1px solid #ffffff50;
 }
@@ -100,12 +79,11 @@
   height: auto;
   flex-direction: column;
   padding-bottom: 0px;
-  font-size: var(--font-14);
-  font-weight: var(--font-semi-bold);
+  @apply text-[14px];
+  @apply font-semibold;
   opacity: 0;
   visibility: hidden;
   transition: visibility 1s , opacity 1s , height 1s ;
-  /* background-color: #33333350; */
   border-bottom:1px solid #ffffff50;
   z-index: 10;
   overflow: hidden;
@@ -117,8 +95,8 @@
 }
 .sub-box > a{
   padding: 12px 0;
-  font-size: var(--font-14) ;
-  font-weight: var(--font-regular);
+  @apply text-[14px];
+  @apply font-normal; 
 }
 .arrow{
   width: 20px;
@@ -133,12 +111,4 @@
 }
 .arrow-up.active{
   display: block;
-}
-.Information-mo > nav > p{
-  font-size: var(--font-12) ;
-  opacity: 0.7;
-}
-.junwha{
-  font-size: 14px;
-  
 }
