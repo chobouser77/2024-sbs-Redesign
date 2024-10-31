@@ -1,27 +1,56 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>헤더</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>헤더</title>
 
-  <link rel="stylesheet" href="css/output.css">
+    <link rel="stylesheet" href="css/output.css" />
 
-  <!-- 제이쿼리 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="js/common.js"></script>
-</head>
-<body>
-  <header>
-    <a class="top-ad-bar background-black text-white fixed top-0 left-0 right-0 z-[100]" href="#">
-      <div class="wrap container mx-auto px-[48px] h-[50px] flex items-center">
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body>
+    <div class="top-ad-bar">
+      <a class="flex container mx-auto px-[48px] h-[50px] bg-myblack text-white font-medium items-center" href="https://www.vans.co.kr/">
         <div class="flex-1"></div>
         <div>영지와 함께하는 Always Out There, The Upland</div>
         <div class="flex-1 flex justify-end">
-          <div class="w-[16px] h-[16px]" style="background-image: url(img/header/icon_close.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></div> 
+          <div class="close-btn w-[16px] h-[16px]" style="background-image: url(img/header/icon_close.png); background-repeat: no-repeat; background-size: contain; background-position: center;" onclick="$(this).closest('.top-ad-bar').remove(); return false;"></div>
+        </div>
+      </a>
+    </div>
+    <header class="pc-top-bar">
+      <div class="container mx-auto px-[48px] bg-myblack text-white flex h-[90px]">
+        <div class="flex-1 flex items-center">
+          <a class="block w-[90px] h-[50px]" style="background-image: url(img/header/logo_white.png); background-repeat: no-repeat; background-size: contain;" href="https://www.vans.co.kr/"></a> 
+        </div>
+        <nav class="top-bar__menu01">
+          <ul class="flex h-full font-medium">
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">NEW</a></li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">MEN</a></li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">WOMEN</a></li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">KIDS</a></li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">PREMIUM</a></li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">CUSTOMS</a></li>
+            <li>
+              <a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">
+              <span class="relative after:content-[''] after:w-[8px] after:h-[8px] after:bg-myred after:rounded-full after:absolute after:top-0 after:right-[-15px]">SALE</span>
+            </a>
+          </li>
+            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">MORE</a></li>
+          </ul>
+        </nav>
+        <nav class="flex-1 flex justify-end">
+          <ul class="flex items-center gap-[18px]">
+            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_location.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
+            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_search.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
+            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_my.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
+            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_cart.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
+          </ul>
+        </nav>
       </div>
-      </div>
-    </a>
-  </header>
-</body>
+    </header>
+  </body>
 </html>
