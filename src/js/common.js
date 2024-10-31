@@ -1,7 +1,8 @@
 // 네비
 $(document).ready(function() {
-
+  
 });
+
 // 푸터
 $(document).ready(function() {
   const open_close = $('.oc');
