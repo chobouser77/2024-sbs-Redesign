@@ -559,3 +559,13 @@ video {
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
+
+.background-black{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
+}
+
+.textcolor-black{
+  --tw-text-opacity: 1;
+  color: rgb(29 29 29 / var(--tw-text-opacity));
+}

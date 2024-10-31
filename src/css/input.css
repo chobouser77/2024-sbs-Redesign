@@ -7,3 +7,10 @@
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
+
+.background-black {
+  @apply bg-[#1d1d1d];
+}
+.textcolor-black {
+  @apply text-[#1d1d1d];
+}
