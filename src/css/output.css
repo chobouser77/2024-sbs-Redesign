@@ -556,8 +556,67 @@ video {
   display: none;
 }
 
+.container{
+  width: 100%;
+}
+
+@media (min-width: 640px){
+  .container{
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px){
+  .container{
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px){
+  .container{
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px){
+  .container{
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px){
+  .container{
+    max-width: 1536px;
+  }
+}
+
+.fixed{
+  position: fixed;
+}
+
 .relative{
   position: relative;
+}
+
+.left-0{
+  left: 0px;
+}
+
+.right-0{
+  right: 0px;
+}
+
+.top-0{
+  top: 0px;
+}
+
+.z-\[100\]{
+  z-index: 100;
+}
+
+.mx-auto{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .ml-\[43px\]{
@@ -588,12 +647,20 @@ video {
   height: 156.1px;
 }
 
+.h-\[16px\]{
+  height: 16px;
+}
+
 .h-\[20px\]{
   height: 20px;
 }
 
 .h-\[39px\]{
   height: 39px;
+}
+
+.h-\[50px\]{
+  height: 50px;
 }
 
 .h-\[7px\]{
@@ -608,6 +675,10 @@ video {
   width: 107px;
 }
 
+.w-\[16px\]{
+  width: 16px;
+}
+
 .w-\[200px\]{
   width: 200px;
 }
@@ -618,6 +689,10 @@ video {
 
 .w-\[6px\]{
   width: 6px;
+}
+
+.flex-1{
+  flex: 1 1 0%;
 }
 
 .flex-grow{
@@ -634,6 +709,10 @@ video {
 
 .items-center{
   align-items: center;
+}
+
+.justify-end{
+  justify-content: flex-end;
 }
 
 .justify-center{
@@ -653,31 +732,14 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.py-\[20px\]{
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-
-.py-\[60px\]{
-  padding-top: 60px;
-  padding-bottom: 60px;
-}
-
 .px-\[48px\]{
   padding-left: 48px;
   padding-right: 48px;
 }
 
-.pt-\[48\]{
-  padding-top: 48;
-}
-
-.pt-\[48px\]{
-  padding-top: 48px;
-}
-
-.pb-\[\]{
-  padding-bottom: ;
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .pb-\[100px\]{
@@ -686,14 +748,6 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
-}
-
-.pt-\[px\]{
-  padding-top: px;
-}
-
-.pt-\[90px\]{
-  padding-top: 90px;
 }
 
 .text-\[12px\]{
@@ -708,7 +762,7 @@ video {
   font-size: 30px;
 }
 
-.text-\[white\]{
+.text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
@@ -729,4 +783,8 @@ html > body {
 .textcolor-black{
   --tw-text-opacity: 1;
   color: rgb(29 29 29 / var(--tw-text-opacity));
+}
+
+.container {
+  max-width: 1920px;
 }
