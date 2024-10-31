@@ -556,6 +556,129 @@ video {
   display: none;
 }
 
+.relative{
+  position: relative;
+}
+
+.ml-\[43px\]{
+  margin-left: 43px;
+}
+
+.mt-\[20px\]{
+  margin-top: 20px;
+}
+
+.mt-\[51px\]{
+  margin-top: 51px;
+}
+
+.flex{
+  display: flex;
+}
+
+.hidden{
+  display: none;
+}
+
+.h-\[100\%\]{
+  height: 100%;
+}
+
+.h-\[156\.1px\]{
+  height: 156.1px;
+}
+
+.h-\[20px\]{
+  height: 20px;
+}
+
+.h-\[39px\]{
+  height: 39px;
+}
+
+.h-\[7px\]{
+  height: 7px;
+}
+
+.w-\[100\%\]{
+  width: 100%;
+}
+
+.w-\[107px\]{
+  width: 107px;
+}
+
+.w-\[200px\]{
+  width: 200px;
+}
+
+.w-\[21\.5px\]{
+  width: 21.5px;
+}
+
+.w-\[6px\]{
+  width: 6px;
+}
+
+.flex-grow{
+  flex-grow: 1;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.flex-wrap{
+  flex-wrap: wrap;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.justify-between{
+  justify-content: space-between;
+}
+
+.border{
+  border-width: 1px;
+}
+
+.border-\[white\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.py-\[20px\]{
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.text-\[12px\]{
+  font-size: 12px;
+}
+
+.text-\[14px\]{
+  font-size: 14px;
+}
+
+.text-\[30px\]{
+  font-size: 30px;
+}
+
+.text-\[white\]{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-\[0\.7\]{
+  opacity: 0.7;
+}
+
 html > body {
   font-family: "Pretendard Variable", sans-serif;
 }

@@ -1,0 +1,144 @@
+
+@media (max-width : 768px) {
+  .footerpc{
+    display: none !important;
+  }
+  .footermo{
+    display: flex !important;
+  }
+}
+/* PC 본문 */
+.footerpc{
+  padding: 60px 48px;
+  padding-bottom: 100px;
+}
+
+.Information > nav > div > div {
+  color: var(--color-white);
+  font-size: var(--font-12);
+  gap: 5px;
+}
+.Information > nav > div > div > p {
+  opacity: 0.7 ;
+}
+.Information > nav > div > div > a {
+  font-weight: 700;
+}
+.Information > nav > ul{
+  gap: 10rem;
+}
+.Information > nav > ul > li {
+  gap: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.Information > nav > ul > li > p{
+  font-size: var(--font-16);
+  padding-bottom: 12px;
+  font-weight: 600;
+}
+.Information > nav > ul > li > a{
+  font-size: var(--font-14);
+}
+@media (max-width : 1161px ) { 
+  /* .footerpc{
+    height: 500px;
+  } */
+  .Information > nav > ul{
+    gap: 5rem;
+  }
+  .number > p {
+    font-size: 20px;
+  }
+}
+@media (max-width : 1003px ) { 
+  /* .footerpc{
+    height: 560px;
+  } */
+  .Information > nav > ul{
+    gap: 2rem;
+  }
+  .number > p {
+    font-size: 20px;
+  }
+}
+.sns > ul > li > a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #333;
+  width: 2rem;
+  height: 2rem;
+}
+.sns > ul > li > a > img {
+  width: 1rem;
+  height: 1rem;
+}
+/* 모바일 */
+.footermo{
+  padding: 28px 48px;
+  padding-bottom: 60px;
+  gap: 40px;
+}
+.tag > ul > .oc{
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 24px 0;
+  justify-content: space-between;
+  width: 100%;
+  /* height: 68px; */
+  font-size: var(--font-14);
+  border-bottom:1px solid #ffffff50;
+}
+.oc.active{
+  border-bottom : none !important;
+}
+.sub-box{
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  padding-bottom: 0px;
+  font-size: var(--font-14);
+  font-weight: var(--font-semi-bold);
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 1s , opacity 1s , height 1s ;
+  /* background-color: #33333350; */
+  border-bottom:1px solid #ffffff50;
+  z-index: 10;
+  overflow: hidden;
+}
+.sub-box.active{
+  opacity: 1;
+  visibility: visible;
+  padding-bottom: 30px;
+}
+.sub-box > a{
+  padding: 12px 0;
+  font-size: var(--font-14) ;
+  font-weight: var(--font-regular);
+}
+.arrow{
+  width: 20px;
+  height: 20px;
+  display: block;
+}
+.arrow-down.active{
+  display: none;
+}
+.arrow-up{
+  display: none;
+}
+.arrow-up.active{
+  display: block;
+}
+.Information-mo > nav > p{
+  font-size: var(--font-12) ;
+  opacity: 0.7;
+}
+.junwha{
+  font-size: 14px;
+  
+}
