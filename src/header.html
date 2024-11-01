@@ -6,48 +6,728 @@
     <title>헤더</title>
 
     <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/header.css">
 
     <!-- 제이쿼리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body>
-    <div class="top-ad-bar">
-      <a class="flex container mx-auto px-[48px] h-[50px] bg-myblack text-white font-medium items-center" href="https://www.vans.co.kr/">
+  <body style="height: 200dvh; background-color: pink;">
+    <div class="top-ad-bar bg-myblack">
+      <a
+        class="flex container mx-auto px-[48px] h-[50px] text-white font-medium items-center"
+        href="https://www.vans.co.kr/"
+      >
         <div class="flex-1"></div>
         <div>영지와 함께하는 Always Out There, The Upland</div>
         <div class="flex-1 flex justify-end">
-          <div class="close-btn w-[16px] h-[16px]" style="background-image: url(img/header/icon_close.png); background-repeat: no-repeat; background-size: contain; background-position: center;" onclick="$(this).closest('.top-ad-bar').remove(); return false;"></div>
+          <div
+            class="close-btn w-[16px] h-[16px]"
+            style="
+              background-image: url(img/header/icon_close.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+              background-position: center;
+            "
+            onclick="$(this).closest('.top-ad-bar').remove(); return false;"
+          ></div>
         </div>
       </a>
     </div>
-    <header class="pc-top-bar">
-      <div class="container mx-auto px-[48px] bg-myblack text-white flex h-[90px]">
+    <header class="pc-top-bar text-white sticky top-0">
+      <div
+        class="container relative mx-auto px-[48px] flex h-[90px]"
+      >
         <div class="flex-1 flex items-center">
-          <a class="block w-[90px] h-[50px]" style="background-image: url(img/header/logo_white.png); background-repeat: no-repeat; background-size: contain;" href="https://www.vans.co.kr/"></a> 
+          <a
+            class="logo-color w-[90px] h-[50px] filter grayscale invert brightness-0"
+            style="
+              background-image: url(img/header/logo_color.png);
+              background-repeat: no-repeat;
+              background-size: contain;
+            "
+            href="https://www.vans.co.kr/"
+          ></a>
         </div>
         <nav class="top-bar__menu01">
           <ul class="flex h-full font-medium">
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">NEW</a></li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">MEN</a></li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">WOMEN</a></li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">KIDS</a></li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">PREMIUM</a></li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">CUSTOMS</a></li>
-            <li>
-              <a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">
-              <span class="relative after:content-[''] after:w-[8px] after:h-[8px] after:bg-myred after:rounded-full after:absolute after:top-0 after:right-[-15px]">SALE</span>
-            </a>
-          </li>
-            <li><a class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold" href="#">MORE</a></li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >NEW</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">NEW</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >NEW</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >신발 신상품</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >의류 신상품</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >액세서리 신상품</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >키즈 신상품</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">COLLECTION</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >MTE 컬렉션</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >코듀라 컬렉션</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스웨이드 컬렉션</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >윈터 뮬 컬렉션</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >아시아 아티스트 컬렉션</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >메리 제인</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >울트라레인지</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">CUSTOMS</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >PINK VIBE</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >NEW SEASON, NEW SWATCH</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000060] invisible"></div>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >MEN</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">신발</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >코어클래식</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >클래식</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스케이트 슈즈</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >클래식플러스</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >서프</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스노우</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">의류</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >탑 & 티셔츠</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >플리스</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >아우터</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >하의</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">액세서리</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >모자</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >가방</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >양말</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >기타</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">WHAT'S HOT</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >베스트 셀러</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >뉴 스쿨 & 뉴 슬립</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >울트라레인지</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >컴피쿠시</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >온라인 단독</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >컬러 띠어리 컬렉션</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000060] invisible"></div>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >WOMEN</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">신발</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >코어클래식</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >클래식</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스케이트 슈즈</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >클래식플러스</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >서프</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스노우</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">의류</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >탑 & 티셔츠</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >플리스</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >아우터</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >하의</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >원피스 & 스커트</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">액세서리</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >모자</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >가방</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >양말</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >기타</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">WHAT'S HOT</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >베스트 셀러</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >뉴 스쿨 & 뉴 슬립</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >플랫폼</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >컴피쿠시</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >온라인 단독</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >컬러 띠어리 컬렉션</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000060] invisible"></div>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >KIDS</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">신발</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >토들러</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >키즈</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >베스트 셀러</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">의류</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >보이즈 & 걸즈</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >키즈</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">액세서리</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >전체보기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >양말</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >모자</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">CUSTOMS</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >커스텀하기</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000060] invisible"></div>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >PREMIUM</a
+              >
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >CUSTOMS</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">CUSTOMS</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >나만의 신발 만들기</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >어센틱 커스텀</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >슬립온 커스텀</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >올드스쿨 커스텀</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >에라 커스텀</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >스케이트-하이 커스텀</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">FEATURED</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >PINK VIBE</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >NEW SEASON, NEW SWATCH</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000060] invisible"></div>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+              >
+                <span
+                  class="relative after:content-[''] after:w-[8px] after:h-[8px] after:bg-myred after:rounded-full after:absolute after:top-0 after:right-[-15px]"
+                  >SALE</span
+                >
+              </a>
+            </li>
+            <li class="group">
+              <a
+                class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
+                href="#"
+                >MORE</a
+              >
+              <nav
+                class="top-bar__menu02 bg-white text-myblack absolute top-full left-0 right-0 hidden group-hover:flex justify-center pt-[16px] pb-[60px]"
+              >
+                <ul class="flex gap-[80px]">
+                  <li>
+                    <a class="font-semibold" href="#">MORE FUN</a>
+                    <ul class="font-normal mt-[24px]">
+                      <li>
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >Always Pushing</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >SURF</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >SUSTAINABILITY</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >ABOUT VANS</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >VANS NEWS</a
+                        >
+                      </li>
+                      <li class="mt-[16px]">
+                        <a class="hover:text-myred hover:font-medium" href="#"
+                          >THIS IS OFF THE WALL</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a class="font-semibold" href="#">SNOW</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="top-bar__menu02-bg fixed left-0 right-0 h-[100dvh] z-[-10] bg-[#00000010] invisible"></div>
+            </li>
           </ul>
         </nav>
-        <nav class="flex-1 flex justify-end">
+        <nav class="top-bar__user-menu flex-1 flex justify-end">
           <ul class="flex items-center gap-[18px]">
-            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_location.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
-            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_search.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
-            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_my.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
-            <li><a class="block w-[28px] h-[28px]" href="#" style="background-image: url(img/header/icon_cart.png); background-repeat: no-repeat; background-size: contain; background-position: center;"></a></li>
+            <li>
+              <a
+                class="block w-[28px] h-[28px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_location.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li>
+              <a
+                class="block w-[28px] h-[28px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_search.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li>
+              <a
+                class="block w-[28px] h-[28px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_my.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li>
+              <a
+                class="block w-[28px] h-[28px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_cart.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
           </ul>
         </nav>
       </div>

@@ -1,0 +1,16 @@
+.pc-top-bar.on {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+
+.pc-top-bar .logo-color.on {
+  filter: none;
+}
+
+.top-bar__user-menu a.on {
+  filter: invert(1) ;
+}
+
+.top-bar__menu02-bg.on {
+  visibility: visible;
+}
