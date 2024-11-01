@@ -840,6 +840,10 @@ html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
 
+.custom-cursor {
+  cursor: url("../img/main/mouse_pointer.png") 100 100, auto !important;
+}
+
 .container {
   max-width: 1920px;
 }
@@ -856,6 +860,10 @@ iframe {
   width: 4058px;
   animation: shose_move 10s linear infinite;
   display: flex;
+}
+
+.mask:hover {
+  animation-play-state: paused;
 }
 
 .mask > img {
@@ -875,12 +883,12 @@ iframe {
   }
 }
 
-@media (max-width : 1440px){
-  .wysp{
+@media (max-width: 1440px) {
+  .wysp {
     font-size: 40px !important;
   }
 
-  .mask{
+  .mask {
     width: 3108px !important;
   }
 
@@ -889,16 +897,16 @@ iframe {
   }
 }
 
-@media (max-width : 1200px){
-  .wys{
+@media (max-width: 1200px) {
+  .wys {
     padding: 140px 0 !important;
   }
 
-  .wysp{
+  .wysp {
     font-size: 26px !important;
   }
 
-  .mask{
+  .mask {
     width: 2618px !important;
   }
 
@@ -907,12 +915,12 @@ iframe {
   }
 }
 
-@media (max-width : 768px){
-  .wys{
+@media (max-width: 768px) {
+  .wys {
     padding: 100px 0 !important;
   }
 
-  .mask{
+  .mask {
     width: 1616px !important;
     gap: 24px !important;
   }
