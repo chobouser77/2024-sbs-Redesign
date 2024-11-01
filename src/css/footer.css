@@ -1,7 +1,8 @@
 footer{
   color: #fff;
+  background-color: #1d1d1d;
 }
-@media (max-width : 768px) {
+@media (max-width : 1200px) {
   .footerpc{
     display: none !important;
   }
@@ -9,22 +10,7 @@ footer{
     display: flex !important;
   }
 }
-@media (max-width : 1161px ) { 
-  .information > nav > ul{
-    gap: 4rem !important;
-  }
-  .number > p {
-    font-size: 20px !important;
-  }
-}
-@media (max-width : 1003px ) { 
-  .information > nav > ul{
-    gap: 2rem !important;
-  }
-  .number > p {
-    font-size: 20px !important  ;
-  }
-}
+
 /* PC 본문 */
 .information > nav > div > div > p {
   opacity: 0.7 ;

@@ -1,17 +1,48 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>메인화면</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>메인화면</title>
 
-  <link rel="stylesheet" href="css/output.css">
-
-  <!-- 제이쿼리 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-  <script src="js/common.js"></script>
-</head>
-<body>
-  안녕하세요.
-</body>
+    <link rel="stylesheet" href="css/output.css" />
+    <!-- 테일윈즈 가동 명령어 -->
+    <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="js/common.js"></script>
+  </head>
+  <body style="color: white; overflow-x: hidden">
+    <iframe
+      class="youtube-video-1 aspect-[1280/720] w-full"
+      src="https://www.youtube-nocookie.com/embed/G7gCXRFa9IQ?si=RIksrqja7DeNcQr-&controls=0&autoplay=1&mute=1&loop=1&playlist=G7gCXRFa9IQ"
+      title="YouTube video player"
+      frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    >
+    </iframe>
+    <section
+      class="wys flex flex-col py-[230px] w-full h-full"
+      style="max-height: 935px; gap: 70px"
+    >
+      <span class="wysp text-[46px] mx-auto font-semibold">
+        WHAT'S YIURE STYLE?
+      </span>
+      <div class="mask w-[4080px] flex items-center" style="gap: 52px">
+        <img src="img/main/slip_on.png" alt="slip_on" />
+        <img src="img/main/authentic.png" alt="authentic" />
+        <img src="img/main/old_skcool.png" alt="old_skcool" />
+        <img src="img/main/era.png" alt="era" />
+        <img src="img/main/sk8_hi.png" alt="sk8_hi" />
+        <!-- 반복 -->
+        <img src="img/main/slip_on.png" alt="slip_on" />
+        <img src="img/main/authentic.png" alt="authentic" />
+        <img src="img/main/old_skcool.png" alt="old_skcool" />
+        <img src="img/main/era.png" alt="era" />
+        <img src="img/main/sk8_hi.png" alt="sk8_hi" />
+      </div>
+    </section>
+  </body>
 </html>
