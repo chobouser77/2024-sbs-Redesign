@@ -639,20 +639,20 @@ video {
   margin-left: 43px;
 }
 
-.mt-\[16px\]{
-  margin-top: 16px;
-}
-
 .mt-\[20px\]{
   margin-top: 20px;
 }
 
-.mt-\[24px\]{
-  margin-top: 24px;
-}
-
 .mt-\[51px\]{
   margin-top: 51px;
+}
+
+.mt-\[16px\]{
+  margin-top: 16px;
+}
+
+.mt-\[24px\]{
+  margin-top: 24px;
 }
 
 .block{
@@ -673,10 +673,6 @@ video {
 
 .h-\[100\%\]{
   height: 100%;
-}
-
-.h-\[100dvh\]{
-  height: 100dvh;
 }
 
 .h-\[156\.1px\]{
@@ -713,6 +709,10 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[100dvh\]{
+  height: 100dvh;
 }
 
 .w-\[100\%\]{
@@ -804,17 +804,24 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
+<<<<<<< HEAD
+.bg-\[\#00000060\]{
+  background-color: #00000060;
+}
+
+=======
+>>>>>>> abfd70a3b39ec881960acf7a72995dcf48484a81
+.bg-myblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
+}
+
 .bg-\[\#00000010\]{
   background-color: #00000010;
 }
 
 .bg-\[\#00000060\]{
   background-color: #00000060;
-}
-
-.bg-myblack{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -853,10 +860,13 @@ video {
 
 .pb-\[60px\]{
   padding-bottom: 60px;
+<<<<<<< HEAD
 }
 
 .pt-\[16px\]{
   padding-top: 16px;
+=======
+>>>>>>> abfd70a3b39ec881960acf7a72995dcf48484a81
 }
 
 .pt-\[28px\]{
@@ -865,6 +875,10 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
+}
+
+.pt-\[16px\]{
+  padding-top: 16px;
 }
 
 .text-\[12px\]{
@@ -891,6 +905,7 @@ video {
   font-weight: 500;
 }
 
+<<<<<<< HEAD
 .font-normal{
   font-weight: 400;
 }
@@ -902,11 +917,20 @@ video {
 .text-myblack{
   --tw-text-opacity: 1;
   color: rgb(29 29 29 / var(--tw-text-opacity));
+=======
+.font-semibold{
+  font-weight: 600;
+>>>>>>> abfd70a3b39ec881960acf7a72995dcf48484a81
 }
 
 .text-white{
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.text-myblack{
+  --tw-text-opacity: 1;
+  color: rgb(29 29 29 / var(--tw-text-opacity));
 }
 
 .opacity-\[0\.7\]{
@@ -937,6 +961,10 @@ html > body {
   font-family: "Pretendard Variable", sans-serif;
 }
 
+.custom-cursor {
+  cursor: url("../img/main/mouse_pointer.png") 100 100, auto !important;
+}
+
 .container {
   max-width: 1920px;
 }
@@ -953,6 +981,10 @@ iframe {
   width: 4058px;
   animation: shose_move 10s linear infinite;
   display: flex;
+}
+
+.mask:hover {
+  animation-play-state: paused;
 }
 
 .mask > img {
@@ -972,12 +1004,12 @@ iframe {
   }
 }
 
-@media (max-width : 1440px){
-  .wysp{
+@media (max-width: 1440px) {
+  .wysp {
     font-size: 40px !important;
   }
 
-  .mask{
+  .mask {
     width: 3108px !important;
   }
 
@@ -986,16 +1018,16 @@ iframe {
   }
 }
 
-@media (max-width : 1200px){
-  .wys{
+@media (max-width: 1200px) {
+  .wys {
     padding: 140px 0 !important;
   }
 
-  .wysp{
+  .wysp {
     font-size: 26px !important;
   }
 
-  .mask{
+  .mask {
     width: 2618px !important;
   }
 
@@ -1004,12 +1036,12 @@ iframe {
   }
 }
 
-@media (max-width : 768px){
-  .wys{
+@media (max-width: 768px) {
+  .wys {
     padding: 100px 0 !important;
   }
 
-  .mask{
+  .mask {
     width: 1616px !important;
     gap: 24px !important;
   }
@@ -1060,12 +1092,12 @@ iframe {
   content: var(--tw-content);
 }
 
-.hover\:font-medium:hover{
-  font-weight: 500;
-}
-
 .hover\:font-semibold:hover{
   font-weight: 600;
+}
+
+.hover\:font-medium:hover{
+  font-weight: 500;
 }
 
 .hover\:text-myred:hover{
