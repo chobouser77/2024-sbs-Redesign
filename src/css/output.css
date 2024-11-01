@@ -626,8 +626,16 @@ video {
   top: 100%;
 }
 
+.top-\[100\%\]{
+  top: 100%;
+}
+
 .z-\[-10\]{
   z-index: -10;
+}
+
+.z-10{
+  z-index: 10;
 }
 
 .mx-auto{
@@ -639,20 +647,20 @@ video {
   margin-left: 43px;
 }
 
-.mt-\[20px\]{
-  margin-top: 20px;
-}
-
-.mt-\[51px\]{
-  margin-top: 51px;
-}
-
 .mt-\[16px\]{
   margin-top: 16px;
 }
 
+.mt-\[20px\]{
+  margin-top: 20px;
+}
+
 .mt-\[24px\]{
   margin-top: 24px;
+}
+
+.mt-\[51px\]{
+  margin-top: 51px;
 }
 
 .block{
@@ -673,6 +681,10 @@ video {
 
 .h-\[100\%\]{
   height: 100%;
+}
+
+.h-\[100dvh\]{
+  height: 100dvh;
 }
 
 .h-\[156\.1px\]{
@@ -711,8 +723,8 @@ video {
   height: 100%;
 }
 
-.h-\[100dvh\]{
-  height: 100dvh;
+.h-screen{
+  height: 100vh;
 }
 
 .w-\[100\%\]{
@@ -753,6 +765,10 @@ video {
 
 .w-full{
   width: 100%;
+}
+
+.w-screen{
+  width: 100vw;
 }
 
 .flex-1{
@@ -804,17 +820,17 @@ video {
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
 }
 
-.bg-myblack{
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#00000010\]{
   background-color: #00000010;
 }
 
 .bg-\[\#00000060\]{
   background-color: #00000060;
+}
+
+.bg-myblack{
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 29 29 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -855,16 +871,16 @@ video {
   padding-bottom: 60px;
 }
 
+.pt-\[16px\]{
+  padding-top: 16px;
+}
+
 .pt-\[28px\]{
   padding-top: 28px;
 }
 
 .pt-\[60px\]{
   padding-top: 60px;
-}
-
-.pt-\[16px\]{
-  padding-top: 16px;
 }
 
 .text-\[12px\]{
@@ -891,22 +907,22 @@ video {
   font-weight: 500;
 }
 
-.font-semibold{
-  font-weight: 600;
-}
-
 .font-normal{
   font-weight: 400;
 }
 
-.text-white{
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255 / var(--tw-text-opacity));
+.font-semibold{
+  font-weight: 600;
 }
 
 .text-myblack{
   --tw-text-opacity: 1;
   color: rgb(29 29 29 / var(--tw-text-opacity));
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
 .opacity-\[0\.7\]{
@@ -1068,12 +1084,12 @@ iframe {
   content: var(--tw-content);
 }
 
-.hover\:font-semibold:hover{
-  font-weight: 600;
-}
-
 .hover\:font-medium:hover{
   font-weight: 500;
+}
+
+.hover\:font-semibold:hover{
+  font-weight: 600;
 }
 
 .hover\:text-myred:hover{

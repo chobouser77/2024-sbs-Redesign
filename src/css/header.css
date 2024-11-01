@@ -11,6 +11,8 @@
   filter: invert(1) ;
 }
 
-.top-bar__menu02-bg.on {
-  visibility: visible;
+
+.op.on{
+  background-color: #1d1d1d50;
+  z-index: 0;
 }
