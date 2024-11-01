@@ -7,6 +7,7 @@ module.exports = {
         myblack: "#1d1d1d",
         myred: "#D41F1F",
       },
+      
     }
   },
   plugins: [],

@@ -48,3 +48,28 @@ $(document).ready(function() {
   });
   $('.sub-box').css('height', '0');
 });
+
+
+// 메인 
+$(document).ready(function() {
+  const cursor = document.querySelector('.custom-cursor');
+  const mask = document.querySelector('.mask'); // .hover-area를 .mask로 변경
+
+  document.addEventListener('mousemove', (e) => {
+      // 커서의 중앙을 맞추기 위해 마우스 위치에서 커서 크기의 절반을 빼줍니다.
+      cursor.style.left = `${e.pageX - cursor.offsetWidth / 2}px`; // 커서의 중앙을 맞추기 위해
+      cursor.style.top = `${e.pageY - cursor.offsetHeight / 2}px`; // 커서의 중앙을 맞추기 위해
+      cursor.style.display = 'block'; // 커서를 보이게 함
+  });
+
+  mask.addEventListener('mouseenter', () => { // .hover-area를 .mask로 변경
+      cursor.style.transform = 'scale(10.0)'; // 커서를 1.5배로 확대
+  });
+
+  mask.addEventListener('mouseleave', () => { // .hover-area를 .mask로 변경
+      cursor.style.transform = 'scale(1)'; // 커서를 원래 크기로 복원
+  });
+});
+
+
+

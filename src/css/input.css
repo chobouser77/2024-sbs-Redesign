@@ -7,10 +7,21 @@
 html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
+  cursor: none;
+  /* cursor: url("../img/main/mause_pointer16.png") 8 8, auto !important; */
 }
-
+/* 커스텀 마우스 */
 .custom-cursor {
-  cursor: url("../img/main/mouse_pointer.png") 100 100, auto !important;
+  position: absolute;
+  mix-blend-mode: difference; 
+  width: 16px; /* 커서 이미지의 너비 */
+  height: 16px; /* 커서 이미지의 높이 */
+  background-color: #D41F1F;
+  border-radius: 50%;
+  pointer-events: none; /* 클릭 이벤트를 막기 위해 */
+  opacity: 1; /* 투명도 설정 */
+  transition: transform 0.5s ease; /* 부드러운 전환 효과 */
+  z-index: 10;
 }
 
 .container {
@@ -28,10 +39,12 @@ iframe {
   width: 4058px;
   animation: shose_move 10s linear infinite;
   display: flex;
+  z-index: 0;
 }
 
 .mask:hover {
   animation-play-state: paused;
+  /* cursor: url("../img/main/mause_pointer120.png") 60 60, auto !important; */
 }
 
 .mask > img {
