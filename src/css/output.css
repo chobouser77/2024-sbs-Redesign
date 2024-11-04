@@ -658,6 +658,10 @@ video {
   top: 140px;
 }
 
+.top-\[351px\]{
+  top: 351px;
+}
+
 .top-\[70\%\]{
   top: 70%;
 }
@@ -960,6 +964,11 @@ video {
   padding-bottom: 24px;
 }
 
+.py-\[330px\]{
+  padding-top: 330px;
+  padding-bottom: 330px;
+}
+
 .pb-\[100px\]{
   padding-bottom: 100px;
 }
@@ -980,6 +989,10 @@ video {
   padding-top: 16px;
 }
 
+.pt-\[26px\]{
+  padding-top: 26px;
+}
+
 .pt-\[28px\]{
   padding-top: 28px;
 }
@@ -990,22 +1003,6 @@ video {
 
 .pt-\[70px\]{
   padding-top: 70px;
-}
-
-.pt-\[10px\]{
-  padding-top: 10px;
-}
-
-.pt-\[20px\]{
-  padding-top: 20px;
-}
-
-.pt-\[24px\]{
-  padding-top: 24px;
-}
-
-.pt-\[26px\]{
-  padding-top: 26px;
 }
 
 .text-\[12px\]{
@@ -1101,7 +1098,7 @@ html > body {
   /* 커서 이미지의 너비 */
   height: 16px;
   /* 커서 이미지의 높이 */
-  background-color: #D41F1F;
+  background-color: #d41f1f;
   border-radius: 50%;
   pointer-events: none;
   /* 클릭 이벤트를 막기 위해 */
@@ -1166,7 +1163,7 @@ iframe {
     max-width: 264px !important;
   }
 
-  .more{
+  .more {
     width: 192px;
     height: 56px;
   }
@@ -1188,6 +1185,10 @@ iframe {
   .mask > img {
     max-width: 215px !important;
   }
+
+  .s4{
+    padding: 170px 48px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1204,11 +1205,15 @@ iframe {
     max-width: 140px !important;
   }
 
-  .more{
+  .more {
     width: 104px;
     height: 37px;
     font-size: 14px;
     top: 75% !important;
+  }
+
+  .s4{
+    padding: 100px 48px !important;
   }
 }
 
