@@ -630,8 +630,8 @@ video {
   top: 140px;
 }
 
-.top-\[251px\]{
-  top: 251px;
+.top-\[351px\]{
+  top: 351px;
 }
 
 .top-\[70\%\]{
@@ -986,7 +986,7 @@ html > body {
   /* 커서 이미지의 너비 */
   height: 16px;
   /* 커서 이미지의 높이 */
-  background-color: #D41F1F;
+  background-color: #d41f1f;
   border-radius: 50%;
   pointer-events: none;
   /* 클릭 이벤트를 막기 위해 */
@@ -1051,19 +1051,9 @@ iframe {
     max-width: 264px !important;
   }
 
-  .null-grow{
-    display: none !important;
-  }
-
-  .more{
+  .more {
     width: 192px;
     height: 56px;
-  }
-}
-
-@media (max-width: 1250px){
-  .footerpc{
-    gap: 40px !important;
   }
 }
 
@@ -1099,7 +1089,7 @@ iframe {
     max-width: 140px !important;
   }
 
-  .more{
+  .more {
     width: 104px;
     height: 37px;
     font-size: 14px;
