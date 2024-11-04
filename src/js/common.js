@@ -1,14 +1,53 @@
 // 헤더
 $(document).ready(function() {
-  $(".top-bar__menu01>ul>li").mouseenter(function(){
+  // pc 상단바
+  $(".pc-top-bar__menu01>ul>li").mouseenter(function(){
     $(".pc-top-bar").addClass("on");
     $(".pc-top-bar .logo-color").addClass("on");
-    $(".top-bar__user-menu a").addClass("on");
+    $(".pc-top-bar__user-menu a").addClass("on");
   });
-  $(".top-bar__menu01>ul>li").mouseleave(function(){
+  $(".pc-top-bar__menu01>ul>li").mouseleave(function(){
     $(".pc-top-bar").removeClass("on");
     $(".pc-top-bar .logo-color").removeClass("on");
-    $(".top-bar__user-menu a").removeClass("on");
+    $(".pc-top-bar__user-menu a").removeClass("on");
+  });
+
+  // tablet 상단바
+  $(".sidemenu-btn-open").click(function(){
+    $(".top-ad-bar").addClass("on");
+
+    $(".tablet-top-bar .container").addClass("on");
+    $(".tablet-top-bar .logo-color").addClass("on");
+    $(".tablet-top-bar__user-menu a").addClass("on");
+    $(".sidemenu-btn-open").addClass("on");
+    $(".sidemenu-btn-close").addClass("on");
+
+    $(".tablet-side-bar").addClass("on");
+  });
+
+  $(".sidemenu-btn-close").click(function(){
+    $(".top-ad-bar").removeClass("on");
+
+    $(".tablet-top-bar .container").removeClass("on");
+    $(".tablet-top-bar .logo-color").removeClass("on");
+    $(".tablet-top-bar__user-menu a").removeClass("on");
+    $(".sidemenu-btn-open").removeClass("on");
+    $(".sidemenu-btn-close").removeClass("on");
+
+    $(".tablet-side-bar").removeClass("on");
+  });
+
+  // tablet 사이드바
+  $(".tablet-side-bar__menu01>ul>li").click(function(){
+    $(".sidemenu-bg-full").addClass("on");
+
+    $(".tablet-side-bar__menu02").addClass("on");
+  });
+
+  $(".tablet-side-bar__menu01>ul").click(function(){
+    setTimeout(function() {
+      $(".tablet-side-bar__menu02").addClass("fast-animate");
+    }, 1000);
   });
 
 });

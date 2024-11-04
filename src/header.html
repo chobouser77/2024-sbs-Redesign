@@ -6,16 +6,17 @@
     <title>헤더1</title>
 
     <link rel="stylesheet" href="css/output.css" />
-    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/header.css" />
 
     <!-- 제이쿼리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body style="height: 200dvh; background-color: pink;">
+  <body style="height: 200dvh; background-color: rgba(104, 49, 49, 0.616)">
+    <!-- 상단 광고바 -->
     <div class="top-ad-bar bg-myblack">
       <a
-        class="flex container mx-auto px-[48px] h-[50px] text-white font-medium items-center"
+        class="flex container mx-auto px-[48px] h-[50px] text-white font-medium text-[12px] md:text-[16px] whitespace-nowrap items-center"
         href="https://www.vans.co.kr/"
       >
         <div class="flex-1"></div>
@@ -34,10 +35,9 @@
         </div>
       </a>
     </div>
-    <header class="pc-top-bar text-white sticky top-0">
-      <div
-        class="container relative mx-auto px-[48px] flex h-[90px]"
-      >
+    <!-- pc 상단바 -->
+    <header class="pc-top-bar text-white sticky top-0 hidden lg:block">
+      <div class="container relative mx-auto px-[48px] flex h-[90px]">
         <div class="flex-1 flex items-center">
           <a
             class="logo-color w-[90px] h-[50px] filter grayscale invert brightness-0"
@@ -49,7 +49,7 @@
             href="https://www.vans.co.kr/"
           ></a>
         </div>
-        <nav class="top-bar__menu01">
+        <nav class="pc-top-bar__menu01">
           <ul class="flex h-full font-medium">
             <li class="group peer/g1">
               <a
@@ -149,7 +149,9 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g1:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g1:visible"
+            ></div>
             <li class="group peer/g2">
               <a
                 class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
@@ -298,7 +300,9 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g2:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g2:visible"
+            ></div>
             <li class="group peer/g3">
               <a
                 class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
@@ -452,7 +456,9 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g3:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g3:visible"
+            ></div>
             <li class="group peer/g4">
               <a
                 class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
@@ -541,7 +547,9 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g4:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g4:visible"
+            ></div>
             <li class="group">
               <a
                 class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
@@ -612,7 +620,9 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g5:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g5:visible"
+            ></div>
             <li class="group">
               <a
                 class="flex h-full items-center px-[25px] hover:text-myred hover:font-semibold"
@@ -675,14 +685,16 @@
                 </ul>
               </nav>
             </li>
-            <div class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g6:visible"></div>
+            <div
+              class="bg-[#00000050] fixed h-[100dvh] top-[140px] left-0 right-0 z-[-10] invisible peer-hover/g6:visible"
+            ></div>
           </ul>
         </nav>
-        <nav class="top-bar__user-menu flex-1 flex justify-end">
+        <nav class="pc-top-bar__user-menu flex-1 flex justify-end">
           <ul class="flex items-center gap-[18px]">
             <li>
               <a
-                class="block w-[28px] h-[28px]"
+                class="block w-[24px] h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_location.png);
@@ -694,7 +706,7 @@
             </li>
             <li>
               <a
-                class="block w-[28px] h-[28px]"
+                class="block w-[24px] h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_search.png);
@@ -706,7 +718,7 @@
             </li>
             <li>
               <a
-                class="block w-[28px] h-[28px]"
+                class="block w-[24px] h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_my.png);
@@ -718,7 +730,7 @@
             </li>
             <li>
               <a
-                class="block w-[28px] h-[28px]"
+                class="block w-[24px] h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_cart.png);
@@ -732,5 +744,162 @@
         </nav>
       </div>
     </header>
+    <!-- 태블릿 상단바 -->
+    <header class="tablet-top-bar sticky top-0 lg:hidden z-[50]">
+      <div
+        class="container relative mx-auto px-[24px] sm:px-[48px] flex h-[70px] md:h-[90px] items-center"
+      >
+        <a
+          class="logo-color w-[90px] h-[50px] filter grayscale invert brightness-0"
+          style="
+            background-image: url(img/header/logo_color.png);
+            background-repeat: no-repeat;
+            background-size: contain;
+          "
+          href="https://www.vans.co.kr/"
+        ></a>
+        <div class="flex-grow"></div>
+        <nav class="tablet-top-bar__user-menu">
+          <ul class="flex gap-[18px]">
+            <li>
+              <a
+                class="block w-[24px] h-[24px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_search.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li>
+              <a
+                class="block w-[24px] h-[24px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_cart.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li class="sidemenu-btn-open">
+              <a
+                class="block w-[24px] h-[24px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_menu.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+            <li class="sidemenu-btn-close hidden">
+              <a
+                class="block w-[24px] h-[24px]"
+                href="#"
+                style="
+                  background-image: url(img/header/icon_close.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                  background-position: center;
+                "
+              ></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- 태블릿 사이드바 -->
+    <div
+      class="tablet-side-bar fixed bg-orange-200 inset-0 px-[48px] pt-[70px] md:pt-[90px] pb-[60px] whitespace-nowrap"
+    >
+      <div class="wrap flex flex-col justify-between h-full bg-red-300">
+        <nav class="tablet-side-bar__menu01 bg-white">
+          <ul class="font-bold text-[28px] flex flex-col gap-[40px] px-[20px]">
+            <li class="bg-red-300 group">
+              <a class="block relative" href="#">
+                <span class="relative z-10 text-white">NEW</span>
+                <div class="sidemenu-bg-full bg-myblack absolute w-[105px] h-full left-[-20px] top-0 hidden group-hover:block">
+                  <div class="sidemenu-bg-1 bg-[#ffffff99] w-[10px] h-[10px] absolute top-0 left-0"></div>
+                  <div class="sidemenu-bg-2 bg-[#ffffff99] w-[10px] h-[10px] absolute bottom-0 right-0"></div>
+                  <div class="sidemenu-bg-3 bg-[#ffffff99] w-[10px] h-[10px] absolute top-[10px] left-[10px]"></div>
+                  <div class="sidemenu-bg-4 bg-myblack w-[10px] h-[10px] absolute bottom-0 right-[-10px]"></div>
+                </div>
+              </a>
+              <ul class="tablet-side-bar__menu02 font-semibold text-[18px] text-white bg-myblack absolute left-[260px] right-0 top-[70px] md:top-[90px] bottom-0 px-[48px] pt-[26px]">
+                <li>
+                  <a href="#">1-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+                <li class="mt-[24px]">
+                  <a href="#">1-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+                <li class="mt-[24px]">
+                  <a href="#">1-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="bg-red-300 group">
+              <a class="block relative" href="#">
+                <span class="relative z-10 text-white">NEW</span>
+                <div class="sidemenu-bg-full bg-myblack absolute w-[105px] h-full left-[-20px] top-0 hidden group-hover:block">
+                  <div class="sidemenu-bg-1 bg-[#ffffff99] w-[10px] h-[10px] absolute top-0 left-0"></div>
+                  <div class="sidemenu-bg-2 bg-[#ffffff99] w-[10px] h-[10px] absolute bottom-0 right-0"></div>
+                  <div class="sidemenu-bg-3 bg-[#ffffff99] w-[10px] h-[10px] absolute top-[10px] left-[10px]"></div>
+                  <div class="sidemenu-bg-4 bg-myblack w-[10px] h-[10px] absolute bottom-0 right-[-10px]"></div>
+                </div>
+              </a>
+              <ul class="tablet-side-bar__menu02 font-semibold text-[18px] text-white bg-myblack absolute left-[260px] right-0 top-[70px] md:top-[90px] bottom-0 px-[48px] pt-[26px]">
+                <li>
+                  <a href="#">2-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+                <li class="mt-[24px]">
+                  <a href="#">2-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+                <li class="mt-[24px]">
+                  <a href="#">2-2차메뉴</a>
+                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                    <li><a href="#">3차메뉴</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li><a href="#">1차메뉴</a></li>
+            <li><a href="#">1차메뉴</a></li>
+          </ul>
+        </nav>
+        <nav class="tablet-side-bar__usermenu bg-white">456</nav>
+      </div>
+    </div>
   </body>
 </html>
