@@ -76,12 +76,19 @@ iframe {
   .mask > img {
     max-width: 264px !important;
   }
+  .null-grow{
+    display: none !important;
+  }
   .more{
     width: 192px;
     height: 56px;
   }
 }
-
+@media (max-width: 1250px){
+  .footerpc{
+    gap: 40px !important;
+  }
+}
 @media (max-width: 1200px) {
   .wys {
     padding: 140px 0 !important;
