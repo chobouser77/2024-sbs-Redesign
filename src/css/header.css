@@ -10,7 +10,3 @@
 .top-bar__user-menu a.on {
   filter: invert(1) ;
 }
-
-.top-bar__menu02-bg.on {
-  visibility: visible;
-}
