@@ -4,15 +4,11 @@ $(document).ready(function() {
     $(".pc-top-bar").addClass("on");
     $(".pc-top-bar .logo-color").addClass("on");
     $(".top-bar__user-menu a").addClass("on");
-    $(".top-bar__menu02-bg").addClass("on");
   });
   $(".top-bar__menu01>ul>li").mouseleave(function(){
     $(".pc-top-bar").removeClass("on");
     $(".pc-top-bar .logo-color").removeClass("on");
     $(".top-bar__user-menu a").removeClass("on");
-  });
-  $(".top-bar__menu02-bg").mouseenter(function(){
-    $(this).removeClass("on");
   });
 
 });
