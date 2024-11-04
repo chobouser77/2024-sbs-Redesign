@@ -1073,6 +1073,10 @@ iframe {
   .mask > img {
     max-width: 215px !important;
   }
+
+  .s4{
+    padding: 170px 48px !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1094,6 +1098,10 @@ iframe {
     height: 37px;
     font-size: 14px;
     top: 75% !important;
+  }
+
+  .s4{
+    padding: 100px 48px !important;
   }
 }
 
