@@ -572,9 +572,9 @@ video {
   }
 }
 
-@media (min-width: 1024px){
+@media (min-width: 1200px){
   .container{
-    max-width: 1024px;
+    max-width: 1200px;
   }
 }
 
@@ -610,12 +610,36 @@ video {
   position: sticky;
 }
 
+.inset-0{
+  inset: 0px;
+}
+
+.bottom-0{
+  bottom: 0px;
+}
+
 .left-0{
   left: 0px;
 }
 
+.left-\[-20px\]{
+  left: -20px;
+}
+
+.left-\[10px\]{
+  left: 10px;
+}
+
+.left-\[260px\]{
+  left: 260px;
+}
+
 .right-0{
   right: 0px;
+}
+
+.right-\[-10px\]{
+  right: -10px;
 }
 
 .right-\[5\%\]{
@@ -624,6 +648,10 @@ video {
 
 .top-0{
   top: 0px;
+}
+
+.top-\[10px\]{
+  top: 10px;
 }
 
 .top-\[140px\]{
@@ -638,12 +666,24 @@ video {
   top: 70%;
 }
 
+.top-\[70px\]{
+  top: 70px;
+}
+
 .top-full{
   top: 100%;
 }
 
+.z-10{
+  z-index: 10;
+}
+
 .z-\[-10\]{
   z-index: -10;
+}
+
+.z-\[50\]{
+  z-index: 50;
 }
 
 .mx-auto{
@@ -699,6 +739,10 @@ video {
   height: 100dvh;
 }
 
+.h-\[10px\]{
+  height: 10px;
+}
+
 .h-\[16px\]{
   height: 16px;
 }
@@ -707,8 +751,8 @@ video {
   height: 20px;
 }
 
-.h-\[28px\]{
-  height: 28px;
+.h-\[24px\]{
+  height: 24px;
 }
 
 .h-\[39px\]{
@@ -725,6 +769,10 @@ video {
 
 .h-\[64px\]{
   height: 64px;
+}
+
+.h-\[70px\]{
+  height: 70px;
 }
 
 .h-\[7px\]{
@@ -751,8 +799,16 @@ video {
   width: 100px;
 }
 
+.w-\[105px\]{
+  width: 105px;
+}
+
 .w-\[107px\]{
   width: 107px;
+}
+
+.w-\[10px\]{
+  width: 10px;
 }
 
 .w-\[16px\]{
@@ -763,12 +819,12 @@ video {
   width: 21.5px;
 }
 
-.w-\[250px\]{
-  width: 250px;
+.w-\[24px\]{
+  width: 24px;
 }
 
-.w-\[28px\]{
-  width: 28px;
+.w-\[250px\]{
+  width: 250px;
 }
 
 .w-\[4080px\]{
@@ -831,8 +887,16 @@ video {
   gap: 18px;
 }
 
+.gap-\[40px\]{
+  gap: 40px;
+}
+
 .gap-\[80px\]{
   gap: 80px;
+}
+
+.whitespace-nowrap{
+  white-space: nowrap;
 }
 
 .border{
@@ -853,6 +917,7 @@ video {
   background-color: rgb(212 31 31 / var(--tw-bg-opacity));
 }
 
+<<<<<<< HEAD
 .bg-\[none\]{
   background-color: none;
 }
@@ -860,6 +925,10 @@ video {
 .bg-\[white\]{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+=======
+.bg-\[\#ffffff99\]{
+  background-color: #ffffff99;
+>>>>>>> 999a4f80875490235c4112f93500fcdabd469e0d
 }
 
 .bg-myblack{
@@ -867,9 +936,29 @@ video {
   background-color: rgb(29 29 29 / var(--tw-bg-opacity));
 }
 
+.bg-orange-200{
+  --tw-bg-opacity: 1;
+  background-color: rgb(254 215 170 / var(--tw-bg-opacity));
+}
+
+.bg-red-300{
+  --tw-bg-opacity: 1;
+  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
+}
+
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.px-\[20px\]{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.px-\[24px\]{
+  padding-left: 24px;
+  padding-right: 24px;
 }
 
 .px-\[25px\]{
@@ -915,12 +1004,25 @@ video {
   padding-bottom: 60px;
 }
 
+<<<<<<< HEAD
 .pt-\[150px\]{
   padding-top: 150px;
+=======
+.pl-\[8px\]{
+  padding-left: 8px;
+}
+
+.pt-\[12px\]{
+  padding-top: 12px;
+>>>>>>> 999a4f80875490235c4112f93500fcdabd469e0d
 }
 
 .pt-\[16px\]{
   padding-top: 16px;
+}
+
+.pt-\[26px\]{
+  padding-top: 26px;
 }
 
 .pt-\[28px\]{
@@ -929,6 +1031,10 @@ video {
 
 .pt-\[60px\]{
   padding-top: 60px;
+}
+
+.pt-\[70px\]{
+  padding-top: 70px;
 }
 
 .text-\[12px\]{
@@ -945,6 +1051,10 @@ video {
 
 .text-\[20px\]{
   font-size: 20px;
+}
+
+.text-\[28px\]{
+  font-size: 28px;
 }
 
 .text-\[30px\]{
@@ -1193,6 +1303,10 @@ iframe {
   color: rgb(212 31 31 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:block{
+  display: block;
+}
+
 .group:hover .group-hover\:flex{
   display: flex;
 }
@@ -1219,4 +1333,39 @@ iframe {
 
 .peer\/g6:hover ~ .peer-hover\/g6\:visible{
   visibility: visible;
+}
+
+@media (min-width: 640px){
+  .sm\:px-\[48px\]{
+    padding-left: 48px;
+    padding-right: 48px;
+  }
+}
+
+@media (min-width: 768px){
+  .md\:top-\[90px\]{
+    top: 90px;
+  }
+
+  .md\:h-\[90px\]{
+    height: 90px;
+  }
+
+  .md\:pt-\[90px\]{
+    padding-top: 90px;
+  }
+
+  .md\:text-\[16px\]{
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px){
+  .lg\:block{
+    display: block;
+  }
+
+  .lg\:hidden{
+    display: none;
+  }
 }

@@ -1,12 +1,89 @@
+/* 상단 광고바 */
+.top-ad-bar.on {
+  display: none;
+}
+
+/* pc 상단바 */
 .pc-top-bar.on {
   background-color: #fff;
   color: #1d1d1d;
 }
-
 .pc-top-bar .logo-color.on {
   filter: none;
 }
-
-.top-bar__user-menu a.on {
+.pc-top-bar__user-menu a.on {
   filter: invert(1) ;
+}
+
+/* tablet 상단바 */
+.tablet-top-bar .container.on {
+  background-color: #fff;
+}
+.tablet-top-bar .logo-color.on {
+  filter: none;
+}
+.tablet-top-bar__user-menu a.on {
+  filter: invert(1);
+}
+/* tablet 상단바 버튼 */
+.sidemenu-btn-open.on {
+  display: none;
+}
+.sidemenu-btn-close.on {
+  display: block;
+}
+
+/* tablet 사이드바 */
+/* .tablet-side-bar {
+  transform: translateX(100%);
+  transition: transform .4s;
+} */
+
+.tablet-side-bar.on {
+  transform: translateX(0);
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; }
+  20% { opacity: 1; }
+  80% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.sidemenu-bg-full.on {
+  display: block;
+}
+
+.sidemenu-bg-1, .sidemenu-bg-2, .sidemenu-bg-3, .sidemenu-bg-4 {
+  opacity: 0;
+}
+
+.group:hover .sidemenu-bg-1 {
+  animation: fadeInOut .5s 0s;
+}
+
+.group:hover .sidemenu-bg-2 {
+  animation: fadeInOut .5s 0s;
+}
+
+.group:hover .sidemenu-bg-3 {
+  animation: fadeInOut .5s 0.2s;
+}
+
+.group:hover .sidemenu-bg-4 {
+  animation: fadeInOut .5s 0.2s;
+}
+
+/* tablet 사이드바 2차메뉴 */
+.tablet-side-bar__menu02 {
+  transform: translateX(100%);
+  transition: transform 1s;
+}
+
+.tablet-side-bar__menu02.on {
+  transform: translateX(0);
+}
+
+.tablet-side-bar__menu02.fast-animate {
+  transition: transform 0s;
 }
