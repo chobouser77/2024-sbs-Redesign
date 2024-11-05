@@ -22,6 +22,8 @@ $(document).ready(function () {
     $(".sidemenu-btn-close").addClass("on");
 
     $(".tablet-side-bar").addClass("on");
+
+    $("html").addClass("tablet-side-bar-actived");
   });
 
   $(".sidemenu-btn-close").click(function () {
@@ -34,20 +36,53 @@ $(document).ready(function () {
     $(".sidemenu-btn-close").removeClass("on");
 
     $(".tablet-side-bar").removeClass("on");
+
+    $("html").removeClass("tablet-side-bar-actived");
+
+    TabletSideMenu__inactiveAll();
   });
+
+// tablet 사이드바 1차메뉴 효과
+$(".tablet-side-bar__menu > ul  li").click(function(){
+  const $this = $(this);
+
+  $this.addClass("on");
+  $this.siblings(".on").removeClass("on");
+});
+
 
   // tablet 사이드바
-  $(".tablet-side-bar__menu01>ul>li").click(function () {
+  $(".tablet-side-bar__menu01>ul>li").click(function(){
     $(".sidemenu-bg-full").addClass("on");
 
-    $(".tablet-side-bar__menu02").addClass("on");
-  });
+  //   // $(".tablet-side-bar__menu02").addClass("on");
+  // });
 
-  $(".tablet-side-bar__menu01>ul").click(function () {
-    setTimeout(function () {
+  $(".tablet-side-bar__menu01>ul").click(function(){
+    setTimeout(function() {
       $(".tablet-side-bar__menu02").addClass("fast-animate");
     }, 1000);
   });
+  
+  $(".tablet-side-bar__menu > ul > li > ul > li").click(function () {
+    const $this = $(this);
+  
+    if ($this.hasClass("on")) {
+      $this.removeClass("on");
+    } else {
+      $this.siblings(".on").removeClass("on");
+      $this.addClass("on");
+    }
+  });
+  
+  $(".tablet-side-bar__menu > ul > li > ul > li > ul").click(function () {
+    return false;
+  });
+
+  function TabletSideMenu__inactiveAll() {
+    $(".tablet-side-bar__menu .on").removeClass("on");
+  }
+
 });
 
 // 푸터
