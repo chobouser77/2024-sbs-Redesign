@@ -1,11 +1,11 @@
 // 헤더
 $(document).ready(function () {
-  $(".top-bar__menu01>ul>li").mouseenter(function () {
+  $(".pc-top-bar__menu01>ul>li").mouseenter(function () {
     $(".pc-top-bar").addClass("on");
     $(".pc-top-bar .logo-color").addClass("on");
     $(".pc-top-bar__user-menu a").addClass("on");
   });
-  $(".top-bar__menu01>ul>li").mouseleave(function () {
+  $(".pc-top-bar__menu01>ul>li").mouseleave(function () {
     $(".pc-top-bar").removeClass("on");
     $(".pc-top-bar .logo-color").removeClass("on");
     $(".pc-top-bar__user-menu a").removeClass("on");
