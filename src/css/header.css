@@ -34,13 +34,17 @@
 }
 
 /* tablet 사이드바 */
-/* .tablet-side-bar {
+html.tablet-side-bar-actived > body {
+  overflow-y: hidden;
+} 
+
+.tablet-side-bar {
   transform: translateX(100%);
-  transition: transform .4s;
-} */
+}
 
 .tablet-side-bar.on {
   transform: translateX(0);
+  transition: transform .4s;
 }
 
 @keyframes fadeInOut {
@@ -50,40 +54,53 @@
   100% { opacity: 0; }
 }
 
-.sidemenu-bg-full.on {
+.tablet-side-bar__menu > ul  li.on > a > div {
   display: block;
+}
+.tablet-side-bar__menu > ul  li.on > a > span {
+  color: white;
 }
 
 .sidemenu-bg-1, .sidemenu-bg-2, .sidemenu-bg-3, .sidemenu-bg-4 {
   opacity: 0;
 }
 
-.group:hover .sidemenu-bg-1 {
+.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-1 {
   animation: fadeInOut .5s 0s;
 }
 
-.group:hover .sidemenu-bg-2 {
+.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-2 {
   animation: fadeInOut .5s 0s;
 }
 
-.group:hover .sidemenu-bg-3 {
+.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-3 {
   animation: fadeInOut .5s 0.2s;
 }
 
-.group:hover .sidemenu-bg-4 {
+.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-4 {
   animation: fadeInOut .5s 0.2s;
 }
 
 /* tablet 사이드바 2차메뉴 */
-.tablet-side-bar__menu02 {
-  transform: translateX(100%);
-  transition: transform 1s;
+.tablet-side-bar__menu > ul ul {
+  display: none;
 }
 
-.tablet-side-bar__menu02.on {
-  transform: translateX(0);
+.tablet-side-bar__menu > ul > li.on > ul {
+  display: block;
+  position: absolute;
+  /* left: 250px; */
+  bottom: 0;
+  right: 0;
+  background-color: #1d1d1d;
+  color: white;
 }
 
-.tablet-side-bar__menu02.fast-animate {
-  transition: transform 0s;
+.tablet-side-bar__menu > ul > li > ul > li.on > ul {
+  padding: 10px;
+  display: block;
+}
+
+.tablet-side-bar__menu > ul > li > ul > li.on > div > div {
+  transform: rotate(0);
 }

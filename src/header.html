@@ -815,87 +815,577 @@
     </header>
     <!-- 태블릿 사이드바 -->
     <div
-      class="tablet-side-bar fixed bg-orange-200 inset-0 px-[48px] pt-[70px] md:pt-[90px] pb-[60px] whitespace-nowrap"
+      class="tablet-side-bar fixed bg-orange-200 inset-0 px-[24px] sm:px-[48px] pt-[70px] md:pt-[90px] pb-[60px] whitespace-nowrap lg:hidden"
     >
-      <div class="wrap flex flex-col justify-between h-full bg-red-300">
-        <nav class="tablet-side-bar__menu01 bg-white">
-          <ul class="font-bold text-[28px] flex flex-col gap-[40px] px-[20px]">
-            <li class="bg-red-300 group">
-              <a class="block relative" href="#">
-                <span class="relative z-10 text-white">NEW</span>
-                <div class="sidemenu-bg-full bg-myblack absolute w-[105px] h-full left-[-20px] top-0 hidden group-hover:block">
-                  <div class="sidemenu-bg-1 bg-[#ffffff99] w-[10px] h-[10px] absolute top-0 left-0"></div>
-                  <div class="sidemenu-bg-2 bg-[#ffffff99] w-[10px] h-[10px] absolute bottom-0 right-0"></div>
-                  <div class="sidemenu-bg-3 bg-[#ffffff99] w-[10px] h-[10px] absolute top-[10px] left-[10px]"></div>
-                  <div class="sidemenu-bg-4 bg-myblack w-[10px] h-[10px] absolute bottom-0 right-[-10px]"></div>
+      <div
+        class="wrap flex flex-col justify-between h-full bg-red-300 pt-[30px]"
+      >
+        <nav class="tablet-side-bar__menu bg-white">
+          <ul>
+            <li class="group">
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
+                href="#"
+              >
+                <span class="relative z-10">NEW</span>
+                <div
+                  class="bg-myblack absolute w-[96px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
                 </div>
               </a>
-              <ul class="tablet-side-bar__menu02 font-semibold text-[18px] text-white bg-myblack absolute left-[260px] right-0 top-[70px] md:top-[90px] bottom-0 px-[48px] pt-[26px]">
-                <li>
-                  <a href="#">1-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+              <ul
+                class="pt-[40px] px-[24px] sm:px-[48px] top-[70px] md:top-[90px] left-[220px] sm:left-[250px] z-50"
+              >
+                <li class="bg-red-300 cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >1-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴5</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li class="mt-[24px]">
-                  <a href="#">1-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+                <li class="bg-red-300 cursor-pointer mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >1-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴5</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴6</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴7</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li class="mt-[24px]">
-                  <a href="#">1-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+                <li class="bg-red-300 cursor-pointer mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >1-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li class="bg-red-300 group">
-              <a class="block relative" href="#">
-                <span class="relative z-10 text-white">NEW</span>
-                <div class="sidemenu-bg-full bg-myblack absolute w-[105px] h-full left-[-20px] top-0 hidden group-hover:block">
-                  <div class="sidemenu-bg-1 bg-[#ffffff99] w-[10px] h-[10px] absolute top-0 left-0"></div>
-                  <div class="sidemenu-bg-2 bg-[#ffffff99] w-[10px] h-[10px] absolute bottom-0 right-0"></div>
-                  <div class="sidemenu-bg-3 bg-[#ffffff99] w-[10px] h-[10px] absolute top-[10px] left-[10px]"></div>
-                  <div class="sidemenu-bg-4 bg-myblack w-[10px] h-[10px] absolute bottom-0 right-[-10px]"></div>
+            <li class="group mt-[20px]">
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
+                href="#"
+              >
+                <span class="relative z-10">MEN</span>
+                <div
+                  class="bg-myblack absolute w-[93px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
                 </div>
               </a>
-              <ul class="tablet-side-bar__menu02 font-semibold text-[18px] text-white bg-myblack absolute left-[260px] right-0 top-[70px] md:top-[90px] bottom-0 px-[48px] pt-[26px]">
+              <ul
+                class="pt-[40px] px-[24px] sm:px-[48px] top-[70px] md:top-[90px] left-[220px] sm:left-[250px]"
+              >
                 <li>
-                  <a href="#">2-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >2-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴5</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li class="mt-[24px]">
-                  <a href="#">2-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >2-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴3</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴4</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴5</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴6</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴7</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li class="mt-[24px]">
-                  <a href="#">2-2차메뉴</a>
-                  <ul class="font-medium text-[14px] pt-[12px] pl-[8px]">
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
-                    <li><a href="#">3차메뉴</a></li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >2-2차메뉴1</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white"
+                        href="#"
+                        >3차메뉴1</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >3차메뉴2</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li><a href="#">1차메뉴</a></li>
-            <li><a href="#">1차메뉴</a></li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴3</a
+              >
+              <ul>
+                <li>
+                  <a href="#">3-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">3-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">3-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴4</a
+              >
+              <ul>
+                <li>
+                  <a href="#">4-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">4-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">4-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴5</a
+              >
+              <ul>
+                <li>
+                  <a href="#">5-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">5-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">5-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴6</a
+              >
+              <ul>
+                <li>
+                  <a href="#">6-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">6-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">6-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴7</a
+              >
+              <ul>
+                <li>
+                  <a href="#">7-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">7-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">7-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                href="#"
+                >1차메뉴8</a
+              >
+              <ul>
+                <li>
+                  <a href="#">8-2차메뉴1</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">8-2차메뉴2</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+                <li>
+                  <a href="#">8-2차메뉴3</a>
+                  <ul>
+                    <li><a href="#">3차메뉴1</a></li>
+                    <li><a href="#">3차메뉴2</a></li>
+                    <li><a href="#">3차메뉴3</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
           </ul>
         </nav>
         <nav class="tablet-side-bar__usermenu bg-white">456</nav>
