@@ -843,6 +843,10 @@ video {
   width: 90px;
 }
 
+.w-\[95\%\]{
+  width: 95%;
+}
+
 .w-full{
   width: 100%;
 }
@@ -857,6 +861,10 @@ video {
 
 .transform{
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.resize{
+  resize: both;
 }
 
 .flex-col{
@@ -903,6 +911,11 @@ video {
   border-width: 1px;
 }
 
+.border-\[black\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 0 0 / var(--tw-border-opacity));
+}
+
 .border-\[white\]{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
@@ -919,6 +932,11 @@ video {
 
 .bg-\[\#ffffff99\]{
   background-color: #ffffff99;
+}
+
+.bg-\[gray\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(128 128 128 / var(--tw-bg-opacity));
 }
 
 .bg-\[none\]{
@@ -948,6 +966,14 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
 }
 
 .px-\[20px\]{
@@ -1112,11 +1138,45 @@ video {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
+/* 커스텀 시작 */
+
 html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
   /* cursor: none; */
   /* cursor: url("../img/main/mause_pointer16.png") 8 8, auto !important; */
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  /* 스크롤바의 너비 */
+  height: 10px;
+  /* 수평 스크롤바의 높이 */
+}
+
+/* 스크롤바 배경 */
+
+::-webkit-scrollbar-track {
+  background: #1d1d1d;
+  /* 스크롤바 트랙의 배경색 */
+  border-radius: 5px;
+  /* 트랙의 둥근 모서리 */
+}
+
+/* 스크롤바 핸들 */
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  /* 스크롤바 핸들의 색상 */
+  border-radius: 6px;
+  /* 핸들의 둥근 모서리 */
+}
+
+/* 핸들에 호버했을 때 색상 변경 */
+
+::-webkit-scrollbar-thumb:hover {
+  background: #fff;
+  /* 핸들을 호버했을 때의 색상 */
 }
 
 /* 커스텀 마우스 */
@@ -1142,6 +1202,8 @@ html > body {
 .container {
   max-width: 1920px;
 }
+
+/* 커스텀 끝 */
 
 /* 메인 화면 */
 
@@ -1244,6 +1306,10 @@ iframe {
 
   .s4{
     padding: 100px 48px !important;
+  }
+
+  .img-area{
+    flex-direction: column;
   }
 }
 
