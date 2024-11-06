@@ -16,7 +16,7 @@
     <!-- 상단 광고바 -->
     <div class="top-ad-bar bg-myblack">
       <a
-        class="flex container mx-auto px-[48px] h-[50px] text-white font-medium text-[12px] md:text-[16px] whitespace-nowrap items-center"
+        class="flex container mx-auto px-[24px] sm:px-[48px] h-[40px] lg:h-[50px] text-white font-medium text-[14px] sm:text-[16px] whitespace-nowrap items-center"
         href="https://www.vans.co.kr/"
       >
         <div class="flex-1"></div>
@@ -744,13 +744,13 @@
         </nav>
       </div>
     </header>
-    <!-- 태블릿 상단바 -->
+    <!-- 태블릿, 모바일 상단바 -->
     <header class="tablet-top-bar sticky top-0 lg:hidden z-[50]">
       <div
-        class="container relative mx-auto px-[24px] sm:px-[48px] flex h-[70px] md:h-[90px] items-center"
+        class="container relative mx-auto px-[24px] sm:px-[48px] flex h-[56px] sm:h-[70px] items-center"
       >
         <a
-          class="logo-color w-[90px] h-[50px] filter grayscale invert brightness-0"
+          class="logo-color w-[65px] sm:w-[90px] h-[36px] sm:h-[50px] filter grayscale invert brightness-0"
           style="
             background-image: url(img/header/logo_color.png);
             background-repeat: no-repeat;
@@ -760,10 +760,10 @@
         ></a>
         <div class="flex-grow"></div>
         <nav class="tablet-top-bar__user-menu">
-          <ul class="flex gap-[18px]">
+          <ul class="flex gap-[10px] sm:gap-[18px]">
             <li>
               <a
-                class="block w-[24px] h-[24px]"
+                class="block w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_search.png);
@@ -775,7 +775,7 @@
             </li>
             <li>
               <a
-                class="block w-[24px] h-[24px]"
+                class="block w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_cart.png);
@@ -787,7 +787,7 @@
             </li>
             <li class="sidemenu-btn-open">
               <a
-                class="block w-[24px] h-[24px]"
+                class="block w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_menu.png);
@@ -799,7 +799,7 @@
             </li>
             <li class="sidemenu-btn-close hidden">
               <a
-                class="block w-[24px] h-[24px]"
+                class="block w-[20px] sm:w-[24px] h-[20px] sm:h-[24px]"
                 href="#"
                 style="
                   background-image: url(img/header/icon_close.png);
@@ -815,12 +815,10 @@
     </header>
     <!-- 태블릿 사이드바 -->
     <div
-      class="tablet-side-bar fixed bg-orange-200 inset-0 px-[24px] sm:px-[48px] pt-[70px] md:pt-[90px] pb-[60px] whitespace-nowrap lg:hidden"
+      class="tablet-side-bar fixed bg-white inset-0 px-[48px] pt-[70px] pb-[60px] whitespace-nowrap hidden sm:block lg:hidden"
     >
-      <div
-        class="wrap flex flex-col justify-between h-full bg-red-300 pt-[30px]"
-      >
-        <nav class="tablet-side-bar__menu bg-white">
+      <div class="wrap flex flex-col justify-between h-full pt-[30px]">
+        <nav class="tablet-side-bar__menu">
           <ul>
             <li class="group">
               <a
@@ -845,15 +843,13 @@
                   ></div>
                 </div>
               </a>
-              <ul
-                class="pt-[40px] px-[24px] sm:px-[48px] top-[70px] md:top-[90px] left-[220px] sm:left-[250px] z-50"
-              >
-                <li class="bg-red-300 cursor-pointer">
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
+                <li class="cursor-pointer">
                   <div class="flex items-center justify-between">
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >1-2차메뉴1</a
+                      >NEW</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -864,50 +860,50 @@
                       "
                     ></div>
                   </div>
-                  <ul>
+                  <ul class="px-[10px]">
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >NEW</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >신발 신상품</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴3</a
+                        >의류 신상품</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴4</a
+                        >액세서리 신상품</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴5</a
+                        >키즈 신상품</a
                       >
                     </li>
                   </ul>
                 </li>
-                <li class="bg-red-300 cursor-pointer mt-[20px]">
+                <li class="cursor-pointer mt-[20px]">
                   <div class="flex items-center justify-between">
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >1-2차메뉴1</a
+                      >COLLECTION</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -918,64 +914,64 @@
                       "
                     ></div>
                   </div>
-                  <ul>
+                  <ul class="px-[10px]">
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >MTE 컬렉션</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >코듀라 컬렉션</a
                       >
                     </li>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        class="block font-regular text-white mt-[12px]"
                         href="#"
-                        >3차메뉴3</a
+                        >스웨이드 컬렉션</a
                       >
                     </li>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        class="block font-regular text-white mt-[12px]"
                         href="#"
-                        >3차메뉴4</a
+                        >윈터 뮬 컬렉션</a
                       >
                     </li>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        class="block font-regular text-white mt-[12px]"
                         href="#"
-                        >3차메뉴5</a
+                        >아시아 아티스트 컬렉션</a
                       >
                     </li>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        class="block font-regular text-white mt-[12px]"
                         href="#"
-                        >3차메뉴6</a
+                        >메리 제인</a
                       >
                     </li>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        class="block font-regular text-white mt-[12px]"
                         href="#"
-                        >3차메뉴7</a
+                        >울트라레인지</a
                       >
                     </li>
                   </ul>
                 </li>
-                <li class="bg-red-300 cursor-pointer mt-[20px]">
+                <li class="cursor-pointer mt-[20px]">
                   <div class="flex items-center justify-between">
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >1-2차메뉴1</a
+                      >CUSTOMS</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -986,19 +982,19 @@
                       "
                     ></div>
                   </div>
-                  <ul>
+                  <ul class="px-[10px]">
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >PINK VIBE</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >NEW SEASON, NEW SWATCH</a
                       >
                     </li>
                   </ul>
@@ -1028,15 +1024,13 @@
                   ></div>
                 </div>
               </a>
-              <ul
-                class="pt-[40px] px-[24px] sm:px-[48px] top-[70px] md:top-[90px] left-[220px] sm:left-[250px]"
-              >
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
                 <li>
                   <div class="flex items-center justify-between">
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >2-2차메뉴1</a
+                      >신발</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -1047,40 +1041,54 @@
                       "
                     ></div>
                   </div>
-                  <ul>
+                  <ul class="px-[10px]">
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >전체보기</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >코어클래식</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴3</a
+                        >클래식</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴4</a
+                        >스케이트 슈즈</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴5</a
+                        >클래식플러스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >서프</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >스노우</a
                       >
                     </li>
                   </ul>
@@ -1090,7 +1098,7 @@
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >2-2차메뉴1</a
+                      >의류</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -1104,51 +1112,37 @@
                   <ul>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >전체보기</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >탑 & 티셔츠</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴3</a
+                        >플리스</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴4</a
+                        >아우터</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴5</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
-                        href="#"
-                        >3차메뉴6</a
-                      >
-                    </li>
-                    <li>
-                      <a
-                        class="block font-regular text-[16px] text-white mt-[12px]"
-                        href="#"
-                        >3차메뉴7</a
+                        >하의</a
                       >
                     </li>
                   </ul>
@@ -1158,7 +1152,7 @@
                     <a
                       class="block text-white font-semibold text-[18px]"
                       href="#"
-                      >2-2차메뉴1</a
+                      >액세서리</a
                     >
                     <div
                       class="w-[20px] h-[20px] -rotate-90"
@@ -1172,224 +1166,1633 @@
                   <ul>
                     <li>
                       <a
-                        class="block font-regular text-[16px] text-white"
+                        class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴1</a
+                        >전체보기</a
                       >
                     </li>
                     <li>
                       <a
                         class="block font-regular text-[16px] text-white mt-[12px]"
                         href="#"
-                        >3차메뉴2</a
+                        >모자</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >가방</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >양말</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >기타</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >WHAT'S HOT</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >베스트 셀러</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >뉴 스쿨 & 뉴 슬립</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >울트라레인지</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >컴피쿠시</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >온라인 단독</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >컬러 띠어리 컬렉션</a
                       >
                     </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="group mt-[20px]">
               <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
                 href="#"
-                >1차메뉴3</a
               >
-              <ul>
+                <span class="relative z-10">WOMEN</span>
+                <div
+                  class="bg-myblack absolute w-[134px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
                 <li>
-                  <a href="#">3-2차메뉴1</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >신발</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul class="px-[10px]">
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >코어클래식</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >클래식</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >스케이트 슈즈</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >클래식플러스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >서프</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >스노우</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">3-2차메뉴2</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >의류</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul class="px-[10px]">
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >탑 & 티셔츠</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >플리스</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >아우터</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >하의</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >원피스 & 스커트</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">3-2차메뉴3</a>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >액세서리</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >모자</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >가방</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >양말</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >기타</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >WHAT'S HOT</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >베스트 셀러</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >뉴 스쿨 & 뉴 슬립</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >플랫폼</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >컴피쿠시</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >온라인 단독</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >컬러 띠어리 컬렉션</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="group mt-[20px]">
               <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
                 href="#"
-                >1차메뉴4</a
               >
-              <ul>
+                <span class="relative z-10">KIDS</span>
+                <div
+                  class="bg-myblack absolute w-[95px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
                 <li>
-                  <a href="#">4-2차메뉴1</a>
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >신발</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >토들러</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >키즈</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >베스트 셀러</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">4-2차메뉴2</a>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >의류</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >보이즈 & 걸즈</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >키즈</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">4-2차메뉴3</a>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >액세서리</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >전체보기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >양말</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >모자</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >CUSTOMS</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
+                  <ul>
+                    <li>
+                      <a
+                        class="block font-regular text-[14px] sm:text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >커스텀하기</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="group mt-[20px]">
               <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
                 href="#"
-                >1차메뉴5</a
               >
-              <ul>
+                <span class="relative z-10">PREMIUM</span>
+                <div
+                  class="bg-myblack absolute w-[150px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
+            </li>
+            <li class="group mt-[20px]">
+              <a
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
+                href="#"
+              >
+                <span class="relative z-10">CUSTOMS</span>
+                <div
+                  class="bg-myblack absolute w-[159px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
                 <li>
-                  <a href="#">5-2차메뉴1</a>
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >CUSTOMS</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >나만의 신발 만들기</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >어센틱 커스텀</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >슬립온 커스텀</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >올드스쿨 커스텀</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >에라 커스텀</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >스케이트-하이 커스텀</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">5-2차메뉴2</a>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >FEATURED</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">5-2차메뉴3</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >PINK VIBE</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >NEW SEASON, NEW SWATCH</a
+                      >
+                    </li>
                   </ul>
                 </li>
               </ul>
             </li>
-            <li>
+            <li class="group mt-[20px]">
               <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
                 href="#"
-                >1차메뉴6</a
               >
-              <ul>
-                <li>
-                  <a href="#">6-2차메뉴1</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">6-2차메뉴2</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">6-2차메뉴3</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-              </ul>
+                <span class="relative z-10">SALE</span>
+                <div
+                  class="bg-myblack absolute w-[100px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
             </li>
-            <li>
+            <li class="group mt-[20px]">
               <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
+                class="block text-myblack font-bold text-[24px] px-[20px] relative"
                 href="#"
-                >1차메뉴7</a
               >
-              <ul>
+                <span class="relative z-10">MORE</span>
+                <div
+                  class="bg-myblack absolute w-[109px] h-full top-0 left-0 hidden"
+                >
+                  <div
+                    class="sidemenu-bg-1 bg-[#ffffff] w-[8px] h-[8px] absolute top-0 left-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-2 bg-[#ffffff] w-[8px] h-[8px] absolute bottom-0 right-0"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-3 bg-[#ffffff] w-[8px] h-[8px] absolute top-[8px] left-[8px]"
+                  ></div>
+                  <div
+                    class="sidemenu-bg-4 bg-myblack w-[8px] h-[8px] absolute bottom-0 right-[-8px]"
+                  ></div>
+                </div>
+              </a>
+              <ul class="pt-[40px] px-[48px] top-[70px] left-[250px]">
                 <li>
-                  <a href="#">7-2차메뉴1</a>
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >MORE FUN</a
+                    >
+                    <div
+                      class="w-[20px] h-[20px] -rotate-90"
+                      style="
+                        background-image: url(img/header/icon_drop\ down.png);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                      "
+                    ></div>
+                  </div>
                   <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >Always Pushing</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >SURF</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >SUSTAINABILITY</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >ABOUT VANS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >VANS NEWS</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="block font-regular text-[16px] text-white mt-[12px]"
+                        href="#"
+                        >THIS IS OFF THE WALL</a
+                      >
+                    </li>
                   </ul>
                 </li>
-                <li>
-                  <a href="#">7-2차메뉴2</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">7-2차메뉴3</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a
-                class="block text-myblack font-bold text-[24px] px-[20px] mt-[20px]"
-                href="#"
-                >1차메뉴8</a
-              >
-              <ul>
-                <li>
-                  <a href="#">8-2차메뉴1</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">8-2차메뉴2</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
-                </li>
-                <li>
-                  <a href="#">8-2차메뉴3</a>
-                  <ul>
-                    <li><a href="#">3차메뉴1</a></li>
-                    <li><a href="#">3차메뉴2</a></li>
-                    <li><a href="#">3차메뉴3</a></li>
-                  </ul>
+                <li class="mt-[20px]">
+                  <div class="flex items-center justify-between">
+                    <a
+                      class="block text-white font-semibold text-[18px]"
+                      href="#"
+                      >SNOW</a
+                    >
+                  </div>
                 </li>
               </ul>
             </li>
           </ul>
         </nav>
-        <nav class="tablet-side-bar__usermenu bg-white">456</nav>
+        <nav class="tablet-side-bar__usermenu">
+          <ul>
+            <li>
+              <a class="font-semibold text-[18px] block px-[20px]" href="#"
+                >마이페이지</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-[18px] block px-[20px] mt-[16px]"
+                href="#"
+                >위시리스트</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-[18px] block px-[20px] mt-[16px]"
+                href="#"
+                >고객센터</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-[18px] block px-[20px] mt-[16px]"
+                href="#"
+                >언어</a
+              >
+            </li>
+            <li>
+              <a
+                class="font-semibold text-[18px] block px-[20px] mt-[16px]"
+                href="#"
+                >매장찾기</a
+              >
+            </li>
+          </ul>
+        </nav>
       </div>
+    </div>
+    <!-- 모바일 사이드바 -->
+    <div
+      class="mobile-side-bar fixed bg-white inset-0 px-[24px] pt-[56px] pb-[60px] sm:hidden"
+    >
+      <nav class="mobile-side-bar__menu">
+        <ul>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >NEW</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-white inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li>
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >NEW</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">NEW</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">신발 신상품</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">의류 신상품</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">액세서리 신상품</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">키즈 신상품</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >COLLECTION</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">MTE 컬렉션</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">코듀라 컬렉션</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">스웨이드 컬렉션</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">윈터 뮬 컬렉션</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">아시아 아티스트 컬렉션</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">메리 제인</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">울트라레인지</a></li>
+                </ul>
+              </li>
+              <li>
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >CUSTOMS</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">PINK VIBE</a></li>
+                  <li><a class="block p-[10px] hover:text-myred" href="#">NEW SEASON, NEW SWATCH</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴2</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴3</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴4</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴5</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴6</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴7</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="cursor-pointer">
+            <div class="flex items-center justify-between">
+              <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                >1차메뉴8</a
+              >
+              <div
+                class="w-[20px] h-[20px] -rotate-90 invert"
+                style="
+                  background-image: url(img/header/icon_drop\ down.png);
+                  background-repeat: no-repeat;
+                  background-size: contain;
+                "
+              ></div>
+            </div>
+            <ul
+              class="absolute bg-red-100 inset-0 px-[24px] pt-[56px] pb-[60px] z-[10]"
+            >
+              <li class="bg-red-300 py-[10px] flex items-center gap-[2px]">
+                <div
+                  class="block w-[16px] h-[16px] filter invert rotate-180"
+                  style="
+                    background-image: url(img/header/icon_arrow.png);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                  "
+                ></div>
+                BACK
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴1</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴2</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+              <li class="mt-[12px] bg-red-500">
+                <div class="flex items-center justify-between">
+                  <a class="font-semibold text-[18px] block py-[10px]" href="#"
+                    >2차메뉴3</a
+                  >
+                  <div
+                    class="w-[20px] h-[20px] -rotate-90 filter invert"
+                    style="
+                      background-image: url(img/header/icon_drop\ down.png);
+                      background-repeat: no-repeat;
+                      background-size: contain;
+                    "
+                  ></div>
+                </div>
+                <ul>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴1</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴2</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴3</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴4</a></li>
+                  <li><a class="block bg-orange-100 p-[10px] hover:text-myred" href="#">3차메뉴5</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
     </div>
   </body>
 </html>
