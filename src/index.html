@@ -17,11 +17,18 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <!-- 제이쿼리 불러오기 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <!--  Msonry 불러오기   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
+    <!--  ImagesLoaded js라이브러리 불러오기   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/5.0.0/imagesloaded.pkgd.min.js"></script>
     <script src="js/common.js"></script>
   </head>
   <body class="" style="color: white; overflow-x: hidden">
     <!-- 커서요소 -->
     <!-- <div class="custom-cursor"></div> -->
+    <!-- 헤더 연결 예정   -->
+    <div class="header"></div>
+
     <!-- 섹션 1 영상 -->
     <iframe
       class="youtube-video-1 aspect-[1280/720] w-full"
@@ -119,7 +126,7 @@
               <div class="flex w-[90%] h-[90%]">
                 <!-- <a href="#" class="core w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
                 <a href="#" class="clasic w-full h-full bg-cover bg-center" style="background-image: url('img/main/c_main.png') !important;"></a>
-                <!-- <a href="#" class="skate w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
+<!--                 <a href="#" class="skate w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
                 <!-- <a href="#" class="plus w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
                 <!-- <a href="#" class="surf w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
                 <!-- <a href="#" class="snow w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
@@ -211,13 +218,156 @@
         <p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p>
       </div>
     </section>
-    <!--  반스 뉴스  -->
-    <section class="relative">
+    <!--  섹션 6 반스 뉴스  -->
+    <section class="relative w-full px-[48px] py-[330px] pb-[200px]">
       <!--   검정 면의 글씨 애니메이션  -->
       <div class="black-ani w-[4367px] whitespace-nowrap absolute top-[-1%] right-0 flex text-[114px] text-white" style="gap: 25px; ">
         <p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p><p class="flex tracking-tighter">OFF THE WALL</p>
       </div>
+      <!-- 반스 뉴스 pc 시작 -->
+      <div class="vans-news-pc hidden md:block">
+        <div class="px-[48px]">
+          <div class="flex items-center justify-center h-full">
+            <div class="text-white text-[46px] font-semibold ">VANS NEWS</div>
+          </div>
+          <div class="news_img mt-[18px]">
+            <div class="masonry-box-1 -m-2 overflow-hidden">
+              <div class="masonry-box-1__main">
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <div class="relative">
+                      <img class="w-full" src="img/main/news_1.png?raw=true" alt="">
+                      <div class="absolute bottom-[48px] left-0 right-0 px-[23px] text-white">반스, 지형 대응력과 스타일을 한꺼번에 잡은 MTE™ 크로스패스 출시
+                      </div>
+                      <div class="absolute bottom-[20px] left-0 right-0 px-[23px] text-[#CECECE]">#MTE
+                      </div>
+                    </div>
+                  </div>
+                </a>
 
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <div class="relative">
+                      <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_3.png?raw=true" alt="">
+                      <div class="absolute bottom-[48px] left-0 right-0 px-[23px] text-white">반스 x 웍스아웃, 새로운 협업 컬렉션 선보여</div>
+                      <div class="absolute bottom-[20px] left-0 right-0 px-[23px] text-[#CECECE]">#COLLABORATION</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <div class="relative">
+                      <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_5.png?raw=true" alt="">
+                      <div class="absolute bottom-[48px] left-0 right-0 px-[23px] text-white">OTW 바이 반스 X 피에트 파라 스웨이드 하프캡</div>
+                      <div class="absolute bottom-[20px] left-0 right-0 px-[23px] text-[#CECECE]">#OTW BY VANS</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <div class="relative">
+                      <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_4.png?raw=true" alt="">
+                      <div class="absolute bottom-[48px] left-0 right-0 px-[23px] text-white">반스의 새로운 글로벌 스토리 "Always Pushing" 공개</div>
+                      <div class="absolute bottom-[20px] left-0 right-0 px-[23px] text-[#CECECE]">#CLASSICS</div>
+                    </div>
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_6.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_7.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="#">
+                  <div class="masonry-box-1__item w-full md:w-1/3 px-1.5 py-3">
+                    <img class="w-full" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_2.png?raw=true" alt="">
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+          <div class="more-button flex justify-center mt-[50px]">
+            <a href="" class="flex items-center justify-center w-[250px] h-[64px] text-[20px] text-white  bg-[#D41F1F]">더 알아보기</a>
+          </div>
+
+        </div>
+      </div>
+      <!-- 반스 뉴스 pc 끝 -->
+
+      <!-- 반스 뉴스 모바일 시작 -->
+      <div class="vans-news-mobile md:hidden">
+        <div class="mt-[180px] h-[31px] px-[48px]">
+
+          <div class="flex items-center justify-center h-full bg-red-100">
+            <div class="text-white text-[26px] font-semibold ">VANS NEWS</div>
+          </div>
+
+          <div class="news_img mt-[24px]">
+            <div class="masonry-box-1">
+              <div class="flex">
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_1.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_2.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_3.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_4.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_5.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_6.png?raw=true" alt="">
+                  </div>
+                </a>
+
+                <a href="">
+                  <div class="">
+                    <img class="w-full swiper-slide" src="https://github.com/chobouser77/2024-sbs-Redesign/blob/main/src/img/main/news_7.png?raw=true" alt="">
+                  </div>
+                </a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
     </section>
+    
+    <!--  푸터 연결 예정  -->
+    <dic class="footer"></dic>
   </body>
 </html>

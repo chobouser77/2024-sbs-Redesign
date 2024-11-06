@@ -150,7 +150,7 @@ $(document).ready(function () {
   });
 });
 
-// 스와이퍼
+// 섹션 5 스와이퍼
 $(document).ready(function () {
   var swiper;
   var resizeTimeout;
@@ -188,4 +188,47 @@ $(document).ready(function () {
       initSwiper(); // 새로운 Swiper 인스턴스 생성
     }, 300); // 300ms 지연으로 resize 이벤트가 여러 번 호출되는 문제 방지
   });
+});
+
+// masonry
+$(document).ready(function () {
+  // /반스 pc 시작/;
+  const $masonryBox1 = $(".masonry-box-1__main");
+
+  $masonryBox1.masonry({
+    // set itemSelector so .grid-sizer is not used in layout
+    itemSelector: ".masonry-box-1__item",
+    // use element for option
+    percentPosition: true
+  });
+
+  $masonryBox1.imagesLoaded().progress(function () {
+    $masonryBox1.masonry("layout");
+  });
+  // /반스 pc 끝/;
+
+  // /반스 모바일 시작/;
+  const swiper = new Swiper(".swiper", {
+    slidesPerView: "auto",
+    centeredSlides: true,
+    grabCursor: true,
+
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: ".swiper-button-next",
+    //   prevEl: ".swiper-button-prev"
+    // },
+
+    // And if we need scrollbar
+    scrollbar: {
+      el: ".swiper-scrollbar"
+    }
+  });
+  // /반스 모바일 끝/;
+
+});
+
+// 커스텀
+$(document).ready(function () {
+
 });
