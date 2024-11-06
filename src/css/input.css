@@ -12,8 +12,8 @@ html > body {
   /* cursor: url("../img/main/mause_pointer16.png") 8 8, auto !important; */
 }
 ::-webkit-scrollbar {
-  width: 10px; /* 스크롤바의 너비 */
-  height: 10px; /* 수평 스크롤바의 높이 */
+  width: 5px; /* 스크롤바의 너비 */
+  height: 5px; /* 수평 스크롤바의 높이 */
 }
 /* 스크롤바 배경 */
 ::-webkit-scrollbar-track {
@@ -56,7 +56,7 @@ iframe {
   overflow: visible;
   background-color: #1d1d1d;
   width: 4058px;
-  animation: shose_move 10s linear infinite;
+  animation: shose_move 20s linear infinite;
   display: flex;
   z-index: 0;
 }
@@ -72,6 +72,12 @@ iframe {
   width: 100%;
   height: auto;
 }
+.white-ani{
+  animation: font-move-left 20s linear infinite;
+}
+.black-ani{
+  animation: font-move-right 20s linear infinite;
+}
 
 
 
@@ -82,6 +88,24 @@ iframe {
 
   100% {
     transform: translate(-50%);
+  }
+}
+@keyframes font-move-left {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(-50%);
+  }
+}
+@keyframes font-move-right {
+  0% {
+    transform: translate(0);
+  }
+
+  100% {
+    transform: translate(+50%);
   }
 }
 
@@ -147,5 +171,16 @@ iframe {
   }
   .img-area{
     flex-direction: column;
+  }
+  .btns > button {
+    font-size: 14px !important;
+  }
+  .white-ani{
+    font-size: 67px !important;
+    width: 2616.41px;
+  }
+  .black-ani{
+    font-size: 67px !important;
+    width: 2616.41px;
   }
 }
