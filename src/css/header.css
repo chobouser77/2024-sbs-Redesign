@@ -94,13 +94,49 @@ html.tablet-side-bar-actived > body {
   right: 0;
   background-color: #1d1d1d;
   color: white;
-}
-
-.tablet-side-bar__menu > ul > li > ul > li.on > ul {
-  padding: 10px;
-  display: block;
+  z-index: 10;
 }
 
 .tablet-side-bar__menu > ul > li > ul > li.on > div > div {
+  transform: rotate(0);
+}
+
+.tablet-side-bar__menu > ul > li > ul > li > ul > li:hover > a {
+  color: #D41F1F;
+}
+
+
+/* 모바일 사이드바 */
+html.mobile-side-bar-actived > body {
+  overflow-y: hidden;
+} 
+
+.mobile-side-bar {
+  transform: translateX(100%);
+}
+
+.mobile-side-bar.on {
+  transform: translateX(0);
+  transition: transform .4s;
+}
+
+/* 모바일 사이드메뉴 */
+.mobile-side-bar__menu > ul > li > ul ul {
+  display: none;
+}
+
+.mobile-side-bar__menu > ul > li > ul {
+  transform: translateX(100%);
+}
+.mobile-side-bar__menu > ul > li.on > ul {
+  transform: translateX(0);
+  transition: transform .4s;
+}
+
+.mobile-side-bar__menu > ul > li > ul > li.on > ul {
+  display: block;
+}
+
+.mobile-side-bar__menu > ul > li > ul > li.on > div > div {
   transform: rotate(0);
 }

@@ -43,40 +43,99 @@ $(document).ready(function () {
   });
 
   // tablet 사이드바 1차메뉴 효과
-  $(".tablet-side-bar__menu > ul  li").click(function () {
+  $(".tablet-side-bar__menu > ul > li").click(function () {
     const $this = $(this);
 
-    $this.addClass("on");
-    $this.siblings(".on").removeClass("on");
+    if ($this.hasClass("on")) {
+      $this.removeClass("on");
+    } else {
+      $this.siblings(".on").removeClass("on");
+      $this.addClass("on");
+    }
   });
 
-  // tablet 사이드바
-  $(".tablet-side-bar__menu01>ul>li").click(function () {
-    
+  $(".tablet-side-bar__menu > ul > li > ul").click(function () {
+    return false;
+  });
 
-    $(".tablet-side-bar__menu > ul > li > ul > li").click(function () {
-      const $this = $(this);
-
-      if ($this.hasClass("on")) {
-        $this.removeClass("on");
-      } else {
-        $this.siblings(".on").removeClass("on");
-        $this.addClass("on");
-      }
-    });
-
-    $(".tablet-side-bar__menu > ul > li > ul > li > ul").click(function () {
-      return false;
-    });
+  $(".tablet-side-bar__menu > ul > li > ul > li > ul").click(function () {
+    return false;
   });
 
   function TabletSideMenu__inactiveAll() {
     $(".tablet-side-bar__menu .on").removeClass("on");
   }
 
+  // tablet 사이드바 3차메뉴
+  $(".tablet-side-bar__menu > ul > li > ul > li").click(function () {
+    const $this = $(this);
+    const $ul = $this.children("ul");
+
+    if ($this.hasClass("on")) {
+      $ul.stop().slideUp();
+      $this.removeClass("on");
+    } else {
+      $ul.stop().slideDown();
+      $this.siblings(".on").removeClass("on").children("ul").stop().slideUp();
+      $this.addClass("on");
+    }
+  });
+
+  // 모바일 사이드바
+  $(".sidemenu-btn-open").click(function () {
+    $(".mobile-side-bar").addClass("on");
+
+    $("html").addClass("mobile-side-bar-actived");
+  });
+
+  $(".sidemenu-btn-close").click(function () {
+    $(".mobile-side-bar").removeClass("on");
+
+    $("html").removeClass("mobile-side-bar-actived");
+
+    TabletSideMenu__inactiveAll();
+  });
+
+  // 모바일 사이드메뉴
+  $(".mobile-side-bar__menu > ul > li").click(function () {
+    const $this = $(this);
+
+    if ($this.hasClass("on")) {
+      $this.removeClass("on");
+    } else {
+      $this.siblings(".on").removeClass("on");
+      $this.addClass("on");
+    }
+  });
+
+  // 모바일 사이드메뉴 - 2차메뉴
+  $(".mobile-side-bar__menu > ul > li > ul > li").click(function () {
+    const $this = $(this);
+    const $ul = $this.children("ul");
+
+    if ($this.hasClass("on")) {
+      $ul.stop().slideUp();
+      $this.removeClass("on");
+    } else {
+      $ul.stop().slideDown();
+      $this.siblings(".on").removeClass("on").children("ul").stop().slideUp();
+      $this.addClass("on");
+    }
+
+    if ($this.is(':first-child')) {
+      $(".mobile-side-bar__menu > ul > li").removeClass('on');
+    }
+  });
+
+  $(".mobile-side-bar__menu > ul > li > ul").click(function () {
+    return false;
+  });
+  
+  $(".mobile-side-bar__menu > ul > li > ul > li > ul").click(function () {
+    return false;
+  });
+
 });
-
-
 
 // 푸터
 $(document).ready(function () {
@@ -164,16 +223,16 @@ $(document).ready(function () {
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
-        type: "progressbar"
+        type: "progressbar",
       },
       loop: $(window).width() >= 1200, // 1200px 이상일 때만 loop 활성화
       navigation: {
         nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev"
+        prevEl: ".swiper-button-prev",
       },
       scrollbar: {
-        el: ".swiper-scrollbar"
-      }
+        el: ".swiper-scrollbar",
+      },
     });
   }
 
