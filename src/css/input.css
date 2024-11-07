@@ -134,6 +134,9 @@ iframe {
     width: 192px;
     height: 56px;
   }
+  .masonry-box-1__item {
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 1200px) {
   .wys {

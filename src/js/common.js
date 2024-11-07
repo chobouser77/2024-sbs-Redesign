@@ -1,15 +1,15 @@
 // 헤더
 // 상단바
-$(window).on('scroll', function() {
+$(window).on("scroll", function () {
   const pcHeader = $("#pc-header");
   const tabletHeader = $("#tablet-header");
 
   if ($(window).scrollTop() > 200) {
-    pcHeader.addClass('scrolled');
-    tabletHeader.addClass('scrolled');
+    pcHeader.addClass("scrolled");
+    tabletHeader.addClass("scrolled");
   } else {
-    pcHeader.removeClass('scrolled');
-    tabletHeader.removeClass('scrolled');
+    pcHeader.removeClass("scrolled");
+    tabletHeader.removeClass("scrolled");
   }
 });
 
