@@ -122,19 +122,18 @@ $(document).ready(function () {
       $this.addClass("on");
     }
 
-    if ($this.is(':first-child')) {
-      $(".mobile-side-bar__menu > ul > li").removeClass('on');
+    if ($this.is(":first-child")) {
+      $(".mobile-side-bar__menu > ul > li").removeClass("on");
     }
   });
 
   $(".mobile-side-bar__menu > ul > li > ul").click(function () {
     return false;
   });
-  
+
   $(".mobile-side-bar__menu > ul > li > ul > li > ul").click(function () {
     return false;
   });
-
 });
 
 // 푸터
@@ -258,7 +257,7 @@ $(document).ready(function () {
     // set itemSelector so .grid-sizer is not used in layout
     itemSelector: ".masonry-box-1__item",
     // use element for option
-    percentPosition: true
+    percentPosition: true,
   });
 
   $masonryBox1.imagesLoaded().progress(function () {
@@ -267,27 +266,9 @@ $(document).ready(function () {
   // /반스 pc 끝/;
 
   // /반스 모바일 시작/;
-  const swiper = new Swiper(".swiper", {
-    slidesPerView: "auto",
-    centeredSlides: true,
-    grabCursor: true,
 
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: ".swiper-button-next",
-    //   prevEl: ".swiper-button-prev"
-    // },
-
-    // And if we need scrollbar
-    scrollbar: {
-      el: ".swiper-scrollbar"
-    }
-  });
   // /반스 모바일 끝/;
-
 });
 
 // 커스텀
-$(document).ready(function () {
-
-});
+$(document).ready(function () {});
