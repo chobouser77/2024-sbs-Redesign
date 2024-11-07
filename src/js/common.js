@@ -1,15 +1,15 @@
 // 헤더
 // 상단바
-$(window).on('scroll', function() {
+$(window).on("scroll", function () {
   const pcHeader = $("#pc-header");
   const tabletHeader = $("#tablet-header");
 
   if ($(window).scrollTop() > 200) {
-    pcHeader.addClass('scrolled');
-    tabletHeader.addClass('scrolled');
+    pcHeader.addClass("scrolled");
+    tabletHeader.addClass("scrolled");
   } else {
-    pcHeader.removeClass('scrolled');
-    tabletHeader.removeClass('scrolled');
+    pcHeader.removeClass("scrolled");
+    tabletHeader.removeClass("scrolled");
   }
 });
 
@@ -287,3 +287,13 @@ $(document).ready(function () {
 
 // 커스텀
 $(document).ready(function () {});
+
+// 헤더 및 푸터 연결
+
+// $(document).ready(function () {
+//   // header.html 파일을 로드해서 #header div에 삽입
+//   $("#header").load("header.html");
+
+//   // footer.html 파일을 로드해서 #footer div에 삽입
+//   $("#footer").load("footer.html");
+// });
