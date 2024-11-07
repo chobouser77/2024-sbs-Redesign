@@ -1435,7 +1435,6 @@ iframe {
 
 .mask:hover {
   animation-play-state: paused;
-  /* cursor: url("../img/main/mause_pointer120.png") 60 60, auto !important; */
 }
 
 .mask > img {

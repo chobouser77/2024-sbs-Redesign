@@ -195,11 +195,13 @@ $(document).ready(function () {
   mask.addEventListener("mouseenter", () => {
     // .hover-area를 .mask로 변경
     cursor.style.transform = "scale(10.0)"; // 커서를 1.5배로 확대
+    cursor.style.mixBlendMode = "difference"; // mix-blend-mode 설정
   });
 
   mask.addEventListener("mouseleave", () => {
     // .hover-area를 .mask로 변경
     cursor.style.transform = "scale(1)"; // 커서를 원래 크기로 복원
+    cursor.style.mixBlendMode = "normal"; // mix-blend-mode 초기화
   });
 
   function adjustBoxHeight() {
@@ -287,13 +289,3 @@ $(document).ready(function () {
 
 // 커스텀
 $(document).ready(function () {});
-
-// 헤더 및 푸터 연결
-
-// $(document).ready(function () {
-//   // header.html 파일을 로드해서 #header div에 삽입
-//   $("#header").load("header.html");
-
-//   // footer.html 파일을 로드해서 #footer div에 삽입
-//   $("#footer").load("footer.html");
-// });
