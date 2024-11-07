@@ -815,6 +815,10 @@ video {
   height: 50px;
 }
 
+.h-\[55px\]{
+  height: 55px;
+}
+
 .h-\[56px\]{
   height: 56px;
 }
@@ -1342,9 +1346,9 @@ html > body {
 }
 
 ::-webkit-scrollbar {
-  width: 5px;
+  width: 8px;
   /* 스크롤바의 너비 */
-  height: 5px;
+  height: 8px;
   /* 수평 스크롤바의 높이 */
 }
 
@@ -1426,22 +1430,22 @@ iframe {
   height: auto;
 }
 
-.white-ani{
+.white-ani {
   animation: font-move-left 20s linear infinite;
 }
 
-.black-ani{
+.black-ani {
   animation: font-move-right 20s linear infinite;
 }
 
-.news_img a{
+.news_img a {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
 }
 
-.news_img img{
+.news_img img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;
@@ -1513,7 +1517,7 @@ iframe {
     max-width: 215px !important;
   }
 
-  .s4{
+  .s4 {
     padding: 170px 48px !important;
   }
 }
@@ -1539,11 +1543,11 @@ iframe {
     top: 75% !important;
   }
 
-  .s4{
+  .s4 {
     padding: 100px 48px !important;
   }
 
-  .img-area{
+  .img-area {
     flex-direction: column;
   }
 
@@ -1551,12 +1555,12 @@ iframe {
     font-size: 14px !important;
   }
 
-  .white-ani{
+  .white-ani {
     font-size: 67px !important;
     width: 2616.41px;
   }
 
-  .black-ani{
+  .black-ani {
     font-size: 67px !important;
     width: 2616.41px;
   }
