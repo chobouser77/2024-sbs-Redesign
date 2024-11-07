@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>헤더1</title>
+    <title>커스텀화면</title>
 
     <link rel="stylesheet" href="css/output.css" />
     <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/custom.css" />
 
-    <!-- 제이쿼리 불러오기 -->
+    <!-- 테일윈즈 가동 명령어 -->
+    <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
+
+    <!-- 제이쿼리 -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="js/common.js"></script>
   </head>
-  <body>
+  <body class="bg-white">
     <!-- 상단 광고바 -->
     <div class="top-ad-bar bg-myblack">
       <a
@@ -36,7 +40,7 @@
       </a>
     </div>
     <!-- pc 상단바 -->
-    <header id="pc-header" class="pc-top-bar text-white sticky top-0 hidden lg:block">
+    <header id="pc-header" class="pc-top-bar text-white sticky top-0 hidden lg:block bg-myblack z-[50]">
       <div class="container relative mx-auto px-[48px] flex h-[90px]">
         <div class="flex-1 flex items-center">
           <a
@@ -2620,5 +2624,8 @@
         </ul>
       </nav>
     </div>
+
+    <!-- 커스텀 페이지 시작 -->
+    
   </body>
 </html>
