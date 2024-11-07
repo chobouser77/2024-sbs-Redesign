@@ -290,10 +290,10 @@ $(document).ready(function () {});
 
 // 헤더 및 푸터 연결
 
-$(document).ready(function () {
-  // header.html 파일을 로드해서 #header div에 삽입
-  $("#header").load("header.html");
+// $(document).ready(function () {
+//   // header.html 파일을 로드해서 #header div에 삽입
+//   $("#header").load("header.html");
 
-  // footer.html 파일을 로드해서 #footer div에 삽입
-  $("#footer").load("footer.html");
-});
+//   // footer.html 파일을 로드해서 #footer div에 삽입
+//   $("#footer").load("footer.html");
+// });

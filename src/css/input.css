@@ -137,8 +137,14 @@ iframe {
   .masonry-box-1__item {
     font-size: 16px !important;
   }
+  .null {
+    height: 1500px !important;
+  }
 }
 @media (max-width: 1200px) {
+  .youtube-video-1 {
+    margin-top: -70px !important;
+  }
   .wys {
     padding: 140px 0 !important;
   }
@@ -157,9 +163,15 @@ iframe {
   .s4 {
     padding: 170px 48px !important;
   }
+  .null {
+    height: 1400px !important;
+  }
 }
 
 @media (max-width: 768px) {
+  .youtube-video-1 {
+    margin-top: -56px !important;
+  }
   .wys {
     padding: 100px 0 !important;
   }
@@ -194,5 +206,8 @@ iframe {
   .black-ani {
     font-size: 67px !important;
     width: 2616.41px;
+  }
+  .null {
+    height: 1000px !important;
   }
 }
