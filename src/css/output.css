@@ -710,10 +710,6 @@ video {
   margin: -0.5rem;
 }
 
-.m-auto{
-  margin: auto;
-}
-
 .mx-auto{
   margin-left: auto;
   margin-right: auto;
@@ -751,16 +747,12 @@ video {
   margin-top: 24px;
 }
 
-.mt-\[51px\]{
-  margin-top: 51px;
-}
-
-.mt-\[5\]{
-  margin-top: 5;
-}
-
 .mt-\[50px\]{
   margin-top: 50px;
+}
+
+.mt-\[51px\]{
+  margin-top: 51px;
 }
 
 .block{
@@ -857,10 +849,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[200px\]{
-  height: 200px;
 }
 
 .w-\[100\%\]{
