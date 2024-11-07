@@ -1,15 +1,15 @@
-.s4 .swiper {
+.vs-b .swiper {
   max-width: 1365px !important;
   width: 100% !important;
   max-height: 541.05px !important;
   height: 100% !important;
   /* overflow-y: auto !important; */
 }
-.s4 .swiper-wrapper {
+.vs-b.s4 .swiper-wrapper {
   width: 100% !important;
   height: 100% !important;
 }
-.s4 .swiper-slide {
+.vs-b .swiper-slide {
   display: flex !important;
   flex-direction: column !important;
   padding: 23.26px !important;
@@ -22,28 +22,28 @@
   background-color: #1d1d1d !important;
   gap: 10.11px !important;
 }
-.s4 .swiper-slide img {
+.vs-b .swiper-slide img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.s4 .sw-bt {
+.vs-b .sw-bt {
   width: 64px !important;
   height: 64px !important;
   background-color: #1d1d1d;
   color: white !important;
   position: relative !important;
 }
-.s4 .swiper-pagination {
+.vs-b .swiper-pagination {
   display: none;
 }
 
 @media (max-width: 1440px) {
-  .s4 .swiper{
+  .vs-b .swiper {
     max-width: 1005px !important;
   }
-  .s4 .swiper-slide {
+  .vs-b .swiper-slide {
     width: 327px !important;
     height: 395.8px !important;
     padding: 17.02px !important;
@@ -53,10 +53,10 @@
   }
 }
 @media (max-width: 1200px) {
-  .s4 .swiper{
+  .vs-b .swiper {
     max-width: 1365px !important;
   }
-  .s4 .swiper-slide {
+  .vs-b .swiper-slide {
     width: 447px !important;
     height: 548px !important;
     padding: 23.26px !important;
@@ -64,13 +64,13 @@
     gap: 10.11px !important;
     font-size: 18px;
   }
-  .s4 .sw-bt {
+  .vs-b .sw-bt {
     display: none !important;
   }
   .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background-color: #ff5722 !important; /* 원하는 색상으로 변경 */
   }
-  .s4 .swiper-pagination {
+  .vs-b .swiper-pagination {
     display: flex !important;
     top: calc(100% + 48px) !important;
     left: 10% !important;
@@ -79,10 +79,10 @@
   }
 }
 @media (max-width: 768px) {
-  .s4 .swiper{
+  .vs-b .swiper {
     max-width: 900px !important;
   }
-  .s4 .swiper-slide {
+  .vs-b .swiper-slide {
     width: 292px !important;
     height: 353.5px !important;
     padding: 15.19px !important;
