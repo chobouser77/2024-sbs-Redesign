@@ -15,6 +15,13 @@
   filter: invert(1) ;
 }
 
+.pc-top-bar__menu01 > ul > li > nav {
+  border-top: solid #f0f0f0 1px;
+}
+.top-bar__menu02 a {
+  display: block;
+}
+
 /* tablet 상단바 */
 .tablet-top-bar .container.on {
   background-color: #fff;
@@ -57,7 +64,13 @@ html.tablet-side-bar-actived > body {
 .tablet-side-bar__menu > ul  li.on > a > div {
   display: block;
 }
+.tablet-side-bar__menu > ul  li:hover > a > div {
+  display: block;
+}
 .tablet-side-bar__menu > ul  li.on > a > span {
+  color: white;
+}
+.tablet-side-bar__menu > ul  li:hover > a > span {
   color: white;
 }
 
@@ -65,19 +78,19 @@ html.tablet-side-bar-actived > body {
   opacity: 0;
 }
 
-.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-1 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-1 {
   animation: fadeInOut .5s 0s;
 }
 
-.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-2 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-2 {
   animation: fadeInOut .5s 0s;
 }
 
-.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-3 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-3 {
   animation: fadeInOut .5s 0.2s;
 }
 
-.tablet-side-bar__menu > ul > li.on > a > div > .sidemenu-bg-4 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-4 {
   animation: fadeInOut .5s 0.2s;
 }
 

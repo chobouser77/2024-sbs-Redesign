@@ -72,10 +72,10 @@ $(document).ready(function () {
     const $ul = $this.children("ul");
 
     if ($this.hasClass("on")) {
-      $ul.stop().slideUp();
+      $ul.stop().slideUp(600);
       $this.removeClass("on");
     } else {
-      $ul.stop().slideDown();
+      $ul.stop().slideDown(600);
       $this.siblings(".on").removeClass("on").children("ul").stop().slideUp();
       $this.addClass("on");
     }
@@ -114,10 +114,10 @@ $(document).ready(function () {
     const $ul = $this.children("ul");
 
     if ($this.hasClass("on")) {
-      $ul.stop().slideUp();
+      $ul.stop().slideUp(600);
       $this.removeClass("on");
     } else {
-      $ul.stop().slideDown();
+      $ul.stop().slideDown(600);
       $this.siblings(".on").removeClass("on").children("ul").stop().slideUp();
       $this.addClass("on");
     }
