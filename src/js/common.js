@@ -1,4 +1,19 @@
 // 헤더
+// 상단바
+$(window).on('scroll', function() {
+  const pcHeader = $("#pc-header");
+  const tabletHeader = $("#tablet-header");
+
+  if ($(window).scrollTop() > 200) {
+    pcHeader.addClass('scrolled');
+    tabletHeader.addClass('scrolled');
+  } else {
+    pcHeader.removeClass('scrolled');
+    tabletHeader.removeClass('scrolled');
+  }
+});
+
+// pc 상단바
 $(document).ready(function () {
   $(".pc-top-bar__menu01>ul>li").mouseenter(function () {
     $(".pc-top-bar").addClass("on");

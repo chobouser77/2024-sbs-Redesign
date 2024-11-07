@@ -3,6 +3,30 @@
   display: none;
 }
 
+/* 상단바 스크롤 */
+#pc-header.scrolled {
+  background-color: #fff;
+}
+#pc-header.scrolled .logo-color {
+  filter: none;
+}
+#pc-header.scrolled .pc-top-bar__user-menu a {
+  filter: invert(1);
+}
+#pc-header.scrolled .pc-top-bar__menu01 > ul > li > a {
+  color: #1d1d1d;
+}
+
+#tablet-header.scrolled {
+  background-color: #fff;
+}
+#tablet-header.scrolled .logo-color {
+  filter: none;
+}
+#tablet-header.scrolled .tablet-top-bar__user-menu a {
+  filter: invert(1);
+}
+
 /* pc 상단바 */
 .pc-top-bar.on {
   background-color: #fff;
