@@ -205,16 +205,16 @@ $(document).ready(function () {
   });
 
   function adjustBoxHeight() {
-    // box의 너비를 가져옴
     var boxWidth = $(".img-area").width();
 
-    if ($(window).width() >= 778) {
-      // 스크롤바 제외 768px 이상일 때
+    if (window.innerWidth > 768) {
+      // 스크롤바 영향을 받지 않는 768px 이상일 때
       var boxHeight = (boxWidth - 12) / 2; // 높이를 너비의 절반에서 12px 뺀 값으로 설정
     } else {
-      // 스크롤바 제외 768px 미만일 때
+      // 스크롤바 영향을 받지 않는 768px 미만일 때
       var boxHeight = boxWidth * 2 + 12; // 높이를 너비의 2배에 12px 더한 값으로 설정
     }
+
     // box의 높이를 설정
     $(".img-area").height(boxHeight);
   }
