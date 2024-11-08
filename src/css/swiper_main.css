@@ -56,6 +56,9 @@
   .vs-b .swiper {
     max-width: 1365px !important;
   }
+  .vs-b .swiper-wrapper{
+    margin-left: 250px !important;
+  }
   .vs-b .swiper-slide {
     width: 447px !important;
     height: 548px !important;
