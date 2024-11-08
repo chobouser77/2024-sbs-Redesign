@@ -630,8 +630,16 @@ video {
   bottom: 48px;
 }
 
+.bottom-\[4rem\]{
+  bottom: 4rem;
+}
+
 .left-0{
   left: 0px;
+}
+
+.left-\[15px\]{
+  left: 15px;
 }
 
 .left-\[250px\]{
@@ -650,8 +658,20 @@ video {
   right: -8px;
 }
 
+.right-\[25px\]{
+  right: 25px;
+}
+
+.right-\[40px\]{
+  right: 40px;
+}
+
 .right-\[5\%\]{
   right: 5%;
+}
+
+.right-\[5rem\]{
+  right: 5rem;
 }
 
 .top-0{
@@ -668,6 +688,14 @@ video {
 
 .top-\[351px\]{
   top: 351px;
+}
+
+.top-\[44px\]{
+  top: 44px;
+}
+
+.top-\[60px\]{
+  top: 60px;
 }
 
 .top-\[70\%\]{
@@ -690,20 +718,16 @@ video {
   top: 100%;
 }
 
-.bottom-\[-1\%\]{
-  bottom: -1%;
-}
-
-.top-\[-1\%\]{
-  top: -1%;
-}
-
 .z-10{
   z-index: 10;
 }
 
 .z-\[-10\]{
   z-index: -10;
+}
+
+.z-\[100\]{
+  z-index: 100;
 }
 
 .z-\[10\]{
@@ -803,6 +827,14 @@ video {
   height: 100dvh;
 }
 
+.h-\[148px\]{
+  height: 148px;
+}
+
+.h-\[160px\]{
+  height: 160px;
+}
+
 .h-\[16px\]{
   height: 16px;
 }
@@ -895,12 +927,20 @@ video {
   width: 134px;
 }
 
+.w-\[148px\]{
+  width: 148px;
+}
+
 .w-\[150px\]{
   width: 150px;
 }
 
 .w-\[159px\]{
   width: 159px;
+}
+
+.w-\[160px\]{
+  width: 160px;
 }
 
 .w-\[16px\]{
@@ -1061,8 +1101,21 @@ video {
   white-space: nowrap;
 }
 
+.rounded-full{
+  border-radius: 9999px;
+}
+
 .border{
   border-width: 1px;
+}
+
+.border-\[0\.6px\]{
+  border-width: 0.6px;
+}
+
+.border-\[\#404040\]{
+  --tw-border-opacity: 1;
+  border-color: rgb(64 64 64 / var(--tw-border-opacity));
 }
 
 .border-\[white\]{
@@ -1370,6 +1423,10 @@ video {
   opacity: 0.7;
 }
 
+.opacity-\[80\%\]{
+  opacity: 80%;
+}
+
 .brightness-0{
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1642,6 +1699,26 @@ iframe {
   }
 }
 
+/* ---- 플로팅 버튼 애니메이션 ---- */
+
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.quick-btn__box01 {
+  animation: upDown 1s 0;
+}
+
 .after\:absolute::after{
   content: var(--tw-content);
   position: absolute;
@@ -1683,6 +1760,11 @@ iframe {
   content: var(--tw-content);
 }
 
+.hover\:bg-myred:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(212 31 31 / var(--tw-bg-opacity));
+}
+
 .hover\:font-medium:hover{
   font-weight: 500;
 }
@@ -1698,6 +1780,10 @@ iframe {
 .hover\:text-myred:hover{
   --tw-text-opacity: 1;
   color: rgb(212 31 31 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover{
+  opacity: 1;
 }
 
 .group:hover .group-hover\:flex{
