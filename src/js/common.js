@@ -153,7 +153,7 @@ $(document).ready(function () {
 
 // 푸터
 $(document).ready(function () {
-  const open_close = $(".oc");
+  const open_close = $(".oct");
 
   open_close.click(function () {
     const submenu = $(this).next(".sub-box");
@@ -161,14 +161,14 @@ $(document).ready(function () {
     const arrowDown = $(this).find(".arrow-down");
 
     if (submenu.hasClass("active")) {
-      open_close.removeClass("active");
+      $(this).removeClass("active");
       submenu.removeClass("active");
       arrowDown.removeClass("active");
       arrowUp.removeClass("active");
 
       submenu.css("height", "0");
     } else {
-      open_close.addClass("active");
+      $(this).addClass("active");
       submenu.addClass("active");
       arrowDown.addClass("active");
       arrowUp.addClass("active");
@@ -255,11 +255,10 @@ $(document).ready(function () {
       spaceBetween: 12,
       // freeMode: true,
       scrollbar: {
-        el: ".swiper-box-1 .swiper-scrollbar"
+        el: ".swiper-box-1 .swiper-scrollbar",
       },
-      mousewheel: true
+      mousewheel: true,
     });
-
   }
 
   // 초기 Swiper 생성

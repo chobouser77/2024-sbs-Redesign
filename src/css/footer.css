@@ -51,7 +51,7 @@ footer{
   height: 1rem;
 }
 /* 모바일 */
-.oc{
+.oct{
   display: flex;
   position: relative;
   align-items: center;
@@ -61,7 +61,7 @@ footer{
   font-size: var(--font-14);
   border-bottom:1px solid #ffffff50;
 }
-.oc.active{
+.oct.active{
   border-bottom : none !important;
 }
 .sub-box{
