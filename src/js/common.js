@@ -233,7 +233,7 @@ $(document).ready(function () {
   function initSwiper() {
     swiper = new Swiper(".mySwiper", {
       slidesPerView: 3,
-      centeredSlides: true,
+      centeredSlides: false,
       spaceBetween: 12,
       grabCursor: true,
       pagination: {
