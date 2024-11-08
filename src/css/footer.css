@@ -2,6 +2,11 @@ footer{
   color: #fff;
   background-color: #1d1d1d;
 }
+@media (max-width : 1440px) {
+  .fg{
+    display: none;
+  }
+}
 @media (max-width : 1200px) {
   .footerpc{
     display: none !important;
