@@ -137,9 +137,6 @@ iframe {
   .masonry-box-1__item {
     font-size: 16px !important;
   }
-  .null {
-    height: 1500px !important;
-  }
 }
 @media (max-width: 1200px) {
   .youtube-video-1 {
@@ -162,9 +159,6 @@ iframe {
   }
   .s4 {
     padding: 170px 48px !important;
-  }
-  .null {
-    height: 1400px !important;
   }
 }
 
@@ -206,8 +200,5 @@ iframe {
   .black-ani {
     font-size: 67px !important;
     width: 2616.41px;
-  }
-  .null {
-    height: 1000px !important;
   }
 }
