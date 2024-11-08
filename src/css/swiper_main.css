@@ -38,6 +38,39 @@
 .vs-b .swiper-pagination {
   display: none;
 }
+/* 뉴스 스와이퍼 */
+.swiper-box-1 .swiper {
+  height: 569px;
+}
+.swiper-box-1 .swiper-slide01 {
+  width: 267px;
+}
+.swiper-box-1 .swiper-slide02 {
+  width: 267px;
+}
+.swiper-box-1 .swiper-slide03 {
+  width: 453px;
+}
+.swiper-box-1 .swiper-slide04 {
+  width: 345px;
+}
+.swiper-box-1 .swiper-slide05,
+.swiper-box-1 .swiper-slide06,
+.swiper-box-1 .swiper-slide07 {
+  width: 360px;
+}
+
+.swiper-box-1 .swiper-slide img {
+  width: 100%;
+}
+.swiper-box-1 .swiper-scrollbar {
+  background-color: rgba(255, 255, 255, 0.2); /* 스크롤바 배경 투명도 */
+}
+
+.swiper-box-1 .swiper-scrollbar-drag {
+  background-color: #ffffff; /* 핸들 색상 */
+}
+/* 반스 모바일 끝 */
 
 @media (max-width: 1440px) {
   .vs-b .swiper {
@@ -56,7 +89,7 @@
   .vs-b .swiper {
     max-width: 1365px !important;
   }
-  .vs-b .swiper-wrapper{
+  .vs-b .swiper-wrapper {
     margin-left: 250px !important;
   }
   .vs-b .swiper-slide {
@@ -92,5 +125,8 @@
     padding-bottom: 26.43px !important;
     gap: 6.61px !important;
     font-size: 9px;
+  }
+  .s6 {
+    padding-top: 160px !important;
   }
 }

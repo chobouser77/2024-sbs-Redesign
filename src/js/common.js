@@ -250,6 +250,16 @@ $(document).ready(function () {
         el: ".swiper-scrollbar",
       },
     });
+    const swiper1 = new Swiper(".swiper-box-1 .swiper", {
+      slidesPerView: "auto",
+      spaceBetween: 12,
+      // freeMode: true,
+      scrollbar: {
+        el: ".swiper-box-1 .swiper-scrollbar"
+      },
+      mousewheel: true
+    });
+
   }
 
   // 초기 Swiper 생성
