@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/swiper_main.css" />
+    <link rel="stylesheet" href="css/index.css">
     <!-- 테일윈즈 가동 명령어 -->
     <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
     <!-- 스와이퍼 불러오기 -->
@@ -2977,7 +2978,7 @@
       style="max-height: 935px; gap: 70px"
     >
       <span class="wysp text-[46px] mx-auto font-semibold">
-        WHAT'S YIURE STYLE?
+        WHAT'S YOUR STYLE?
       </span>
       <div class="mask flex items-center" style="gap: 52px">
         <img src="img/main/slip_on.png" alt="slip_on" />
@@ -2998,7 +2999,7 @@
       class="relative w-pull flex flex-col items-center"
       style="gap: 30px"
     >
-      <p class="text-[46px]">NEW COLLECTION</p>
+      <p class="text-[46px] font-semibold">NEW COLLECTION</p>
       <img src="img/main/nc.jpg" alt="뉴 컬렉션 배경 이미지" class="w-pull" />
       <a
         href="#"
@@ -3077,7 +3078,14 @@
 
             <!--     카테고리 선택 미구현       -->
             <div class="grid grid-cols-2 gap-3 flex-1 relative">
-              <div class="sub1 flex-1 bg-red-300">
+              <div class="sub1 flex-1 bg-red-300 relative group">
+                <div class="absolute w-full h-full bg-[#00000020] p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
+                  <span class="font-medium text-[15px] w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                  <div>
+                    <div class="font-semibold text-[18px]">Old Skool 올드스쿨 로우 프로</div>
+                    <div class="font-normal text-[18px]">85,000 원</div>
+                  </div>
+                </div>
                 <a
                   href="#"
                   class="clasic block w-full h-full bg-cover bg-center"
