@@ -8,8 +8,7 @@
 html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
-  /* cursor: none; */
-  /* cursor: url("../img/main/mause_pointer16.png") 8 8, auto !important; */
+  cursor: none;
 }
 ::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
