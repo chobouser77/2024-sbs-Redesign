@@ -102,19 +102,11 @@ html.tablet-side-bar-actived > body {
   opacity: 0;
 }
 
-.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-1 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-1, .sidemenu-bg-2 {
   animation: fadeInOut .5s 0s;
 }
 
-.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-2 {
-  animation: fadeInOut .5s 0s;
-}
-
-.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-3 {
-  animation: fadeInOut .5s 0.2s;
-}
-
-.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-4 {
+.tablet-side-bar__menu > ul > li:hover > a > div > .sidemenu-bg-3, .sidemenu-bg-4 {
   animation: fadeInOut .5s 0.2s;
 }
 
