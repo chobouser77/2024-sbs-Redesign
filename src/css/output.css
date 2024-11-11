@@ -626,10 +626,6 @@ video {
   bottom: -20px;
 }
 
-.bottom-\[-21px\]{
-  bottom: -21px;
-}
-
 .bottom-\[20px\]{
   bottom: 20px;
 }
@@ -788,6 +784,14 @@ video {
   margin-top: 0.75rem;
 }
 
+.mt-\[-10px\]{
+  margin-top: -10px;
+}
+
+.mt-\[-20px\]{
+  margin-top: -20px;
+}
+
 .mt-\[10px\]{
   margin-top: 10px;
 }
@@ -826,22 +830,6 @@ video {
 
 .mt-\[51px\]{
   margin-top: 51px;
-}
-
-.mt-\[-10px\;\]{
-  margin-top: -10px;;
-}
-
-.mt-\[-10px\]{
-  margin-top: -10px;
-}
-
-.mt-\[-0px\]{
-  margin-top: -0px;
-}
-
-.mt-\[-20px\]{
-  margin-top: -20px;
 }
 
 .block{
@@ -896,6 +884,10 @@ video {
   height: 24px;
 }
 
+.h-\[313px\]{
+  height: 313px;
+}
+
 .h-\[31px\]{
   height: 31px;
 }
@@ -904,12 +896,20 @@ video {
   height: 35.5px;
 }
 
+.h-\[367px\]{
+  height: 367px;
+}
+
 .h-\[36px\]{
   height: 36px;
 }
 
 .h-\[373px\]{
   height: 373px;
+}
+
+.h-\[389px\]{
+  height: 389px;
 }
 
 .h-\[39px\]{
@@ -968,24 +968,16 @@ video {
   height: 100%;
 }
 
-.h-\[\]{
-  height: ;
+.h-\[330px\]{
+  height: 330px;
 }
 
-.h-\[313px\]{
-  height: 313px;
+.h-\[90\]{
+  height: 90;
 }
 
-.h-\[389px\]{
-  height: 389px;
-}
-
-.h-\[33px\]{
-  height: 33px;
-}
-
-.h-\[367px\]{
-  height: 367px;
+.h-\[394px\]{
+  height: 394px;
 }
 
 .w-\[100\%\]{
@@ -1108,10 +1100,6 @@ video {
   width: 100%;
 }
 
-.w-\[284\]{
-  width: 284;
-}
-
 .flex-1{
   flex: 1 1 0%;
 }
@@ -1218,6 +1206,10 @@ video {
   border-width: 0.6px;
 }
 
+.border-dashed{
+  border-style: dashed;
+}
+
 .border-\[\#404040\]{
   --tw-border-opacity: 1;
   border-color: rgb(64 64 64 / var(--tw-border-opacity));
@@ -1236,6 +1228,10 @@ video {
 .border-\[white\]{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[whi\]{
+  border-color: whi;
 }
 
 .bg-\[\#00000020\]{
@@ -1430,9 +1426,24 @@ video {
   padding-bottom: 50px;
 }
 
+.py-\[60px\]{
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
+}
+
+.py-\[40px\]{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.py-\[30px\]{
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .pb-\[100px\]{
@@ -1547,6 +1558,10 @@ video {
 .text-xs{
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.text-\[11px\]{
+  font-size: 11px;
 }
 
 .font-bold{

@@ -1,72 +1,148 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>커스텀 화면</title>
-  <link rel="stylesheet" href="css/output.css" />
-  <link rel="stylesheet" href="css/header.css" />
-  <link rel="stylesheet" href="css/custom.css" />
-  <link rel="stylesheet" href="css/footer.css" />
-  
-  <!-- 테일윈즈 가동 명령어 -->
-  <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
-  <!-- 제이쿼리 불러오기 -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>커스텀 화면</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/footer.css" />
 
-  <script src="js/common.js"></script>
-</head>
-<body class="bg-white">
-  <!-- 커서요소 -->
-  <div class="custom-cursor"></div>
-  <!-- 탑바 -->
+    <!-- 테일윈즈 가동 명령어 -->
+    <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
+    <!-- 제이쿼리 불러오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-  <!-- 섹션 커스텀 1 -->
-  <section class="flex flex-col w-full pt-[187px] ">
-    <div class="flex flex-col items-center w-full " style="gap: 30px;">
-      <div class="w-[204px] h-[35.5px] flex items-center justify-center border border-[#dc2020] bg-[#faf6f1] font-semibold text-myred text-[20px]">VANS CUSTOMS</div>
-      <div class="flex" style="gap: 90px;">
-        <img src="img/custom/whats.png" alt="What's" class="mt-[-20px] object-contain">
-        <img src="img/custom/your.png" alt="Your" class="object-contain">
-        <img src="img/custom/style.png" alt="Style" class="mt-[-10px] object-contain">
-      </div>
-      <div class="flex justify-between w-full h-[719px] pt-[100px] px-[200px] overflow-hidden bg-center bg-no-repeat bg-cover" style="background-image: url(img/custom/grid.png) ;">
-        <div class="c-box flex " style="gap: 40px;">
-          <a class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[373px]" style="gap: 10px;">
-            <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
-            <p class="text-center text-[14px]">새롭게 출시된 스와치를 활용해<br>
-            나만의 커스텀 신발을 제작해 보세요!</p>
-            <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON">
-            <div class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white" style="bottom: -21px; left: calc(50% - 90px);">더 알아보기</div>          
-          </a>
-          <a class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[313px]" style="gap: 10px;">
-            <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
-            <p class="text-center text-[14px]">새롭게 출시된 스와치를 활용해<br>
-            나만의 커스텀 신발을 제작해 보세요!</p>
-            <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON">
-            <div class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white" style="bottom: -21px; left: calc(50% - 90px);">더 알아보기</div>          
-          </a>
-          <a class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[389px]" style="gap: 10px;">
-            <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
-            <p class="text-center text-[14px]">새롭게 출시된 스와치를 활용해<br>
-            나만의 커스텀 신발을 제작해 보세요!</p>
-            <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON">
-            <div class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white" style="bottom: -21px; left: calc(50% - 90px);">더 알아보기</div>          
-          </a>
-          <a class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[367px]" style="gap: 10px;">
-            <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
-            <p class="text-center text-[14px]">새롭게 출시된 스와치를 활용해<br>
-            나만의 커스텀 신발을 제작해 보세요!</p>
-            <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON">
-            <div class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white" style="bottom: -21px; left: calc(50% - 90px);">더 알아보기</div>          
-          </a>
-          
+    <script src="js/common.js"></script>
+  </head>
+  <body class="bg-white">
+    <!-- 커서요소 -->
+    <div class="custom-cursor"></div>
+    <!-- 탑바 -->
+
+    <!-- 섹션 커스텀 1 -->
+    <section class="flex flex-col w-full pt-[187px]">
+      <div class="flex flex-col items-center w-full" style="gap: 30px">
+        <div
+          class="w-[204px] h-[35.5px] flex items-center justify-center border border-[#dc2020] bg-[#faf6f1] font-semibold text-myred text-[20px]"
+        >
+          VANS CUSTOMS
         </div>
-        
-        <div class=""></div>
-      </div>
-    </div>
+        <div class="flex" style="gap: 90px">
+          <img
+            src="img/custom/whats.png"
+            alt="What's"
+            class="mt-[-20px] object-contain"
+          />
+          <img src="img/custom/your.png" alt="Your" class="object-contain" />
+          <img
+            src="img/custom/style.png"
+            alt="Style"
+            class="mt-[-10px] object-contain"
+          />
+        </div>
+        <div
+          class="s1_cus flex justify-between w-full h-[719px] pt-[100px] px-[200px] overflow-hidden bg-center bg-no-repeat bg-cover"
+          style="background-image: url(img/custom/grid.png);, gap: 40px;"
+        >
+          <div class="c-box flex" style="gap: 25px">
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[373px]"
+              style="gap: 10px"
+            >
+              <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
+              <p class="text-center text-[14px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON" />
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-end py-[30px] px-[30px] w-[284px] h-[330px]"
+              style="gap: 5px"
+            >
+              <img class="" src="img/custom/sk8_hi_c.png" alt="SK8 - HI" />
+              <p class="mt-[-10px] text-myred font-bold text-[20px]">
+                SK8 - HI
+              </p>
+              <p class="text-center text-[14px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[389px]"
+              style="gap: 10px"
+            >
+              <img class="" src="img/custom/authentic_c.png" alt="AUTHENTIC" />
+              <p class="text-myred font-bold text-[20px]">AUTHENTIC</p>
+              <p class="text-center text-[14px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[367px]"
+              style="gap: 10px"
+            >
+              <p class="text-myred font-bold text-[20px]">OLD SKOOL</p>
+              <p class="text-center text-[14px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <img class="" src="img/custom/old_skool_c.png" alt="OLD SKOOL" />
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+          </div>
+          <a
+            class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[394px]"
+            style="gap: 10px"
+          >
+            <div
+              class="absolute w-[90%] h-[90%] border border-[white] border-dashed"
+            ></div>
+            <p class="text-myred font-bold text-[20px]">CUSTOMS</p>
+            <p class="text-center text-[11px] text-white">
+              VANS 커스텀은 1966년부터 창의적인 표현을 추구해온<br />
+              VANS의 전통에서 시작됩니다.<br />
+              세상에 하나뿐인 나만의 신발을 직접 디자인해보세요.
+            </p>
+            <img class="" src="img/custom/cust_c.png" alt="?" />
+            <div
+              class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
+              style="bottom: -21px; left: calc(50% - 90px)"
+            >
+              커스텀 하기
+            </div>
+          </a>
 
-  </section>
-</body>
+          <div class=""></div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
