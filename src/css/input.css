@@ -44,6 +44,38 @@ html > body {
 .container {
   max-width: 1920px;
 }
+/* ---- 플로팅 버튼 애니메이션 ---- */
+/* @keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(80%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+@keyframes downUp {
+  0% {
+    transform: translateY(00%);
+  }
+  50% {
+    transform: translateY(-80%);
+  }
+  100% {
+    transform: translateY(00%);
+  }
+} */
+
+.flot-btn:hover .quick-btn__box01 {
+  /* animation: upDown 2s ease-in-out infinite; */
+  top: 60px !important;
+}
+.flot-btn:hover .quick-btn__box02 {
+  /* animation: downUp 2s ease-in-out infinite; */
+  top: 44px !important;
+}
 /* 커스텀 끝 */
 
 /* 메인 화면 */
@@ -62,7 +94,6 @@ iframe {
 
 .mask:hover {
   animation-play-state: paused;
-  
 }
 
 .mask > img {

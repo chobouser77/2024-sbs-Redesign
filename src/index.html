@@ -31,6 +31,34 @@
   <body class="relative" style="color: white; overflow-x: hidden">
     <!-- 커서요소 -->
     <div class="custom-cursor"></div>
+    <!-- 플로팅버튼 -->
+    <div class="flot-btn quick-wrap fixed right-[5rem] bottom-[4rem] z-[100]">
+      <div
+        class="quick-btn w-[160px] h-[160px] bg-white rounded-full cursor-pointer hover:bg-myred opacity-[80%] hover:opacity-100 relative flex items-center justify-center"
+        style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3)"
+      >
+        <div
+          class="w-[148px] h-[148px] border border-[#404040] border-[0.6px] rounded-full"
+        ></div>
+        <img
+          class="absolute bottom-[20px] left-[15px]"
+          src="img/flotbtn/shose.png"
+          alt="플로팅버튼 신발이미지"
+        />
+        <img
+          class="quick-btn__box01 absolute top-[44px] right-[40px]"
+          src="img/flotbtn/box_white1.png"
+          alt="플로팅버튼 네모 흰색"
+        />
+        <img
+          class="quick-btn__box02 absolute top-[60px] right-[25px]"
+          src="img/flotbtn/box_red.png"
+          alt="플로팅버튼 네모 빨간색"
+        />
+      </div>
+    </div>
+    <!-- //플로팅버튼 -->
+
     <!-- 헤더 연결 예정   -->
     <!-- 상단 광고바 -->
     <div class="top-ad-bar bg-myblack">
@@ -3061,11 +3089,20 @@
             >
               <div class="flex w-[90%] h-[90%] relative group">
                 <!-- <a href="#" class="core w-full h-full bg-cover bg-center" style="background-image: url('img/main/imsi.svg') !important;"></a> -->
-                <div class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
-                  <span class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                <div
+                  class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex"
+                >
+                  <span
+                    class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred"
+                    >NEW</span
+                  >
                   <div>
-                    <div class="font-semibold text-[16px] lg:text-[18px]">컬러 띠어리 Sk8-Hi 스케이트 하이</div>
-                    <div class="font-normal text-[16px] lg:text-[18px]">95,000 원</div>
+                    <div class="font-semibold text-[16px] lg:text-[18px]">
+                      컬러 띠어리 Sk8-Hi 스케이트 하이
+                    </div>
+                    <div class="font-normal text-[16px] lg:text-[18px]">
+                      95,000 원
+                    </div>
                   </div>
                 </div>
                 <a
@@ -3085,11 +3122,20 @@
             <!--     카테고리 선택 미구현       -->
             <div class="grid grid-cols-2 gap-3 flex-1 relative">
               <div class="sub1 flex-1 bg-red-300 relative group">
-                <div class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
-                  <span class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                <div
+                  class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex"
+                >
+                  <span
+                    class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred"
+                    >NEW</span
+                  >
                   <div>
-                    <div class="font-semibold text-[16px] lg:text-[18px]">Old Skool 올드스쿨 로우 프로</div>
-                    <div class="font-normal text-[16px] lg:text-[18px]">85,000 원</div>
+                    <div class="font-semibold text-[16px] lg:text-[18px]">
+                      Old Skool 올드스쿨 로우 프로
+                    </div>
+                    <div class="font-normal text-[16px] lg:text-[18px]">
+                      85,000 원
+                    </div>
                   </div>
                 </div>
                 <a
@@ -3099,11 +3145,20 @@
                 ></a>
               </div>
               <div class="sub2 flex-1 bg-[black] relative group">
-                <div class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
-                  <span class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                <div
+                  class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex"
+                >
+                  <span
+                    class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred"
+                    >NEW</span
+                  >
                   <div>
-                    <div class="font-semibold text-[16px] lg:text-[18px]">Old Skool 올드스쿨 로우 프로</div>
-                    <div class="font-normal text-[16px] lg:text-[18px]">85,000 원</div>
+                    <div class="font-semibold text-[16px] lg:text-[18px]">
+                      Old Skool 올드스쿨 로우 프로
+                    </div>
+                    <div class="font-normal text-[16px] lg:text-[18px]">
+                      85,000 원
+                    </div>
                   </div>
                 </div>
                 <a
@@ -3113,11 +3168,20 @@
                 ></a>
               </div>
               <div class="sub3 flex-1 bg-[blue] relative group">
-                <div class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
-                  <span class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                <div
+                  class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex"
+                >
+                  <span
+                    class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred"
+                    >NEW</span
+                  >
                   <div>
-                    <div class="font-semibold text-[16px] lg:text-[18px]">Old Skool 올드스쿨 로우 프로</div>
-                    <div class="font-normal text-[16px] lg:text-[18px]">85,000 원</div>
+                    <div class="font-semibold text-[16px] lg:text-[18px]">
+                      Old Skool 올드스쿨 로우 프로
+                    </div>
+                    <div class="font-normal text-[16px] lg:text-[18px]">
+                      85,000 원
+                    </div>
                   </div>
                 </div>
                 <a
@@ -3127,11 +3191,20 @@
                 ></a>
               </div>
               <div class="sub4 flex-1 bg-[green] relative group">
-                <div class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex">
-                  <span class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred">NEW</span>
+                <div
+                  class="absolute w-full h-full bg-[#00000020] p-[30px] lg:p-[40px] flex flex-col justify-end gap-[10px] cursor-pointer hidden group-hover:flex"
+                >
+                  <span
+                    class="font-medium text-[12px] lg:text-[15px] w-[47px] lg:w-[54px] px-[10px] py-[6px] bg-myred"
+                    >NEW</span
+                  >
                   <div>
-                    <div class="font-semibold text-[16px] lg:text-[18px]">Old Skool 올드스쿨 로우 프로</div>
-                    <div class="font-normal text-[16px] lg:text-[18px]">85,000 원</div>
+                    <div class="font-semibold text-[16px] lg:text-[18px]">
+                      Old Skool 올드스쿨 로우 프로
+                    </div>
+                    <div class="font-normal text-[16px] lg:text-[18px]">
+                      85,000 원
+                    </div>
                   </div>
                 </div>
                 <a
@@ -3370,101 +3443,134 @@
       <!-- 반스 뉴스 pc 끝 -->
 
       <!-- 반스 뉴스 모바일 시작 -->
-      <div class="vans-news-mobile md:hidden flex flex-col ">
-        <div class=" h-[31px] flex flex-col ">
-          <div class="text-white text-[26px] font-semibold mx-auto">VANS NEWS</div>
-      
+      <div class="vans-news-mobile md:hidden flex flex-col">
+        <div class="h-[31px] flex flex-col">
+          <div class="text-white text-[26px] font-semibold mx-auto">
+            VANS NEWS
+          </div>
+
           <div class="swiper-box-1 mt-[24px]">
             <div class="swiper">
               <div class="swiper-wrapper">
-      
                 <div class="swiper-slide swiper-slide01 ml-[48px]">
                   <div class="swiper-slide-box">
-                    <img src="img/main/news_1.png" alt="">
+                    <img src="img/main/news_1.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">반스, 지형 대응력과 스타일을 한꺼번에 잡은 MTE™ 크로스패스 출시</div>
+                      <div class="text-white text-xs">
+                        반스, 지형 대응력과 스타일을 한꺼번에 잡은 MTE™
+                        크로스패스 출시
+                      </div>
                       <div class="text-[#CECECE] text-xs py-2">#MTE</div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide02">
                   <div class="swiper-slide-box">
-                    <img src="img/main/news_2.png" alt="">
+                    <img src="img/main/news_2.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">반스, 전 세계 스케이터들의 축제 ‘고 스케이트보딩 데이’ 6월 22일 개최</div>
+                      <div class="text-white text-xs">
+                        반스, 전 세계 스케이터들의 축제 ‘고 스케이트보딩 데이’
+                        6월 22일 개최
+                      </div>
                       <div class="text-[#CECECE] text-xs py-2">#EVENT</div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide03">
                   <div>
-                    <img src="img/main/news_3.png" alt="">
+                    <img src="img/main/news_3.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">반스 x 웍스아웃, 새로운 협업 컬렉션 선보여</div>
-                      <div class="text-[#CECECE] text-xs py-2">#COLLABORATION</div>
+                      <div class="text-white text-xs">
+                        반스 x 웍스아웃, 새로운 협업 컬렉션 선보여
+                      </div>
+                      <div class="text-[#CECECE] text-xs py-2">
+                        #COLLABORATION
+                      </div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide04">
                   <div>
-                    <img src="img/main/news_4.png" alt="">
+                    <img src="img/main/news_4.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">반스의 새로운 글로벌 스토리 "Always Pushing" 공개</div>
+                      <div class="text-white text-xs">
+                        반스의 새로운 글로벌 스토리 "Always Pushing" 공개
+                      </div>
                       <div class="text-[#CECECE] text-xs py-2">CLASSICS</div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide05">
                   <div>
-                    <img src="img/main/news_5.png" alt="">
+                    <img src="img/main/news_5.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">OTW 바이 반스 X 피에트 파라 스웨이드 하프캡</div>
-                      <div class="text-[#CECECE] text-xs py-2">#OTW BY VANS</div>
+                      <div class="text-white text-xs">
+                        OTW 바이 반스 X 피에트 파라 스웨이드 하프캡
+                      </div>
+                      <div class="text-[#CECECE] text-xs py-2">
+                        #OTW BY VANS
+                      </div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide06">
                   <div>
-                    <img src="img/main/news_6.png" alt="">
+                    <img src="img/main/news_6.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">놀이에서 목적을 찾다! 반스 x DOE 리미티드 에디션 출시</div>
-                      <div class="text-[#CECECE] text-xs py-2">#COLLABORATION</div>
+                      <div class="text-white text-xs">
+                        놀이에서 목적을 찾다! 반스 x DOE 리미티드 에디션 출시
+                      </div>
+                      <div class="text-[#CECECE] text-xs py-2">
+                        #COLLABORATION
+                      </div>
                     </div>
                   </div>
                 </div>
-      
+
                 <div class="swiper-slide swiper-slide07 mr-[48px]">
                   <div>
-                    <img src="img/main/news_7.png" alt="">
+                    <img src="img/main/news_7.png" alt="" />
                     <div class="swiper-slide-text-box mt-3">
-                      <div class="text-white text-xs">반스 x 더뮤지엄비지터, 첫 번째 협업 컬렉션 선보여</div>
-                      <div class="text-[#CECECE] text-xs py-2">#COLLABORATION</div>
+                      <div class="text-white text-xs">
+                        반스 x 더뮤지엄비지터, 첫 번째 협업 컬렉션 선보여
+                      </div>
+                      <div class="text-[#CECECE] text-xs py-2">
+                        #COLLABORATION
+                      </div>
                     </div>
                   </div>
                 </div>
-      
               </div>
-      
-              <div class="swiper-scrollbar mx-0" style="width: calc(100% - 96px); margin-left: 48px;"></div>
-      
+
+              <div
+                class="swiper-scrollbar mx-0"
+                style="width: calc(100% - 96px); margin-left: 48px"
+              ></div>
             </div>
           </div>
-      
         </div>
         <div class="w-full h-[650px]"></div>
-      
-        <button class="mx-auto md:hidden bg-[#D41F1F] text-white z-50 bottom-10 w-[192px] h-[56px] text-lg">더 알아보기</button>
+
+        <button
+          class="mx-auto md:hidden bg-[#D41F1F] text-white z-50 bottom-10 w-[192px] h-[56px] text-lg"
+        >
+          더 알아보기
+        </button>
       </div>
     </section>
     <div class="null w-full h-[1850px] bg-[#1d1d1d]"></div>
 
     <!--  푸터 연결 예정  -->
-    <dic id="footer" class="absolute bottom-0 left-0 w-full " style="border-top: 1px solid #ffffff25;">
+    <dic
+      id="footer"
+      class="absolute bottom-0 left-0 w-full"
+      style="border-top: 1px solid #ffffff25"
+    >
       <!-- pc footer -->
       <footer
         class="footerpc flex background-black justify-center w-[100%] pt-[60px] px-[48px] pb-[100px]"
@@ -3497,7 +3603,7 @@
                 <a href="#" class="">청소년 보호정책</a>
               </li>
             </ul>
-            <div class="flex flex-col " style="gap: 20px">
+            <div class="flex flex-col" style="gap: 20px">
               <div
                 class="flex w-[100%] flex-wrap text-[12px]"
                 style="max-width: 790px; gap: 5px"
@@ -3687,7 +3793,9 @@
             <div>
               <div>고객센터 1522-1822</div>
               <div class="mt-[2px]">Vansjr_online@vfc.com</div>
-              <div class="mt-[2px]" style="opacity: 0.6">평일 09:00 ~ 18:00</div>
+              <div class="mt-[2px]" style="opacity: 0.6">
+                평일 09:00 ~ 18:00
+              </div>
             </div>
           </div>
           <div
