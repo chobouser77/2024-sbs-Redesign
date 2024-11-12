@@ -1168,6 +1168,14 @@ video {
   width: 100%;
 }
 
+.min-w-\[1920px\]{
+  min-width: 1920px;
+}
+
+.max-w-\[1920px\]{
+  max-width: 1920px;
+}
+
 .flex-1{
   flex: 1 1 0%;
 }

@@ -302,14 +302,19 @@ $(document).ready(function () {
   const bear_h = $(".bear-hover");
   const bears = $(".bears");
   const s2bg = $(".cu-s2");
+  const svg_font = $(".svg-font");
+  const svg_black = $(".svg-black");
 
-  bear_h.mouseenter(function(){
-    s2bg.css("background-color" ,"white");
-    bears.css("display" , "flex")
-  })
-  pink_h.mouseenter(function(){
-    s2bg.css("background-color" ,"pink");
-    bears.css("display" , "none")
-  })
-
+  bear_h.mouseover(function () {
+    s2bg.css("background-color", "white");
+    bears.css("display", "flex");
+    svg_black.css("display", "none");
+    svg_font.css("display", "flex");
+  });
+  pink_h.mouseover(function () {
+    s2bg.css("background-color", "pink");
+    bears.css("display", "none");
+    svg_black.css("display", "flex");
+    svg_font.css("display", "none");
+  });
 });
