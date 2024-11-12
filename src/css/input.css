@@ -50,32 +50,47 @@ html > body {
     transform: translateY(0);
   }
   50% {
-    transform: translateY(80%);
+    transform: translateY(85%);
   }
   100% {
-    transform: translateY(0%);
+    transform: translateY(0);
   }
 }
 @keyframes downUp {
   0% {
-    transform: translateY(00%);
+    transform: translateY(0);
   }
   50% {
-    transform: translateY(-80%);
+    transform: translateY(-85%);
   }
   100% {
-    transform: translateY(00%);
+    transform: translateY(0);
   }
+}
+
+
+.quick-btn__box01 {
+  animation: upDown 1.5s steps(1) infinite;
+}
+.quick-btn__box02 {
+  animation: downUp 1.5s steps(1) infinite;
 } */
 
-.flot-btn:hover .quick-btn__box01 {
-  /* animation: upDown 2s ease-in-out infinite; */
-  top: 60px !important;
+/* @keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+  50% {
+    transform: rotate(-15deg);
+  }
+  100% {
+    transform: rotate(0);
+  }
 }
-.flot-btn:hover .quick-btn__box02 {
-  /* animation: downUp 2s ease-in-out infinite; */
-  top: 44px !important;
-}
+
+.quick-btn__shoe {
+  animation: rotate 1.5s steps(1) infinite;
+} */
 /* 커스텀 끝 */
 
 /* 메인 화면 */
