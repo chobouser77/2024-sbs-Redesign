@@ -297,4 +297,19 @@ $(document).ready(function () {
 });
 
 // 커스텀
-$(document).ready(function () {});
+$(document).ready(function () {
+  const pink_h = $(".pink-hover");
+  const bear_h = $(".bear-hover");
+  const bears = $(".bears");
+  const s2bg = $(".cu-s2");
+
+  bear_h.mouseenter(function(){
+    s2bg.css("background-color" ,"white");
+    bears.css("display" , "flex")
+  })
+  pink_h.mouseenter(function(){
+    s2bg.css("background-color" ,"pink");
+    bears.css("display" , "none")
+  })
+
+});
