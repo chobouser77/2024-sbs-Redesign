@@ -2116,8 +2116,24 @@ iframe {
   color: rgb(212 31 31 / var(--tw-text-opacity));
 }
 
+.group:hover .group-hover\:top-\[-20\%\]{
+  top: -20%;
+}
+
 .group:hover .group-hover\:top-\[-30\%\]{
   top: -30%;
+}
+
+.group:hover .group-hover\:top-\[-10\%\]{
+  top: -10%;
+}
+
+.group:hover .group-hover\:top-\[-25\%\]{
+  top: -25%;
+}
+
+.group:hover .group-hover\:top-\[-27\%\]{
+  top: -27%;
 }
 
 .group:hover .group-hover\:flex{
