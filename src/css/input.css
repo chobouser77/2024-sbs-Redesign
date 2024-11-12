@@ -31,7 +31,6 @@ html > body {
 /* 커스텀 마우스 */
 .custom-cursor {
   position: absolute;
-  /* mix-blend-mode: difference; */
   width: 16px; /* 커서 이미지의 너비 */
   height: 16px; /* 커서 이미지의 높이 */
   background-color: #d41f1f;
@@ -241,3 +240,4 @@ iframe {
     height: 1000px !important;
   }
 }
+
