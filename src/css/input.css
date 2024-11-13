@@ -154,7 +154,7 @@ iframe {
 }
 @keyframes font-move-right {
   0% {
-    transform: translate(0);
+    transform: translate(0) ;
   }
 
   100% {
