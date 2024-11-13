@@ -1,3 +1,6 @@
+$(document).ready(function() {
+  $('html, body').css('overflow-x', 'hidden');
+});
 // 헤더
 // 상단바
 $(window).on("scroll", function () {

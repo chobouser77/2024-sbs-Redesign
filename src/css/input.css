@@ -226,6 +226,9 @@ iframe {
 }
 
 @media (max-width: 768px) {
+  .custom-cursor{
+    display: none !important;
+  }
   .youtube-video-1 {
     margin-top: -56px !important;
   }
