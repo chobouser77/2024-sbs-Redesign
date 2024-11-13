@@ -642,12 +642,20 @@ video {
   left: 0px;
 }
 
+.left-\[10\%\]{
+  left: 10%;
+}
+
 .left-\[15px\]{
   left: 15px;
 }
 
 .left-\[250px\]{
   left: 250px;
+}
+
+.left-\[7\%\]{
+  left: 7%;
 }
 
 .left-\[8px\]{
@@ -698,6 +706,10 @@ video {
   top: 0;
 }
 
+.top-\[12\%\]{
+  top: 12%;
+}
+
 .top-\[140px\]{
   top: 140px;
 }
@@ -712,6 +724,10 @@ video {
 
 .top-\[44px\]{
   top: 44px;
+}
+
+.top-\[5\%\]{
+  top: 5%;
 }
 
 .top-\[60px\]{
@@ -750,12 +766,20 @@ video {
   z-index: -10;
 }
 
+.z-\[0\]{
+  z-index: 0;
+}
+
 .z-\[100\]{
   z-index: 100;
 }
 
 .z-\[10\]{
   z-index: 10;
+}
+
+.z-\[1\]{
+  z-index: 1;
 }
 
 .z-\[49\]{
@@ -884,6 +908,10 @@ video {
   aspect-ratio: 1280/720;
 }
 
+.aspect-square{
+  aspect-ratio: 1 / 1;
+}
+
 .h-\[100\%\]{
   height: 100%;
 }
@@ -898,6 +926,10 @@ video {
 
 .h-\[1080px\]{
   height: 1080px;
+}
+
+.h-\[1330px\]{
+  height: 1330px;
 }
 
 .h-\[148px\]{
@@ -1016,20 +1048,16 @@ video {
   height: 90px;
 }
 
+.h-auto{
+  height: auto;
+}
+
 .h-full{
   height: 100%;
 }
 
-.h-\[\]{
-  height: ;
-}
-
-.h-\[200\%\]{
-  height: 200%;
-}
-
-.max-h-\[1080px\]{
-  max-height: 1080px;
+.max-h-\[810px\]{
+  max-height: 810px;
 }
 
 .w-\[100\%\]{
@@ -1172,6 +1200,10 @@ video {
   width: 96px;
 }
 
+.w-auto{
+  width: auto;
+}
+
 .w-full{
   width: 100%;
 }
@@ -1182,6 +1214,10 @@ video {
 
 .max-w-\[434px\]{
   max-width: 434px;
+}
+
+.max-w-\[810px\]{
+  max-width: 810px;
 }
 
 .max-w-\[882px\]{
@@ -1228,8 +1264,16 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
+.grid-cols-3{
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .grid-rows-2{
   grid-template-rows: repeat(2, minmax(0, 1fr));
+}
+
+.grid-rows-3{
+  grid-template-rows: repeat(3, minmax(0, 1fr));
 }
 
 .flex-col{
@@ -1463,6 +1507,11 @@ video {
   padding-right: 180px;
 }
 
+.px-\[200px\]{
+  padding-left: 200px;
+  padding-right: 200px;
+}
+
 .px-\[20px\]{
   padding-left: 20px;
   padding-right: 20px;
@@ -1663,6 +1712,10 @@ video {
 
 .text-\[46px\]{
   font-size: 46px;
+}
+
+.text-\[50px\]{
+  font-size: 50px;
 }
 
 .text-lg{

@@ -14,6 +14,12 @@ a:nth-child(4) {
   .s2font > a {
     font-size: 21px !important;
   }
+  .s3font > span:nth-of-type(1){
+    font-size: 46px !important;
+  }
+  .s3font > span:nth-of-type(2){
+    font-size: 16px !important;
+  }
 }
 @media (max-width: 1440px) {
   .cu-s2 {
