@@ -90,6 +90,19 @@ html > body {
 .quick-btn__shoe {
   animation: rotate 1.5s steps(1) infinite;
 } */
+
+@keyframes spin {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+
+.quick-btn__text {
+  animation: spin 20s linear infinite;
+}
 /* 커스텀 끝 */
 
 /* 메인 화면 */

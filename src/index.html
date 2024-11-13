@@ -34,12 +34,13 @@
     <!-- 플로팅버튼 -->
     <div class="flot-btn quick-wrap fixed right-[4rem] bottom-[4rem] z-[100]">
       <div
-        class="quick-btn w-[160px] h-[160px] bg-white rounded-full cursor-pointer opacity-[80%] relative flex items-center justify-center group"
+        class="quick-btn w-[160px] h-[160px] bg-white rounded-full cursor-pointer opacity-[80%] hover:opacity-100 relative flex items-center justify-center group"
         style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3)"
       >
-        <div
+        <!-- <div
           class="w-[148px] h-[148px] border border-[#404040] border-[0.6px] rounded-full"
-        ></div>
+        ></div> -->
+        <div class="quick-btn__text w-[150px] h-[150px] filter invert" style="background-image: url(img/flotbtn/text.png); background-repeat: no-repeat; background-size: cover;"></div>
         <img
           class="quick-btn__shoe absolute bottom-[20px] left-[15px]"
           src="img/flotbtn/shose.png"
@@ -58,9 +59,9 @@
         <div
           class="quick-btn__after absolute w-full h-full rounded-full bg-myred flex flex-col items-center justify-center whitespace-nowrap scale-0 group-hover:scale-100 transition transition-all duration-500"
         >
-          <div class="font-semibold text-[18px] mt-[6px]">커스텀하기</div>
+          <div class="font-semibold text-[20px] mt-[6px]">커스텀하기</div>
           <div
-            class="w-[24px] h-[24px] mt-[6px]"
+            class="w-[26px] h-[26px] mt-[4px]"
             style="
               background-image: url(img/flotbtn/icon_clese.png);
               background-repeat: no-repeat;
@@ -70,6 +71,7 @@
         </div>
         <div
           class="quick-btn__top absolute top-[0] bg-white px-[8px] py-[10px] rounded font-medium text-[12px] text-myred flex items-center justify-center opacity-0 group-hover:top-[-27%] group-hover:opacity-100 transition transition-all duration-700"
+          style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3)"
           onclick="scrollToTop()"
         >
           TOP

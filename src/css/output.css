@@ -876,6 +876,10 @@ video {
   margin-top: 30px;
 }
 
+.mt-\[4px\]{
+  margin-top: 4px;
+}
+
 .mt-\[50px\]{
   margin-top: 50px;
 }
@@ -936,6 +940,10 @@ video {
   height: 148px;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .h-\[160px\]{
   height: 160px;
 }
@@ -954,6 +962,10 @@ video {
 
 .h-\[24px\]{
   height: 24px;
+}
+
+.h-\[26px\]{
+  height: 26px;
 }
 
 .h-\[31px\]{
@@ -1142,6 +1154,10 @@ video {
 
 .w-\[250px\]{
   width: 250px;
+}
+
+.w-\[26px\]{
+  width: 26px;
 }
 
 .w-\[284px\]{
@@ -1943,6 +1959,20 @@ html > body {
   animation: rotate 1.5s steps(1) infinite;
 } */
 
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.quick-btn__text {
+  animation: spin 20s linear infinite;
+}
+
 /* 커스텀 끝 */
 
 /* 메인 화면 */
@@ -2187,6 +2217,10 @@ iframe {
 .hover\:text-myred:hover{
   --tw-text-opacity: 1;
   color: rgb(212 31 31 / var(--tw-text-opacity));
+}
+
+.hover\:opacity-100:hover{
+  opacity: 1;
 }
 
 .group:hover .group-hover\:top-\[-27\%\]{
