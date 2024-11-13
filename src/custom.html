@@ -19,8 +19,8 @@
   <body class="bg-white">
     <!-- 커서요소 -->
     <div class="custom-cursor"></div>
-    <!-- 상단 광고바 -->
-    <div class="top-ad-bar bg-myblack">
+    <!-- 탑바 -->
+    <div class="top-ad-bar bg-myblack z-[51]">
       <a
         class="flex container mx-auto px-[24px] sm:px-[48px] h-[40px] lg:h-[50px] text-white font-medium text-[14px] sm:text-[16px] whitespace-nowrap items-center"
         href="https://www.vans.co.kr/"
@@ -44,7 +44,7 @@
     <!-- pc 상단바 -->
     <header
       id="pc-header"
-      class="pc-top-bar text-white sticky top-0 hidden lg:block bg-myblack z-[50]"
+      class="pc-top-bar text-white sticky top-0 hidden lg:block z-[51]"
     >
       <div class="container relative mx-auto px-[48px] flex h-[90px]">
         <div class="flex-1 flex items-center">
@@ -760,7 +760,7 @@
     <!-- 태블릿, 모바일 상단바 -->
     <header
       id="tablet-header"
-      class="tablet-top-bar sticky top-0 lg:hidden z-[50]"
+      class="tablet-top-bar sticky top-0 lg:hidden z-[51]"
     >
       <div
         class="container relative mx-auto px-[24px] sm:px-[48px] flex h-[56px] sm:h-[70px] items-center"
@@ -831,7 +831,7 @@
     </header>
     <!-- 태블릿 사이드바 -->
     <div
-      class="tablet-side-bar fixed bg-white inset-0 px-[48px] pt-[70px] pb-[60px] whitespace-nowrap hidden sm:block lg:hidden"
+      class="z-[50] tablet-side-bar fixed bg-white inset-0 px-[48px] pt-[70px] pb-[60px] whitespace-nowrap hidden sm:block lg:hidden"
     >
       <div class="wrap flex flex-col justify-between h-full pt-[30px]">
         <nav class="tablet-side-bar__menu">
@@ -2036,7 +2036,7 @@
     </div>
     <!-- 모바일 사이드바 -->
     <div
-      class="mobile-side-bar fixed bg-white inset-0 px-[24px] pt-[56px] pb-[60px] sm:hidden"
+      class="z-[50] mobile-side-bar fixed bg-white inset-0 px-[24px] pt-[56px] pb-[60px] sm:hidden"
     >
       <nav class="mobile-side-bar__menu">
         <ul>
@@ -2947,24 +2947,28 @@
 
     <!-- 커스텀 페이지 시작 -->
     <!-- 섹션 커스텀 1 -->
-    <section class="flex flex-col w-full pt-[187px]">
+    <section class="flex flex-col w-full max-h-[970px] pt-[3%]">
       <div class="flex flex-col items-center w-full" style="gap: 30px">
         <div
           class="w-[204px] h-[35.5px] flex items-center justify-center border border-[#dc2020] bg-[#faf6f1] font-semibold text-myred text-[20px]"
         >
           VANS CUSTOMS
         </div>
-        <div class="flex" style="gap: 90px">
+        <div class="flex w-full justify-center" style="gap: 5%">
           <img
             src="img/custom/whats.png"
             alt="What's"
-            class="mt-[-20px] object-contain"
+            class="mt-[-20px] object-contain w-[14%]"
           />
-          <img src="img/custom/your.png" alt="Your" class="object-contain" />
+          <img
+            src="img/custom/your.png"
+            alt="Your"
+            class="object-contain; w-[18%]"
+          />
           <img
             src="img/custom/style.png"
             alt="Style"
-            class="mt-[-10px] object-contain"
+            class="mt-[-10px] object-contain w-[13%]"
           />
         </div>
         <div
@@ -2980,9 +2984,9 @@
               alt="vector"
             />
           </div>
-          <div class="c-box flex mt-[-38px]" style="gap: 25px">
+          <div class="c-box flex mt-[-38px] w-full" style="gap: 2%">
             <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[373px]"
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[57%]"
               style="gap: 10px"
             >
               <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
@@ -2999,7 +3003,7 @@
               </div>
             </a>
             <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-end py-[30px] px-[30px] w-[284px] h-[330px]"
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-end py-[30px] px-[30px] w-[24.4%] h-[50%]"
               style="gap: 5px"
             >
               <img class="" src="img/custom/sk8_hi_c.png" alt="SK8 - HI" />
@@ -3018,7 +3022,7 @@
               </div>
             </a>
             <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[389px]"
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[59%]"
               style="gap: 10px"
             >
               <img class="" src="img/custom/authentic_c.png" alt="AUTHENTIC" />
@@ -3035,7 +3039,7 @@
               </div>
             </a>
             <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[367px]"
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[56%]"
               style="gap: 10px"
             >
               <p class="text-myred font-bold text-[20px]">OLD SKOOL</p>
@@ -3052,9 +3056,9 @@
               </div>
             </a>
           </div>
-          <div class="mt-[-50px]">
+          <div class="c-box mt-[-50px] w-[24.4%]">
             <a
-              class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[30px] w-[284px] h-[394px]"
+              class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[10%] w-full h-[65%]"
               style="gap: 10px"
             >
               <img
@@ -3157,8 +3161,8 @@
     </section>
     <!-- 섹션 3 커스텀 -->
     <section
-      class="w-full max-h-[1330px] aspect-square  px-[10%] flex items-center justify-between relative"
-      style="gap: 11%"
+      class="w-full max-h-[1330px] aspect-square px-[10%] flex items-center justify-between relative"
+      style="gap: 11%; border-top: 2px solid #1d1d1d"
     >
       <img
         class="absolute z-[0] top-[5%] left-[7%]"
@@ -3167,7 +3171,7 @@
       />
       <div
         class="s3font relative flex flex-col items-center justify-center h-auto w-auto aspect-square"
-        style="gap: 30px; max-width: 500px; max-height: 475px ;"
+        style="gap: 30px; max-width: 500px; max-height: 475px"
       >
         <img
           class="absolute bottom-0 left-0"
