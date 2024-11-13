@@ -1396,6 +1396,14 @@ video {
   border-width: 0.6px;
 }
 
+.border-\[10px\]{
+  border-width: 10px;
+}
+
+.border-\[1px\]{
+  border-width: 1px;
+}
+
 .border-dashed{
   border-style: dashed;
 }
@@ -1418,6 +1426,14 @@ video {
 .border-\[white\]{
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-\[1x\]{
+  border-color: 1x;
+}
+
+.border-\[1\3154x\]{
+  border-color: 1ㅔx;
 }
 
 .bg-\[\#00000020\]{
