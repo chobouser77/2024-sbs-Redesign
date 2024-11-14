@@ -1960,54 +1960,7 @@ html > body {
   max-width: 1920px;
 }
 
-/* ---- 플로팅 버튼 애니메이션 ---- */
-
-/* @keyframes upDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(85%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes downUp {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-85%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-.quick-btn__box01 {
-  animation: upDown 1.5s steps(1) infinite;
-}
-.quick-btn__box02 {
-  animation: downUp 1.5s steps(1) infinite;
-} */
-
-/* @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-.quick-btn__shoe {
-  animation: rotate 1.5s steps(1) infinite;
-} */
+/* 퀵 버튼 */
 
 @keyframes spin {
   from {
@@ -2123,10 +2076,6 @@ iframe {
   .masonry-box-1__item {
     font-size: 16px !important;
   }
-
-  /* .null {
-    height: 1500px !important;
-  } */
 }
 
 @media (max-width: 1200px) {
@@ -2153,10 +2102,6 @@ iframe {
   .s4 {
     padding: 170px 48px !important;
   }
-
-  /* .null {
-    height: 600px !important;
-  } */
 }
 
 @media (max-width: 768px) {
@@ -2209,10 +2154,6 @@ iframe {
     font-size: 67px !important;
     width: 2616.41px;
   }
-
-  /* .null {
-    height: 0px !important;
-  } */
 }
 
 .after\:absolute::after{
