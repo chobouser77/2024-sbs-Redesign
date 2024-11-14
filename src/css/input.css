@@ -9,6 +9,7 @@ html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
   cursor: none;
+  min-width: 350px;
 }
 ::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
@@ -47,10 +48,10 @@ html > body {
 /* 퀵 버튼 */
 @keyframes spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -101,6 +102,12 @@ iframe {
   object-fit: contain;
 }
 
+.s4 .responsive-img {
+  width: 100%;
+  min-width: 190px;
+  height: auto;
+}
+
 @keyframes shose_move {
   0% {
     transform: translate(0);
@@ -121,7 +128,7 @@ iframe {
 }
 @keyframes font-move-right {
   0% {
-    transform: translate(0) ;
+    transform: translate(0);
   }
 
   100% {
@@ -130,7 +137,11 @@ iframe {
 }
 
 @media (max-width: 1440px) {
-  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
+  .wysp,
+  .new-col,
+  .vans-shoes,
+  .jfy,
+  .vn-txt {
     font-size: 40px !important;
   }
 
@@ -141,10 +152,10 @@ iframe {
   .mask > img {
     max-width: 264px !important;
   }
-  .more {
+  /* .more {
     width: 192px;
     height: 56px;
-  }
+  } */
   .masonry-box-1__item {
     font-size: 16px !important;
   }
@@ -157,7 +168,11 @@ iframe {
     padding: 140px 0 !important;
   }
 
-  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
+  .wysp,
+  .new-col,
+  .vans-shoes,
+  .jfy,
+  .vn-txt {
     font-size: 26px !important;
   }
 
@@ -174,7 +189,7 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  .custom-cursor{
+  .custom-cursor {
     display: none !important;
   }
   .youtube-video-1 {
@@ -192,12 +207,12 @@ iframe {
   .mask > img {
     max-width: 140px !important;
   }
-  .more {
+  /* .more {
     width: 104px;
     height: 37px;
     font-size: 14px;
     top: 75% !important;
-  }
+  } */
   .s4 {
     padding: 100px 48px !important;
   }
@@ -216,4 +231,3 @@ iframe {
     width: 2616.41px;
   }
 }
-
