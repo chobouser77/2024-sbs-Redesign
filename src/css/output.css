@@ -1903,7 +1903,6 @@ html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
   cursor: none;
-  width: 100%;
 }
 
 ::-webkit-scrollbar {
@@ -2106,11 +2105,6 @@ iframe {
 }
 
 @media (max-width: 768px) {
-  html > body {
-    width: 100%;
-    min-width: 350px !important;
-  }
-
   .custom-cursor{
     display: none !important;
   }
