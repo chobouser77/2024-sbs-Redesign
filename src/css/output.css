@@ -1068,6 +1068,10 @@ video {
   height: 100%;
 }
 
+.h-\[95\%\]{
+  height: 95%;
+}
+
 .max-h-\[1330px\]{
   max-height: 1330px;
 }
@@ -1392,10 +1396,6 @@ video {
   border-width: 1px;
 }
 
-.border-dashed{
-  border-style: dashed;
-}
-
 .border-\[\#dc2020\]{
   --tw-border-opacity: 1;
   border-color: rgb(220 32 32 / var(--tw-border-opacity));
@@ -1626,11 +1626,6 @@ video {
 .py-\[6px\]{
   padding-top: 6px;
   padding-bottom: 6px;
-}
-
-.px-\[\]{
-  padding-left: ;
-  padding-right: ;
 }
 
 .pb-\[100px\]{
@@ -2371,13 +2366,10 @@ iframe {
     font-size: 16px;
   }
 
-<<<<<<< HEAD
   .md\:text-\[18px\]{
     font-size: 18px;
   }
 
-=======
->>>>>>> 822166d5cba615d2cce9ddbab757de511cb6a561
   .group:hover .md\:group-hover\:top-\[-30\%\]{
     top: -30%;
   }
