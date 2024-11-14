@@ -2103,7 +2103,7 @@ iframe {
 }
 
 @media (max-width: 1440px) {
-  .wysp {
+  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
     font-size: 40px !important;
   }
 
@@ -2138,7 +2138,7 @@ iframe {
     padding: 140px 0 !important;
   }
 
-  .wysp {
+  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
     font-size: 26px !important;
   }
 
@@ -2432,10 +2432,6 @@ iframe {
 }
 
 @media (min-width: 1700px){
-  .\33xl\:h-\[\]{
-    height: ;
-  }
-
   .\33xl\:h-\[1500px\]{
     height: 1500px;
   }

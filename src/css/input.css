@@ -176,7 +176,7 @@ iframe {
 }
 
 @media (max-width: 1440px) {
-  .wysp {
+  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
     font-size: 40px !important;
   }
 
@@ -206,7 +206,7 @@ iframe {
     padding: 140px 0 !important;
   }
 
-  .wysp {
+  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
     font-size: 26px !important;
   }
 
