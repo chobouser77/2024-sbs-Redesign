@@ -1080,6 +1080,10 @@ video {
   max-height: 970px;
 }
 
+.max-h-\[467px\]{
+  max-height: 467px;
+}
+
 .min-h-\[330px\]{
   min-height: 330px;
 }
