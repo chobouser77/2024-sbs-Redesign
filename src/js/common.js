@@ -156,9 +156,15 @@ $(document).ready(function () {
 
 // 플로팅 버튼
 $(document).ready(function () {
-  $(".quick-btn__top").click(function () {
+  $(".quick-btn").click(function() {
+    window.location.href = "custom.html";
+  });
+
+  $(".quick-btn__top").click(function (event) {
+    event.stopPropagation();
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
+
 });
 
 // 푸터
