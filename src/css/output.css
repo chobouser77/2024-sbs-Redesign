@@ -1048,6 +1048,10 @@ video {
   height: 8%;
 }
 
+.h-\[80dvh\]{
+  height: 80dvh;
+}
+
 .h-\[8px\]{
   height: 8px;
 }
@@ -1066,6 +1070,50 @@ video {
 
 .h-full{
   height: 100%;
+}
+
+.h-\[90dvh\]{
+  height: 90dvh;
+}
+
+.h-\[419p\]{
+  height: 419p;
+}
+
+.h-\[419px\]{
+  height: 419px;
+}
+
+.h-\[\]{
+  height: ;
+}
+
+.h-\[420px\]{
+  height: 420px;
+}
+
+.h-\[1023px\]{
+  height: 1023px;
+}
+
+.h-\[900px\]{
+  height: 900px;
+}
+
+.h-\[700px\]{
+  height: 700px;
+}
+
+.h-\[00px\]{
+  height: 00px;
+}
+
+.h-\[750px\]{
+  height: 750px;
+}
+
+.h-\[400px\]{
+  height: 400px;
 }
 
 .max-h-\[1330px\]{
@@ -1624,6 +1672,31 @@ video {
   padding-bottom: 6px;
 }
 
+.py-\[\]{
+  padding-top: ;
+  padding-bottom: ;
+}
+
+.py-\[500px\]{
+  padding-top: 500px;
+  padding-bottom: 500px;
+}
+
+.py-\[300px\]{
+  padding-top: 300px;
+  padding-bottom: 300px;
+}
+
+.py-\[400px\]{
+  padding-top: 400px;
+  padding-bottom: 400px;
+}
+
+.py-\[390px\]{
+  padding-top: 390px;
+  padding-bottom: 390px;
+}
+
 .pb-\[100px\]{
   padding-bottom: 100px;
 }
@@ -1816,6 +1889,14 @@ video {
   opacity: 80%;
 }
 
+.opacity-\[60\%\]{
+  opacity: 60%;
+}
+
+.opacity-\[50\%\]{
+  opacity: 50%;
+}
+
 .brightness-0{
   --tw-brightness: brightness(0);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1935,24 +2016,6 @@ html > body {
 
 .quick-btn__text {
   animation: spin 20s linear infinite;
-}
-
-.quick-btn__animation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: red;
-  border-radius: 50%;
-  transform: scale(0);
-  pointer-events: none;
-}
-
-.quick-btn__animation.active {
-  transform: scale(10000);
-  background-color: white;
-  opacity: 0;
 }
 
 /* 커스텀 끝 */
