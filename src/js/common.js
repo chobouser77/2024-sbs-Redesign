@@ -157,13 +157,7 @@ $(document).ready(function () {
 // 플로팅 버튼
 $(document).ready(function () {
   $(".quick-btn").click(function() {
-    var animationDiv = $(this).find('.quick-btn__animation');
-
-    animationDiv.addClass('active');
-
-    setTimeout(function() {
-      window.location.href = "custom.html";
-    }, 1000);
+    window.location.href = "custom.html";
   });
 
   $(".quick-btn__top").click(function (event) {

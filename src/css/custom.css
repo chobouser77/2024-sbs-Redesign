@@ -1,3 +1,18 @@
+/* 상단바 */
+.custom-top-bar {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+.custom-top-bar .logo-color {
+  filter: none;
+}
+.custom-top-bar .pc-top-bar__user-menu a {
+  filter: invert(1);
+}
+.custom-top-bar .tablet-top-bar__user-menu a {
+  filter: invert(1);
+}
+
 .c-box > a:nth-child(2),
 a:nth-child(4) {
   margin-top: -50px;
