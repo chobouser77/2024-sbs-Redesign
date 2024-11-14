@@ -32,36 +32,53 @@
     <!-- 커서요소 -->
     <div class="custom-cursor"></div>
     <!-- 플로팅버튼 -->
-    <div class="flot-btn quick-wrap fixed right-[4rem] bottom-[4rem] z-[49]">
+    <div
+      class="flot-btn quick-wrap fixed right-[2rem] md:right-[3rem] lg:right-[4rem] bottom-[2rem] md:bottom-[3rem] lg:bottom-[4rem] z-[49]"
+    >
       <div
-        class="quick-btn w-[160px] h-[160px] bg-white rounded-full cursor-pointer opacity-[80%] hover:opacity-100 relative flex items-center justify-center group"
+        class="quick-btn w-[100px] md:w-[140px] lg:w-[160px] h-[100px] md:h-[140px] lg:h-[160px] bg-white rounded-full cursor-pointer opacity-[80%] hover:opacity-100 relative flex items-center justify-center group"
         style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3)"
       >
-        <!-- <div
-          class="w-[148px] h-[148px] border border-[#404040] border-[0.6px] rounded-full"
-        ></div> -->
-        <div class="quick-btn__text w-[150px] h-[150px] filter invert" style="background-image: url(img/flotbtn/text.png); background-repeat: no-repeat; background-size: cover;"></div>
-        <img
-          class="quick-btn__shoe absolute bottom-[20px] left-[15px]"
+        <div
+          class="quick-btn__text w-[90px] md:w-[130px] lg:w-[150px] h-[90px] md:h-[130px] lg:h-[150px] filter invert"
+          style="
+            background-image: url(img/flotbtn/text.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+          "
+        ></div>
+        <div
+          class="absolute w-[65px] h-[55px] md:w-[106px] md:h-[86px]  lg:w-[115px] lg:h-[90px] top-[30%] md:top-[28%]"
+          style="
+            background-image: url(img/flotbtn/all.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+          "
+        >
+        
+        </div>
+        <!-- <img
+          class="quick-btn__shoe absolute bottom-[20px] left-[16px] w-[70%] h-auto"
           src="img/flotbtn/shose.png"
           alt="플로팅버튼 신발이미지"
         />
         <img
-          class="quick-btn__box01 absolute top-[44px] right-[40px]"
+          class="quick-btn__box01 absolute top-[30%] right-[20%] w-[12%] h-auto"
           src="img/flotbtn/box_white1.png"
           alt="플로팅버튼 네모 흰색"
         />
         <img
-          class="quick-btn__box02 absolute top-[60px] right-[25px]"
+          class="quick-btn__box02 absolute top-[60px] right-[25px] w-[12%] h-auto"
           src="img/flotbtn/box_red.png"
           alt="플로팅버튼 네모 빨간색"
-        />
+        /> -->
         <div
           class="quick-btn__after absolute w-full h-full rounded-full bg-myred flex flex-col items-center justify-center whitespace-nowrap scale-0 group-hover:scale-100 transition transition-all duration-500"
         >
-          <div class="font-semibold text-[20px] mt-[6px]">커스텀하기</div>
+          <div class="font-semibold text-[12px] md:text-[16px] lg:text-[20px] mt-[6px]">커스텀하기</div>
           <div
-            class="w-[26px] h-[26px] mt-[4px]"
+            class="w-[16px] h-[16px] md:w-[26px] md:h-[26px] mt-[4px]"
             style="
               background-image: url(img/flotbtn/icon_clese.png);
               background-repeat: no-repeat;
@@ -70,7 +87,7 @@
           ></div>
         </div>
         <div
-          class="quick-btn__top absolute top-[0] bg-white px-[8px] py-[10px] rounded font-medium text-[12px] text-myred flex items-center justify-center opacity-0 group-hover:top-[-27%] group-hover:opacity-100 transition transition-all duration-700"
+          class="quick-btn__top absolute top-[0] bg-white px-[8px] py-[10px] rounded font-medium text-[10px] md:text-[12px] text-myred flex items-center justify-center opacity-0  group-hover:top-[-37%] md:group-hover:top-[-30%] lg:group-hover:top-[-27%] group-hover:opacity-100 transition transition-all duration-700"
           style="box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3)"
           onclick="scrollToTop()"
         >
@@ -3050,24 +3067,31 @@
       <img src="img/main/nc.jpg" alt="뉴 컬렉션 배경 이미지" class="w-pull" />
       <a
         href="#"
-        class="more flex absolute top-[70%] right-[5%] justify-center items-center w-[250px] h-[64px] text-[20px] bg-[#d41f1f]"
+        class="more flex absolute bottom-[14%] sm:bottom-[20%] right-[5%] md-2:right-[60px] lg:right-[80px] w-[16%] h-[8%]"
+        style="
+          background-image: url(img/main/more-btn.png);
+          background-repeat: no-repeat;
+          background-size: contain;
+        "
       >
-        더 알아보기
       </a>
     </section>
     <!-- 섹션 4 맨 워먼 키즈 -->
     <section
       class="s4 w-full flex items-center justify-center py-[330px] px-[48px]"
     >
-      <div class="flex w-[100%] justify-center" style="gap: 12px">
+      <div
+        class="flex flex-col sm:flex-row w-[100%] justify-center"
+        style="gap: 12px"
+      >
         <a href="#" class="">
-          <img src="img/main/men.png" alt="Men" />
+          <img class="responsive-img" src="img/main/men.png" alt="Men" />
         </a>
         <a href="#" class="">
-          <img src="img/main/women.png" alt="Women" />
+          <img class="responsive-img" src="img/main/women.png" alt="Women" />
         </a>
         <a href="#" class="">
-          <img src="img/main/kids.png" alt="Kids" />
+          <img class="responsive-img" src="img/main/kids.png" alt="Kids" />
         </a>
       </div>
     </section>
@@ -3079,7 +3103,9 @@
       <div class="vs-t flex w-full flex-col items-center" style="gap: 60px">
         <!-- 사진 준비시 작업 -->
         <div class="flex flex-col items-center w-full" style="gap: 20px">
-          <p class="vans-shoes text-myblack text-[46px] font-semibold">VANS SHOES</p>
+          <p class="vans-shoes text-myblack text-[46px] font-semibold">
+            VANS SHOES
+          </p>
           <div class="btns flex font-medium" style="gap: 20px">
             <button id="core" class="bg-[none] text-[18px] text-myblack">
               코어 클래식
@@ -3332,7 +3358,9 @@
       <div class="vans-news-pc hidden md:block">
         <div class="px-[48px] h-[55px]">
           <div class="flex items-center justify-center h-full">
-            <div class="vn-txt text-white text-[46px] font-semibold">VANS NEWS</div>
+            <div class="vn-txt text-white text-[46px] font-semibold">
+              VANS NEWS
+            </div>
           </div>
 
           <div class="news_img mt-[18px]">
@@ -3583,14 +3611,12 @@
         </button>
       </div>
     </section>
-    <div class="null w-full h-[600px] md-2:h-[800px] lg:h-[1000px] lg-2:h-[1200px] 3xl:h-[1500px] bg-[#1d1d1d] hidden md:block"></div>
+    <div
+      class="null w-full h-[600px] md-2:h-[800px] lg:h-[1000px] lg-2:h-[1200px] 3xl:h-[1500px] bg-[#1d1d1d] hidden md:block"
+    ></div>
 
     <!--  푸터 연결 예정  -->
-    <dic
-      id="footer"
-      class=""
-      style="border-top: 1px solid #ffffff25"
-    >
+    <dic id="footer" class="" style="border-top: 1px solid #ffffff25">
       <!-- pc footer -->
       <footer
         class="footerpc flex background-black justify-center w-[100%] pt-[60px] px-[48px] pb-[100px]"

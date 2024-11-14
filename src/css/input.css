@@ -9,6 +9,7 @@ html > body {
   background-color: #1d1d1d;
   font-family: "Pretendard Variable", sans-serif;
   cursor: none;
+  min-width: 350px;
 }
 ::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
@@ -43,60 +44,14 @@ html > body {
 .container {
   max-width: 1920px;
 }
-/* ---- 플로팅 버튼 애니메이션 ---- */
-/* @keyframes upDown {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(85%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-@keyframes downUp {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-85%);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
 
-
-.quick-btn__box01 {
-  animation: upDown 1.5s steps(1) infinite;
-}
-.quick-btn__box02 {
-  animation: downUp 1.5s steps(1) infinite;
-} */
-
-/* @keyframes rotate {
-  0% {
-    transform: rotate(0);
-  }
-  50% {
-    transform: rotate(-15deg);
-  }
-  100% {
-    transform: rotate(0);
-  }
-}
-
-.quick-btn__shoe {
-  animation: rotate 1.5s steps(1) infinite;
-} */
-
+/* 퀵 버튼 */
 @keyframes spin {
   from {
-      transform: rotate(0deg);
+    transform: rotate(0deg);
   }
   to {
-      transform: rotate(360deg);
+    transform: rotate(360deg);
   }
 }
 
@@ -147,6 +102,12 @@ iframe {
   object-fit: contain;
 }
 
+.s4 .responsive-img {
+  width: 100%;
+  min-width: 190px;
+  height: auto;
+}
+
 @keyframes shose_move {
   0% {
     transform: translate(0);
@@ -167,7 +128,7 @@ iframe {
 }
 @keyframes font-move-right {
   0% {
-    transform: translate(0) ;
+    transform: translate(0);
   }
 
   100% {
@@ -176,7 +137,11 @@ iframe {
 }
 
 @media (max-width: 1440px) {
-  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
+  .wysp,
+  .new-col,
+  .vans-shoes,
+  .jfy,
+  .vn-txt {
     font-size: 40px !important;
   }
 
@@ -187,16 +152,13 @@ iframe {
   .mask > img {
     max-width: 264px !important;
   }
-  .more {
+  /* .more {
     width: 192px;
     height: 56px;
-  }
+  } */
   .masonry-box-1__item {
     font-size: 16px !important;
   }
-  /* .null {
-    height: 1500px !important;
-  } */
 }
 @media (max-width: 1200px) {
   .youtube-video-1 {
@@ -206,7 +168,11 @@ iframe {
     padding: 140px 0 !important;
   }
 
-  .wysp, .new-col, .vans-shoes, .jfy, .vn-txt {
+  .wysp,
+  .new-col,
+  .vans-shoes,
+  .jfy,
+  .vn-txt {
     font-size: 26px !important;
   }
 
@@ -220,13 +186,10 @@ iframe {
   .s4 {
     padding: 170px 48px !important;
   }
-  /* .null {
-    height: 600px !important;
-  } */
 }
 
 @media (max-width: 768px) {
-  .custom-cursor{
+  .custom-cursor {
     display: none !important;
   }
   .youtube-video-1 {
@@ -244,12 +207,12 @@ iframe {
   .mask > img {
     max-width: 140px !important;
   }
-  .more {
+  /* .more {
     width: 104px;
     height: 37px;
     font-size: 14px;
     top: 75% !important;
-  }
+  } */
   .s4 {
     padding: 100px 48px !important;
   }
@@ -267,8 +230,4 @@ iframe {
     font-size: 67px !important;
     width: 2616.41px;
   }
-  /* .null {
-    height: 0px !important;
-  } */
 }
-
