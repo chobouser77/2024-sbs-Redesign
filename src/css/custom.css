@@ -6,6 +6,17 @@ a:nth-child(4) {
 .c-box > a:nth-child(3) {
   rotate: -2deg;
 }
+.s3ani > img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+}
+.s3ani > img.active{
+  opacity: 1;
+}
 
 @media (max-width: 1725px) {
   .c-box > a > p:nth-of-type(1){

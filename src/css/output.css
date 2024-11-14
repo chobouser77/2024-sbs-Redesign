@@ -2371,10 +2371,13 @@ iframe {
     font-size: 16px;
   }
 
+<<<<<<< HEAD
   .md\:text-\[18px\]{
     font-size: 18px;
   }
 
+=======
+>>>>>>> 822166d5cba615d2cce9ddbab757de511cb6a561
   .group:hover .md\:group-hover\:top-\[-30\%\]{
     top: -30%;
   }
