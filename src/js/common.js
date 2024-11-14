@@ -1,5 +1,5 @@
-$(document).ready(function() {
-  $('html, body').css('overflow-x', 'hidden');
+$(document).ready(function () {
+  $("html, body").css("overflow-x", "hidden");
 });
 // 헤더
 // 상단바
@@ -155,8 +155,8 @@ $(document).ready(function () {
 });
 
 // 플로팅 버튼
-$(document).ready(function() {
-  $(".quick-btn__top").click(function(){
+$(document).ready(function () {
+  $(".quick-btn__top").click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
 });
@@ -327,4 +327,39 @@ $(document).ready(function () {
     svg_black.css("display", "flex");
     svg_font.css("display", "none");
   });
+
+  // 섹션 3 애니메이션
+  function nextBox(boxClass) {
+    const $abc = $(boxClass + " > .active");
+
+    // 다음 요소 찾기
+    const $next =
+      $abc.next().length > 0 ? $abc.next() : $(boxClass + " > img:first-child");
+
+    $abc.removeClass("active");
+    $next.addClass("active");
+  }
+
+  // 호출 예시
+  function changebox() {
+    let boxIndex = 0;
+
+    function changeBoxSequence() {
+      if (boxIndex === 0) {
+        nextBox(".s3ani-1");
+      } else if (boxIndex === 1) {
+        nextBox(".s3ani-7");
+      } else if (boxIndex === 2) {
+        nextBox(".s3ani-9");
+      }
+
+      // 박스 순차 변경
+      boxIndex = (boxIndex + 1) % 3;
+      setTimeout(changeBoxSequence, 1000);
+    }
+
+    changeBoxSequence(); // 최초 실행
+  }
+
+  changebox();
 });
