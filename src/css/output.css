@@ -1392,10 +1392,6 @@ video {
   border-width: 1px;
 }
 
-.border-dashed{
-  border-style: dashed;
-}
-
 .border-\[\#dc2020\]{
   --tw-border-opacity: 1;
   border-color: rgb(220 32 32 / var(--tw-border-opacity));
