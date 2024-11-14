@@ -8,6 +8,7 @@ module.exports = {
         myred: "#D41F1F",
       },
       screens: {
+        "xs": "450px",
         "md-2": "1000px",
         "lg": "1200px",
         "lg-2": "1480px",

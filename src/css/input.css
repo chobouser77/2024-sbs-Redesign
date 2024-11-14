@@ -219,9 +219,6 @@ iframe {
   .img-area {
     flex-direction: column;
   }
-  .btns > button {
-    font-size: 14px !important;
-  }
   .white-ani {
     font-size: 67px !important;
     width: 2616.41px;
@@ -229,5 +226,11 @@ iframe {
   .black-ani {
     font-size: 67px !important;
     width: 2616.41px;
+  }
+}
+
+@media (max-width: 450px) {
+  .btns button {
+    width: 20%; 
   }
 }
