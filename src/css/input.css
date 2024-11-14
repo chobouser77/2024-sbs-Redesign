@@ -58,6 +58,25 @@ html > body {
 .quick-btn__text {
   animation: spin 20s linear infinite;
 }
+
+
+.quick-btn__animation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: red;
+  border-radius: 50%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.quick-btn__animation.active {
+  transform: scale(10000);
+  background-color: white;
+  opacity: 0;
+}
 /* 커스텀 끝 */
 
 /* 메인 화면 */
