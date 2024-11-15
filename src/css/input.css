@@ -66,7 +66,7 @@ iframe {
 }
 
 .mask {
-  overflow: visible;
+  /* overflow: visible; */
   background-color: #1d1d1d;
   width: 4058px;
   animation: shose_move 20s linear infinite;

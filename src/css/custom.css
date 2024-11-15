@@ -14,10 +14,11 @@
 }
 
 .c-box > a:nth-child(2),
-a:nth-child(4) {
+.c-box > a:nth-child(4) {
   margin-top: -50px;
   rotate: -5deg;
 }
+
 .c-box > a:nth-child(3) {
   rotate: -2deg;
 }
@@ -32,10 +33,24 @@ a:nth-child(4) {
 .s3ani > img.active{
   opacity: 1;
 }
-.s4ani > a:hover > div {
-  display: block !important;
+.cu-s4 > div > img {
+  mix-blend-mode: multiply;
 }
+.s4ani{
+  animation: cu-shose 15s linear infinite;
+}
+.s4ani  a:hover > div {
+  display: flex !important;
+}
+@keyframes cu-shose {
+  0% {
+    transform: translate(0);
+  }
 
+  100% {
+    transform: translate(-50%);
+  }
+}
 @media (max-width: 1725px) {
   .c-box > a > p:nth-of-type(1){
     font-size: 18px;
