@@ -1140,6 +1140,10 @@ video {
   height: 100%;
 }
 
+.h-\[\]{
+  height: ;
+}
+
 .max-h-\[1330px\]{
   max-height: 1330px;
 }

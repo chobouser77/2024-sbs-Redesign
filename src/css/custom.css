@@ -22,6 +22,10 @@
 .c-box > a:nth-child(3) {
   rotate: -2deg;
 }
+
+.cu-s1{
+  animation: cu-shose 10s linear infinite ;
+}
 .cu-s2-box > div:hover > div{
   display: flex !important;
 }
