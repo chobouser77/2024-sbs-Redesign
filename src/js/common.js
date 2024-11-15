@@ -320,18 +320,21 @@ $(document).ready(function () {
   const s2bg = $(".cu-s2");
   const svg_font = $(".svg-font");
   const svg_black = $(".svg-black");
+  const font = $(".s2font > a");
 
   bear_h.mouseover(function () {
     s2bg.css("background-color", "white");
     bears.css("display", "flex");
     svg_black.css("display", "none");
     svg_font.css("display", "flex");
+    font.css({"background-color" : "#1d1d1d" , "color" : "#fff" });
   });
   pink_h.mouseover(function () {
-    s2bg.css("background-color", "pink");
+    s2bg.css("background-color", "#FFA3CD");
     bears.css("display", "none");
     svg_black.css("display", "flex");
     svg_font.css("display", "none");
+    font.css({"background-color" : "#fff" , "color" : "#EC2F86" });
   });
 
   // 섹션 3 애니메이션

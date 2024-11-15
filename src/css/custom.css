@@ -22,6 +22,10 @@
 .c-box > a:nth-child(3) {
   rotate: -2deg;
 }
+.cu-s2-box > div:hover > div{
+  display: flex !important;
+}
+
 .s3ani > img {
   position: absolute;
   top: 0;
