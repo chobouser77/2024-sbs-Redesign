@@ -11,6 +11,10 @@ html > body {
   cursor: none;
   min-width: 350px;
 }
+header{
+  position: sticky !important;
+  top: 0 !important;
+}
 ::-webkit-scrollbar {
   width: 8px; /* 스크롤바의 너비 */
   height: 8px; /* 수평 스크롤바의 높이 */

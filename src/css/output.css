@@ -996,6 +996,10 @@ video {
   height: 1080px;
 }
 
+.h-\[150px\]{
+  height: 150px;
+}
+
 .h-\[16px\]{
   height: 16px;
 }
@@ -1006,6 +1010,10 @@ video {
 
 .h-\[24px\]{
   height: 24px;
+}
+
+.h-\[3000px\]{
+  height: 3000px;
 }
 
 .h-\[31px\]{
@@ -1130,10 +1138,6 @@ video {
 
 .h-full{
   height: 100%;
-}
-
-.h-\[150px\]{
-  height: 150px;
 }
 
 .max-h-\[1330px\]{
@@ -1321,10 +1325,6 @@ video {
   width: 100%;
 }
 
-.w-\[151\]{
-  width: 151;
-}
-
 .min-w-\[200px\]{
   min-width: 200px;
 }
@@ -1500,6 +1500,10 @@ video {
   background-color: #00000050;
 }
 
+.bg-\[\#1d1d1d20\]{
+  background-color: #1d1d1d20;
+}
+
 .bg-\[\#1d1d1d\]{
   --tw-bg-opacity: 1;
   background-color: rgb(29 29 29 / var(--tw-bg-opacity, 1));
@@ -1513,6 +1517,11 @@ video {
 .bg-\[\#FAF6F1\]{
   --tw-bg-opacity: 1;
   background-color: rgb(250 246 241 / var(--tw-bg-opacity, 1));
+}
+
+.bg-\[\#FF4B9E\]{
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 75 158 / var(--tw-bg-opacity, 1));
 }
 
 .bg-\[\#faf6f1\]{
@@ -1572,32 +1581,6 @@ video {
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\]{
-  background-color: ;
-}
-
-.bg-\[FF4B9E\]{
-  background-color: FF4B9E;
-}
-
-.bg-\[\#FF4B9E\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 75 158 / var(--tw-bg-opacity, 1));
-}
-
-.bg-\[\#\]{
-  background-color: #;
-}
-
-.bg-\[\#1d1d1d20\]{
-  background-color: #1d1d1d20;
-}
-
-.bg-\[red\]{
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 0 0 / var(--tw-bg-opacity, 1));
 }
 
 .bg-cover{
@@ -1804,10 +1787,6 @@ video {
   padding-top: 70px;
 }
 
-.pb-\[150px\]{
-  padding-bottom: 150px;
-}
-
 .text-center{
   text-align: center;
 }
@@ -1936,10 +1915,6 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity, 1));
 }
 
-.text-\[\]{
-  color: ;
-}
-
 .opacity-0{
   opacity: 0;
 }
@@ -2004,6 +1979,11 @@ html > body {
   font-family: "Pretendard Variable", sans-serif;
   cursor: none;
   min-width: 350px;
+}
+
+header{
+  position: sticky !important;
+  top: 0 !important;
 }
 
 ::-webkit-scrollbar {
