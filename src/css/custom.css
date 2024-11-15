@@ -23,10 +23,10 @@
   rotate: -2deg;
 }
 
-.cu-s1{
-  animation: cu-shose 10s linear infinite ;
+.cu-s1 {
+  animation: cu-shose 10s linear infinite;
 }
-.cu-s2-box > div:hover > div{
+.cu-s2-box > div:hover > div {
   display: flex !important;
 }
 
@@ -38,19 +38,19 @@
   bottom: 0;
   opacity: 0;
 }
-.s3ani > img.active{
+.s3ani > img.active {
   opacity: 1;
 }
 .cu-s4 > div > img {
   mix-blend-mode: multiply;
 }
-.s4ani{
+.s4ani {
   animation: cu-shose 15s linear infinite;
 }
-.s4ani:hover{
+.s4ani:hover {
   animation-play-state: paused;
 }
-.s4ani  a:hover > div {
+.s4ani a:hover > div {
   display: flex !important;
 }
 @keyframes cu-shose {
@@ -63,10 +63,10 @@
   }
 }
 @media (max-width: 1725px) {
-  .c-box > a > p:nth-of-type(1){
+  .c-box > a > p:nth-of-type(1) {
     font-size: 18px;
   }
-  .c-box > a > p:nth-of-type(2){
+  .c-box > a > p:nth-of-type(2) {
     font-size: 13px;
   }
   .cu-s2 {
@@ -75,21 +75,21 @@
   .s2font > a {
     font-size: 21px !important;
   }
-  .s3font{
+  .s3font {
     gap: 25px;
   }
-  .s3font > span:nth-of-type(1){
+  .s3font > span:nth-of-type(1) {
     font-size: 46px !important;
   }
-  .s3font > span:nth-of-type(2){
+  .s3font > span:nth-of-type(2) {
     font-size: 16px !important;
   }
 }
 @media (max-width: 1440px) {
-  .c-box > a > p:nth-of-type(1){
+  .c-box > a > p:nth-of-type(1) {
     font-size: 16px;
   }
-  .c-box > a > p:nth-of-type(2){
+  .c-box > a > p:nth-of-type(2) {
     font-size: 11px;
   }
   .cu-s2 {
@@ -98,21 +98,21 @@
   .s2font > a {
     font-size: 16px !important;
   }
-  .s3font{
+  .s3font {
     gap: 20px;
   }
-  .s3font > span:nth-of-type(1){
+  .s3font > span:nth-of-type(1) {
     font-size: 40px !important;
   }
-  .s3font > span:nth-of-type(2){
+  .s3font > span:nth-of-type(2) {
     font-size: 14px !important;
   }
 }
 @media (max-width: 1200px) {
-  .c-box > a > p:nth-of-type(1){
+  .c-box > a > p:nth-of-type(1) {
     font-size: 14px;
   }
-  .c-box > a > p:nth-of-type(2){
+  .c-box > a > p:nth-of-type(2) {
     font-size: 10px;
   }
   .cu-s2 {
@@ -125,13 +125,19 @@
   .s2font > a {
     font-size: 16px !important;
   }
-  .s3font{
+  .s3font {
     gap: 20px;
   }
-  .s3font > span:nth-of-type(1){
+  .s3font > span:nth-of-type(1) {
     font-size: 32px !important;
   }
-  .s3font > span:nth-of-type(2){
+  .s3font > span:nth-of-type(2) {
     font-size: 12px !important;
+  }
+}
+@media (max-width: 768px) {
+  .cu-s3 {
+    flex-direction: column !important;
+    padding: 10% 0;
   }
 }
