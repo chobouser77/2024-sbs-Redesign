@@ -39,6 +39,9 @@
 .s4ani{
   animation: cu-shose 15s linear infinite;
 }
+.s4ani:hover{
+  animation-play-state: paused;
+}
 .s4ani  a:hover > div {
   display: flex !important;
 }
