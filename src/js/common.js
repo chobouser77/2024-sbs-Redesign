@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $("html, body").css("overflow-x", "hidden");
+  $(" body").css("overflow-x", "hidden");
 });
 // 헤더
 // 상단바
@@ -156,7 +156,7 @@ $(document).ready(function () {
 
 // 플로팅 버튼
 $(document).ready(function () {
-  $(".quick-btn").click(function() {
+  $(".quick-btn").click(function () {
     window.location.href = "custom.html";
   });
 
@@ -164,7 +164,6 @@ $(document).ready(function () {
     event.stopPropagation();
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
-
 });
 
 // 푸터
@@ -222,22 +221,24 @@ $(document).ready(function () {
 
   function adjustBoxHeight() {
     var boxWidth = $(".img-area").width();
+    console.log("Box Width: " + boxWidth); // width 값 확인
 
-    if (window.innerWidth > 768) {
-      // 스크롤바 영향을 받지 않는 768px 이상일 때
-      var boxHeight = (boxWidth - 12) / 2; // 높이를 너비의 절반에서 12px 뺀 값으로 설정
+    var boxHeight;
+    if ($(window).width() > 768) {
+      boxHeight = (boxWidth - 12) / 2;
     } else {
-      // 스크롤바 영향을 받지 않는 768px 미만일 때
-      var boxHeight = boxWidth * 2 + 12; // 높이를 너비의 2배에 12px 더한 값으로 설정
+      boxHeight = boxWidth * 2 + 12;
     }
 
-    // box의 높이를 설정
+    console.log("Box Height: " + boxHeight); // height 값 확인
     $(".img-area").height(boxHeight);
   }
+
   adjustBoxHeight(); // 페이지 로드 시 높이 조정
 
   $(window).resize(function () {
-    adjustBoxHeight(); // 창 크기 조정 시 높이 재조정
+    console.log("Window resized"); // 창 크기 조정 시 호출 확인
+    adjustBoxHeight();
   });
 });
 
@@ -320,18 +321,21 @@ $(document).ready(function () {
   const s2bg = $(".cu-s2");
   const svg_font = $(".svg-font");
   const svg_black = $(".svg-black");
+  const font = $(".s2font > a");
 
   bear_h.mouseover(function () {
     s2bg.css("background-color", "white");
     bears.css("display", "flex");
     svg_black.css("display", "none");
     svg_font.css("display", "flex");
+    font.css({ "background-color": "#1d1d1d", color: "#fff" });
   });
   pink_h.mouseover(function () {
-    s2bg.css("background-color", "pink");
+    s2bg.css("background-color", "#FFA3CD");
     bears.css("display", "none");
     svg_black.css("display", "flex");
     svg_font.css("display", "none");
+    font.css({ "background-color": "#fff", color: "#EC2F86" });
   });
 
   // 섹션 3 애니메이션

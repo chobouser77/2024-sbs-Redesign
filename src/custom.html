@@ -45,7 +45,7 @@
     <!-- pc 상단바 -->
     <header
       id="pc-header"
-      class="custom-top-bar pc-top-bar text-white sticky top-0 hidden lg:block z-[51]"
+      class="custom-top-bar pc-top-bar text-white hidden lg:block z-[51]"
     >
       <div class="container relative mx-auto px-[48px] flex h-[90px]">
         <div class="flex-1 flex items-center">
@@ -761,7 +761,7 @@
     <!-- 태블릿, 모바일 상단바 -->
     <header
       id="tablet-header"
-      class="custom-top-bar tablet-top-bar sticky top-0 lg:hidden z-[51]"
+      class="custom-top-bar tablet-top-bar lg:hidden z-[51]"
     >
       <div
         class="container relative mx-auto px-[24px] sm:px-[48px] flex h-[56px] sm:h-[70px] items-center"
@@ -3092,7 +3092,21 @@
         </div>
       </div>
     </section>
-    <div class="h-[50px] w-full bg-myblack"></div>
+    <div class="w-full border border-[black]">
+      <div
+        class="cu-s1 h-[100px] w-full flex items-center bg-white"
+        style="gap: 100px"
+      >
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+        <img src="img/custom/cu_s1_wys.png" alt="" class="h-[40px]" />
+      </div>
+    </div>
     <!-- 섹션 커스텀 2 -->
     <section
       class="cu-s2 w-full h-[1080px] flex items-center px-[115px] bg-[white] relative"
@@ -3122,17 +3136,39 @@
       </div>
 
       <div
-        class="relative z-[5] w-full h-f grid grid-cols-2 grid-rows-2 bg-myblack"
+        class="cu-s2-box relative z-[5] w-full h-f grid grid-cols-2 grid-rows-2 bg-[#FF4B9E]"
         style="max-height: 680px; max-width: 680px"
       >
         <div class="flex items-center justify-center">
-          <img class="w-[60%]" src="img/custom/font_custom.svg" alt="" />
+          <img class="w-[60%]" src="img/custom/font_pink.svg" alt="" />
         </div>
-        <div class="bear-hover">
+        <div class="bear-hover relative">
           <img class="w-full" src="img/custom/cu_s2_2.png" alt="??2" />
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-[#1d1d1d20] hidden items-center justify-center"
+          >
+            <a
+              class="flex items-center justify-center bg-myred w-[150px] h-[40px] font-medium text-[white]"
+              href="#"
+              >더 알아보기</a
+            >
+          </div>
         </div>
-        <div class="bg-pink-50 pink-hover"></div>
-        <div class=""></div>
+        <div class="bg-pink-50 pink-hover relative">
+          <img class="w-full" src="img/custom/cu_s2_3.png" alt="??2" />
+          <div
+            class="absolute w-full h-full top-0 left-0 bg-[#1d1d1d20] hidden items-center justify-center"
+          >
+            <a
+              class="flex items-center justify-center bg-myred w-[150px] h-[40px] font-medium text-[white]"
+              href="#"
+              >더 알아보기</a
+            >
+          </div>
+        </div>
+        <div class="w-full h-full relative">
+          <img class="absolute w-[50%] bottom-0 left-[25%]" src="img/custom/cu_s2_4.png" alt="">
+        </div>
       </div>
       <img
         class="svg-font absolute top-[25%] right-[7%] w-[57%]"
@@ -3142,7 +3178,7 @@
       <img
         class="svg-black absolute top-[25%] right-[7%] w-[57%]"
         style="display: none"
-        src="img/custom/font_black.svg"
+        src="img/custom/font_pink.svg"
         alt=""
       />
 
@@ -3302,42 +3338,529 @@
       </div>
     </section>
     <!-- 섹션 4 -->
-    <section class="w-full max-h-[467px] aspect-square">
-      <img class="w-full h-auto aspect-square" src="img/custom/c" alt="체크보드">
-      <div class="w-full h-auto aspect-square bg-[#FAF6F1] relative">
+    <section class="cu-s4 w-full" style="height: 467px">
+      <img
+        class="w-full h-[66px]"
+        src="img/custom/checkbold.png"
+        alt="체크보드"
+      />
+      <div class="w-full h-auto bg-[#FAF6F1] relative overflow-hidden">
         <!-- 스티커 -->
-
+        <img
+          class="absolute top-[30%] left-[-5%]"
+          src="img/custom/sticker_1.png"
+          alt="스티커"
+        />
+        <img
+          class="absolute top-[3%] left-[28%]"
+          src="img/custom/sticker_2.png"
+          alt="스티커"
+        />
+        <img
+          class="absolute top-auto bottom-[-5%] left-[45%]"
+          src="img/custom/sticker_3.jpg"
+          alt="스티커"
+        />
+        <img
+          class="absolute top-[45%] left-[69%]"
+          src="img/custom/sticker_4.jpg"
+          alt="스티커"
+        />
+        <img
+          class="absolute top-auto bottom-0 left-[75%]"
+          src="img/custom/sticker_5.jpg"
+          alt="스티커"
+        />
         <!-- 섹션 4 애니메이션 -->
-        <div class="s4ani ">
-          <div class="s4ani-a pl-[106px] flex">
-            <a class="h-full w-auto aspect-square relative" href="#">
-              <img class="w-full h-auto aspect-square" src="" alt="">
-              <div class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full flex items-end pb-[10%] text-[22px] text-[white] font-semibold">
-                커스텀 Vans x 애니멀 믹스 클래식 올드스쿨
+        <div class="s4ani w-fit flex">
+          <div class="s4ani-a h-[333px] pl-[106px] flex">
+            <a class="h-full aspect-square relative" href="#">
+              <img
+                class="w-full h-auto aspect-square absolute top-[-10%]"
+                src="img/custom/shose_1.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                올드스쿨
               </div>
             </a>
-            <a class="h-full w-auto aspect-square relative ml-[52px]" href="#">
-              <img class="w-full h-auto aspect-square" src="" alt="">
-              <div class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full flex items-end pb-[10%] text-[22px] text-[white] font-semibold">
-                커스텀 Vans x 애니멀 믹스 클래식 올드스쿨
+            <a class="h-full aspect-square relative ml-[52px]" href="#">
+              <img
+                class="w-[80%] h-auto absolute top-[30%] left-[10%]"
+                src="img/custom/shose_2.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                스케이트 하이
               </div>
             </a>
-            <a class="h-full w-auto aspect-square relative ml-[290px]" href="#">
-              <img class="w-full h-auto aspect-square" src="" alt="">
-              <div class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full flex items-end pb-[10%] text-[22px] text-[white] font-semibold">
-                커스텀 Vans x 애니멀 믹스 클래식 올드스쿨
+            <a class="h-full aspect-square relative ml-[290px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_3.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
               </div>
             </a>
-            <a class="h-full w-auto aspect-square relative ml-[121px]" href="#">
-              <img class="w-full h-auto aspect-square" src="" alt="">
-              <div class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full flex items-end pb-[10%] text-[22px] text-[white] font-semibold">
-                커스텀 Vans x 애니멀 믹스 클래식 올드스쿨
+            <a class="h-full aspect-square relative ml-[121px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_4.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                슬립온
+              </div>
+            </a>
+          </div>
+          <div class="s4ani-a h-[333px] pl-[106px] flex">
+            <a class="h-full aspect-square relative" href="#">
+              <img
+                class="w-full h-auto aspect-square absolute top-[-10%]"
+                src="img/custom/shose_5.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[52px]" href="#">
+              <img
+                class="w-[80%] h-auto absolute top-[30%] left-[10%]"
+                src="img/custom/shose_6.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                스케이트 하이
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[290px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_7.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[121px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_8_.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치<br />
+                슬립온
+              </div>
+            </a>
+          </div>
+          <div class="s4ani-a h-[333px] pl-[106px] flex">
+            <a class="h-full aspect-square relative" href="#">
+              <img
+                class="w-full h-auto aspect-square absolute top-[-10%]"
+                src="img/custom/shose_1.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                올드스쿨
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[52px]" href="#">
+              <img
+                class="w-[80%] h-auto absolute top-[30%] left-[10%]"
+                src="img/custom/shose_2.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                스케이트 하이
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[290px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_3.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[121px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_4.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                슬립온
+              </div>
+            </a>
+          </div>
+          <div class="s4ani-a h-[333px] pl-[106px] flex">
+            <a class="h-full aspect-square relative" href="#">
+              <img
+                class="w-full h-auto aspect-square absolute top-[-10%]"
+                src="img/custom/shose_5.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[52px]" href="#">
+              <img
+                class="w-[80%] h-auto absolute top-[30%] left-[10%]"
+                src="img/custom/shose_6.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                애니멀 믹스 클래식<br />
+                스케이트 하이
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[290px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_7.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치 클래식<br />
+                어센틱
+              </div>
+            </a>
+            <a class="h-full aspect-square relative ml-[121px]" href="#">
+              <img
+                class="w-full h-auto aspect-square"
+                src="img/custom/shose_8_.png"
+                alt=""
+              />
+              <div
+                class="hidden bg-[#00000040] absolute top-0 left-0 w-full h-full justify-center items-end pb-[10%] text-center text-[22px] text-[white] font-semibold"
+              >
+                커스텀 Vans x<br />
+                베어 스와치<br />
+                슬립온
               </div>
             </a>
           </div>
         </div>
       </div>
-      <img class="w-full h-auto aspect-square" src="" alt="체크보드">
+      <img
+        class="w-full h-[66px]"
+        src="img/custom/checkbold.png"
+        alt="체크보드"
+      />
     </section>
+    <div class="w-full h-[150px]"></div>
+    <!-- 푸터 -->
+    <dic id="footer" class="" style="border-top: 1px solid #ffffff25">
+      <!-- pc footer -->
+      <footer
+        class="footerpc flex background-black justify-center w-[100%] pt-[60px] px-[48px] pb-[100px]"
+        style="min-height: 478px; gap: 60px"
+      >
+        <img
+          class="w-[100px] h-[42px]"
+          src="img/footer/Mask group.svg"
+          alt="vanslogo"
+        />
+        <div class="flex flex-col information">
+          <nav class="flex flex-col" style="gap: 80px">
+            <ul class="flex" style="gap: 120px">
+              <li class="">
+                <p>ABOUT</p>
+                <a href="#" class="">반스에 대하여</a>
+                <a href="#" class="">고객센터</a>
+              </li>
+              <li class="">
+                <p>ACCOUNT</p>
+                <a href="#" class="">Login</a>
+                <a href="#" class="">회원가입</a>
+                <a href="#" class="">주문/배송조회</a>
+                <a href="#" class="">Likge List</a>
+              </li>
+              <li class="">
+                <p>LEGAL</p>
+                <a href="#" class="">이용약관</a>
+                <a href="#" class="">개인정보처리방침</a>
+                <a href="#" class="">청소년 보호정책</a>
+              </li>
+            </ul>
+            <div class="flex flex-col" style="gap: 20px">
+              <div
+                class="flex w-[100%] flex-wrap text-[12px]"
+                style="max-width: 790px; gap: 5px"
+              >
+                <p class="">유한책임회사 브에이프코리아</p>
+                <p>|</p>
+                <p class="">대표 SANUSI SYLYANI</p>
+                <p>|</p>
+                <p class="">등록번호 220-88-43561</p>
+                <p>|</p>
+                <p class="">통신판매업신고번호 2013-서울강남-02918호</p>
+                <a href="#" class="">사업자 정보 확인</a>
+                <p class="">서울특별시 강남구 테헤란로 317 동훈타워 18층</p>
+                <p>|</p>
+                <p class="">개인정보 책임자 이보람</p>
+              </div>
+              <div class="text-[12px]" style="gap: 5px">
+                <p>
+                  ⓒ유한책임회사 브이에프코리아. All Rights Reserved. California
+                  Transparency in Supply Chain Act of 2010
+                </p>
+              </div>
+            </div>
+          </nav>
+        </div>
+        <div class="flex flex-grow fg"></div>
+        <div class="flex flex-col ml-[43px]" style="gap: 20px">
+          <div class="flex flex-col">
+            <p
+              class="border w-[107px] h-[39px] flex items-center justify-center"
+            >
+              CS CENTER
+            </p>
+            <div class="flex flex-col mt-[20px] number" style="gap: 14px">
+              <p class="text-[30px] w-[100%]" style="flex-wrap: wrap">
+                1522-1822 <br />
+                Vansjr_online@vfc.com
+              </p>
+              <p class="text-[14px]" style="opacity: 0.6">평일 09:00 ~ 18:00</p>
+            </div>
+            <nav class="sns mt-[51px]">
+              <ul class="flex" style="gap: 4px">
+                <li class="fackbook">
+                  <a href="#">
+                    <img src="img/footer/facebook.svg" alt="facebook.svg" />
+                  </a>
+                </li>
+                <li class="twiter">
+                  <a href="#">
+                    <img src="img/footer/twitter.svg" alt="twiter.svg" />
+                  </a>
+                </li>
+                <li class="youtube">
+                  <a href="#">
+                    <img
+                      src="img/footer/Combined Shape.svg"
+                      alt="youtube.svg"
+                    />
+                  </a>
+                </li>
+                <li class="line">
+                  <a href="#">
+                    <img src="img/footer/Subtract.svg" alt="line.svg" />
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="Language flex items-center mt-[51px]" style="gap: 30px">
+              <p class="text-[14px]">언어설정</p>
+              <button class="flex items-center" style="gap: 8px">
+                <img
+                  class="w-[21.5px] h-[20px]"
+                  src="img/footer/kr 1.png"
+                  alt="태극기 마크"
+                />
+                <p class="text-[14px]">Korea</p>
+                <img
+                  class="w-[6px] h-[7px]"
+                  src="img/footer/icon.svg"
+                  alt="오른쪽 화살표 심벌"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- 모바일 footer -->
+      <footer
+        class="footermo background-black hidden flex-col w-[100%] px-[48px] pt-[28px] pb-[60px]"
+        style="min-height: 620px; gap: 40px"
+      >
+        <nav class="tag w-[100%]">
+          <ul class="flex flex-col w-[100%]">
+            <li
+              class="oct flex items-center py-[24px] justify-between w-[100%] text-[14px]"
+            >
+              <p class="">ABOUT</p>
+              <img
+                class="arrow-down arrow"
+                src="img/footer/arrow_down.svg"
+                alt="에로우 아래"
+              />
+              <img
+                class="arrow-up arrow"
+                src="img/footer/arrow_up.svg"
+                alt="에로우 위"
+              />
+            </li>
+            <div class="sub-box">
+              <a href="#" class="">반스에 대하여</a>
+              <a href="#" class="">고객센터</a>
+            </div>
+            <li class="oct">
+              <p class="">ACCOUNT</p>
+              <img
+                class="arrow-down arrow"
+                src="img/footer/arrow_down.svg"
+                alt="에로우 아래"
+              />
+              <img
+                class="arrow-up arrow"
+                src="img/footer/arrow_up.svg"
+                alt="에로우 위"
+              />
+            </li>
+            <div class="sub-box">
+              <a href="#" class="">Login</a>
+              <a href="#" class="">회원가입</a>
+              <a href="#" class="">주문/배송조회</a>
+              <a href="#" class="">Lige List</a>
+            </div>
+            <li class="oct">
+              <p class="">LEGAL</p>
+              <img
+                class="arrow-down arrow"
+                src="img/footer/arrow_down.svg"
+                alt="에로우 아래"
+              />
+              <img
+                class="arrow-up arrow"
+                src="img/footer/arrow_up.svg"
+                alt="에로우 위"
+              />
+            </li>
+            <div class="sub-box">
+              <a href="#" class="">이용약관</a>
+              <a href="#" class="">개인정보처리방침</a>
+              <a href="#" class="">청소년 보호정책</a>
+            </div>
+            <li class="lan oct">
+              <button class="w-[100%] h-[100%] flex justify-between">
+                <p>언어설정</p>
+                <img class="arrow" src="img/footer/kr 1.png" alt="태극기" />
+              </button>
+            </li>
+          </ul>
+        </nav>
+        <div class="information-mo">
+          <nav class="flex flex-col sns" style="gap: 1rem">
+            <ul class="flex" style="gap: 4px">
+              <li>
+                <a href="#">
+                  <img src="img/footer/facebook.svg" alt="페이스북" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/footer/twitter.svg" alt="트위터" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/footer/Combined Shape.svg" alt="유튜브" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src="img/footer/Subtract.svg" alt="라인" />
+                </a>
+              </li>
+            </ul>
+            <p class="text-[12px] opacity-[0.7]">
+              유한책임회사 브에이프 코리아
+            </p>
+          </nav>
+          <div class="flex flex-col text-[14px] py-[20px]">
+            <div>
+              <div>고객센터 1522-1822</div>
+              <div class="mt-[2px]">Vansjr_online@vfc.com</div>
+              <div class="mt-[2px]" style="opacity: 0.6">
+                평일 09:00 ~ 18:00
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex flex-col text-[12px] opacity-[0.7]"
+            style="gap: 12px"
+          >
+            <p class="text-wrap">
+              대표 SANUSI SYLYANI | 등록번호 220-88-43561 | 통신판매업신고번호
+              2013-서울강남-02918호 |
+              <span class="font-bold">사업자 정보 확인</span>
+              서울특별시 강남구 테헤란로 317 동훈타워 18층 | 개인정보 책임자
+              이보람
+            </p>
+            <p>
+              ⓒ유한책임회사 브이에프코리아. All Rights Reserved. California
+              Transparency in Supply Chain Act of 2010
+            </p>
+          </div>
+        </div>
+      </footer>
+    </dic>
   </body>
 </html>
