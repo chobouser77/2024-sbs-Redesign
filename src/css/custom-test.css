@@ -1,0 +1,56 @@
+/* 상단바 */
+.custom-top-bar {
+  background-color: #fff;
+  color: #1d1d1d;
+}
+.custom-top-bar .logo-color {
+  filter: none;
+}
+.custom-top-bar .pc-top-bar__user-menu a {
+  filter: invert(1);
+}
+.custom-top-bar .tablet-top-bar__user-menu a {
+  filter: invert(1);
+}
+
+/* 더 알아보기 버튼 */
+.more-btn {
+  padding: 16px 50px;
+  background-color: #D41F1F;
+  text-align: center;
+  white-space: nowrap;
+  font-weight: 500;
+  color: #fff;
+}
+
+/* 신발 리스트 :: pc */
+/* .section01__shoesli a {
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: #FAF6F1;
+}
+.section01__shoesli li:nth-of-type(1) a {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+.section01__shoesli li:nth-of-type(2) a {
+  padding-bottom: 52px;
+}
+.section01__shoesli li:nth-of-type(3) a {
+  padding-top: 20px;
+  padding-bottom: 60px;
+}
+.section01__shoesli li:nth-of-type(4) a {
+  padding-top: 50px;
+  padding-bottom: 12px;
+}
+.section01__shoesli li:nth-of-type(5) a {
+  background-color: #1D1D1D;
+  padding: 10px; 
+} */
+
+/* 신발 리스트 커스텀 */
+.section01__shoeslist a {
+  width: 294px;
+  background-color: #FAF6F1;
+}
