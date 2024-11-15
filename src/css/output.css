@@ -682,6 +682,10 @@ video {
   left: 10%;
 }
 
+.left-\[25\%\]{
+  left: 25%;
+}
+
 .left-\[250px\]{
   left: 250px;
 }
@@ -1140,10 +1144,6 @@ video {
   height: 100%;
 }
 
-.h-\[\]{
-  height: ;
-}
-
 .max-h-\[1330px\]{
   max-height: 1330px;
 }
@@ -1266,6 +1266,10 @@ video {
 
 .w-\[47px\]{
   width: 47px;
+}
+
+.w-\[50\%\]{
+  width: 50%;
 }
 
 .w-\[57\%\]{
