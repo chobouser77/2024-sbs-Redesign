@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/header.css" />
     <link rel="stylesheet" href="css/footer.css" />
     <link rel="stylesheet" href="css/custom.css" />
+    <link rel="stylesheet" href="css/custom-test.css" />
 
     <!-- 테일윈즈 가동 명령어 -->
     <!-- npx tailwindcss -i ./src/css/input.css -o ./src/css/output.css --watch -->
@@ -2948,7 +2949,7 @@
 
     <!-- 커스텀 페이지 시작 -->
     <!-- 섹션 커스텀 1 -->
-    <section class="flex flex-col w-full max-h-[970px] pt-[3%]">
+    <section class="cu-s1-1 flex flex-col w-full max-h-[970px] pt-[3%]">
       <div class="flex flex-col items-center w-full" style="gap: 30px">
         <div
           class="w-[204px] h-[35.5px] flex items-center justify-center border border-[#dc2020] bg-[#faf6f1] font-semibold text-myred text-[20px]"
@@ -2973,7 +2974,7 @@
           />
         </div>
         <div
-          class="s1_cus flex justify-center relative w-full h-[657px] pt-[100px] px-[180px] overflow-hidden bg-center bg-no-repeat bg-cover"
+          class="s1-cus flex justify-center relative w-full h-[657px] pt-[100px] px-[120px] overflow-hidden bg-center"
           style="background-image: url(img/custom/grid.png); gap: 100px"
         >
           <div class="absolute top-0 left-0 w-full">
@@ -2985,12 +2986,15 @@
               alt="vector"
             />
           </div>
-          <div class="w-full h-full flex" style="gap: 5%;">
+          <div
+            class="s1-scroll1 w-full h-full flex items-start mt-[-100px]"
+            style="gap: 4%"
+          >
             <nav
-              class="section01__shoeslist w-[100%] z-[2] relative justify-end scroll-left custom-scrollbar  bg-red-100 overflow-x-auto"
+              class="section01__shoeslist w-[100%] z-[2] relative justify-end scroll-left custom-scrollbar overflow-x-auto"
             >
               <ul
-                class="hidden md-2:flex min-w-[1250px] h-[500px]  justify-end   overflow-y-hidden"
+                class="hidden md-2:flex min-w-[1250px] h-[500px] justify-center overflow-y-hidden"
               >
                 <li class="mt-[60px] mr-[20px]">
                   <a
@@ -3103,85 +3107,38 @@
               </ul>
             </nav>
 
-            <div
-              class="w-[295px] h-[350px] bg-myblack bottom-[-300px] md-2:right-[10%]"
-            ></div>
+            <div class="c-box mt-[50px] flex">
+              <a
+                class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[10%] w-[295px] h-[350px]"
+                style="gap: 20px"
+              >
+                <img
+                  class="absolute w-[90%] h-[90%]"
+                  src="img/custom/dash.png"
+                  alt=""
+                />
+                <p class="text-myred font-bold text-[20px]">CUSTOMS</p>
+                <p class="text-center text-[16px] text-white">
+                  VANS 커스텀은 1966년부터 <br />
+                  창의적인 표현을 추구해온<br />
+                  VANS의 전통에서 시작됩니다.<br />
+                  세상에 하나뿐인 나만의 신발을<br />
+                  직접 디자인해보세요.
+                </p>
+                <div
+                  class="flex items-center justify-center text-[20px] w-[192px] h-[56px] bg-myred text-white"
+                >
+                  더 알아보기
+                </div>
+              </a>
+            </div>
           </div>
-          <!-- <div class="c-box flex mt-[-38px] w-full" style="gap: 2%">
+          <div
+            class="s1-scroll2 mt-[-50px] c-box hidden flex-col items-center h-full w-full pb-[100px]"
+            style="gap: 100px"
+          >
             <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[57%]"
-              style="gap: 10px"
-            >
-              <p class="text-myred font-bold text-[20px]">SLIP - ON</p>
-              <p class="text-center text-[14px]">
-                새롭게 출시된 스와치를 활용해<br />
-                나만의 커스텀 신발을 제작해 보세요!
-              </p>
-              <img class="" src="img/custom/slop_on_c.png" alt="SLIP - ON" />
-              <div
-                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
-                style="bottom: -21px; left: calc(50% - 90px)"
-              >
-                더 알아보기
-              </div>
-            </a>
-            <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-end py-[30px] px-[30px] w-[24.4%] h-[50%]"
-              style="gap: 5px"
-            >
-              <img class="" src="img/custom/sk8_hi_c.png" alt="SK8 - HI" />
-              <p class="mt-[-10px] text-myred font-bold text-[20px]">
-                SK8 - HI
-              </p>
-              <p class="text-center text-[14px]">
-                새롭게 출시된 스와치를 활용해<br />
-                나만의 커스텀 신발을 제작해 보세요!
-              </p>
-              <div
-                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
-                style="bottom: -21px; left: calc(50% - 90px)"
-              >
-                더 알아보기
-              </div>
-            </a>
-            <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[59%]"
-              style="gap: 10px"
-            >
-              <img class="" src="img/custom/authentic_c.png" alt="AUTHENTIC" />
-              <p class="text-myred font-bold text-[20px]">AUTHENTIC</p>
-              <p class="text-center text-[14px]">
-                새롭게 출시된 스와치를 활용해<br />
-                나만의 커스텀 신발을 제작해 보세요!
-              </p>
-              <div
-                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
-                style="bottom: -21px; left: calc(50% - 90px)"
-              >
-                더 알아보기
-              </div>
-            </a>
-            <a
-              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[24.4%] h-[56%]"
-              style="gap: 10px"
-            >
-              <p class="text-myred font-bold text-[20px]">OLD SKOOL</p>
-              <p class="text-center text-[14px]">
-                새롭게 출시된 스와치를 활용해<br />
-                나만의 커스텀 신발을 제작해 보세요!
-              </p>
-              <img class="" src="img/custom/old_skool_c.png" alt="OLD SKOOL" />
-              <div
-                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
-                style="bottom: -21px; left: calc(50% - 90px)"
-              >
-                더 알아보기
-              </div>
-            </a>
-          </div>
-          <div class="c-box mt-[-50px] w-[24.4%]">
-            <a
-              class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[10%] w-full h-[65%]"
+              class="relative bg-myblack flex flex-col items-center justify-center py-[50px] px-[10%] w-[480px] h-[560px]"
               style="gap: 10px"
             >
               <img
@@ -3196,21 +3153,91 @@
                 src="img/custom/dash.png"
                 alt=""
               />
-              <p class="text-myred font-bold text-[20px]">CUSTOMS</p>
-              <p class="text-center text-[11px] text-white">
-                VANS 커스텀은 1966년부터 창의적인 표현을 추구해온<br />
+              <p class="text-myred font-bold text-[32px]">CUSTOMS</p>
+              <p class="text-center text-[26px] text-white">
+                VANS 커스텀은 1966년부터 <br />
+                창의적인 표현을 추구해온<br />
                 VANS의 전통에서 시작됩니다.<br />
-                세상에 하나뿐인 나만의 신발을 직접 디자인해보세요.
-              </p>
-              <img class="" src="img/custom/cust_c.png" alt="?" />
+                세상에 하나뿐인 나만의 신발을<br />
+                직접 디자인해보세요.
+              </p>              
               <div
-                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white"
-                style="bottom: -21px; left: calc(50% - 90px)"
+                class="flex items-center justify-center w-[180px] h-[42px] bg-myred text-white text-[20px]"                
               >
-                커스텀 하기
+                더 알아보기
               </div>
             </a>
-          </div> -->
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[480px] h-[585px]"
+              style="gap: 10px"
+            >
+              <p class="text-myred font-bold text-[32px]">SLIP - ON</p>
+              <p class="text-center text-[26px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <img class="w-[80%]" src="img/custom/slop_on_c.png" alt="SLIP - ON" />
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white text-[20px]"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[30px] px-[30px] w-[480px] h-[556px]"
+              style="gap: 5px"
+            >
+              <img class="w-[80%]" src="img/custom/sk8_hi_c.png" alt="SK8 - HI" />
+              <p class="mt-[-10px] text-myred font-bold text-[32px]">
+                SK8 - HI
+              </p>
+              <p class="text-center text-[26px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white text-[20px]"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[480px] h-[617px]"
+              style="gap: 10px"
+            >
+              <img class="w-[80%]" src="img/custom/authentic_c.png" alt="AUTHENTIC" />
+              <p class="text-myred font-bold text-[32px]">AUTHENTIC</p>
+              <p class="text-center text-[26px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white text-[20px]"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+            <a
+              class="relative border border-[black] bg-[#faf6f1] flex flex-col items-center justify-center py-[50px] px-[30px] w-[480px] h-[572px]"
+              style="gap: 10px"
+            >
+              <p class="text-myred font-bold text-[32px]">OLD SKOOL</p>
+              <p class="text-center text-[26px]">
+                새롭게 출시된 스와치를 활용해<br />
+                나만의 커스텀 신발을 제작해 보세요!
+              </p>
+              <img class="w-[80%]" src="img/custom/old_skool_c.png" alt="OLD SKOOL" />
+              <div
+                class="flex absolute items-center justify-center w-[180px] h-[42px] bg-myred text-white text-[20px]"
+                style="bottom: -21px; left: calc(50% - 90px)"
+              >
+                더 알아보기
+              </div>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -3258,8 +3285,13 @@
       </div>
 
       <div
-        class="cu-s2-box relative z-[5] w-full h-full grid grid-cols-2 grid-rows-2 bg-[#FF4B9E]"
-        style="max-height: 680px; max-width: 680px;  min-width: 210px; min-height: 210px;"
+        class="cu-s2-box relative z-[5] w-full h-auto grid grid-cols-2 grid-rows-2 bg-[#FF4B9E]"
+        style="
+          max-height: 680px;
+          max-width: 680px;
+          min-width: 210px;
+          min-height: 210px;
+        "
       >
         <div class="flex items-center justify-center">
           <img class="w-[60%]" src="img/custom/font_pink.svg" alt="" />
@@ -3289,7 +3321,11 @@
           </div>
         </div>
         <div class="w-full h-full relative">
-          <img class="absolute w-[50%] bottom-0 left-[25%]" src="img/custom/cu_s2_4.png" alt="">
+          <img
+            class="absolute w-[50%] bottom-0 left-[25%]"
+            src="img/custom/cu_s2_4.png"
+            alt=""
+          />
         </div>
       </div>
       <img
