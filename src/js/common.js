@@ -315,6 +315,10 @@ $(document).ready(function () {
 
 // 커스텀
 $(document).ready(function () {
+  const $scrollContainer = $(".scroll-left");
+  // 스크롤 위치를 오른쪽 끝으로 설정
+  $scrollContainer.scrollLeft($scrollContainer[0].scrollWidth);
+
   const pink_h = $(".pink-hover");
   const bear_h = $(".bear-hover");
   const bears = $(".bears");

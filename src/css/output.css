@@ -1441,6 +1441,10 @@ video {
   width: 1250px;
 }
 
+.w-\[65\%\]{
+  width: 65%;
+}
+
 .min-w-\[200px\]{
   min-width: 200px;
 }
