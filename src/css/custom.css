@@ -136,6 +136,13 @@
   }
 }
 @media (max-width: 768px) {
+  .cu-s2 {
+    flex-direction: column;
+    padding: 50px;
+  }
+  .s2font {
+    justify-content: center !important;
+  }
   .cu-s3 {
     flex-direction: column !important;
     padding: 10% 0;
