@@ -1,5 +1,12 @@
 {
   "rewrites": [
     { "source": "/", "destination": "/src/index.html" }
+    { "source": "/css/custom.css", "destination": "/src/css/custom.css" }
+    { "source": "/css/custom.html", "destination": "/src/css/custom.html" }
+    { "source": "/css/footer.css", "destination": "/src/css/footer.css" }
+    { "source": "/css/header.css", "destination": "/src/css/header.css" }
+    { "source": "/css/output.css", "destination": "/src/css/output.css" }
+    { "source": "/css/swiper_main.css", "destination": "/src/css/swiper_main.css" }
+    { "source": "/js/common.js", "destination": "/src/js/common.js" }
   ]
 }
