@@ -249,7 +249,7 @@ $(document).ready(function () {
 
   function initSwiper() {
     swiper = new Swiper(".mySwiper", {
-      slidesPerView: 3,
+      slidesPerView: 4,
       centeredSlides: false,
       spaceBetween: 12,
       grabCursor: true,
@@ -259,10 +259,10 @@ $(document).ready(function () {
         type: "progressbar",
       },
       loop: $(window).width() >= 1200, // 1200px 이상일 때만 loop 활성화
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
-      },
+      // navigation: {
+      //   nextEl: ".swiper-button-next",
+      //   prevEl: ".swiper-button-prev",
+      // },
       scrollbar: {
         el: ".swiper-scrollbar",
       },

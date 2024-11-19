@@ -44,7 +44,7 @@
   mix-blend-mode: multiply;
 }
 .s4ani {
-  animation: cu-shose 15s linear infinite;
+  animation: cu-shose 30s linear infinite;
 }
 .s4ani:hover {
   animation-play-state: paused;
