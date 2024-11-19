@@ -113,6 +113,8 @@
   }
   .s1-cus{
     height: auto !important; 
+    padding-left: 120px;
+    padding-right: 120px;
   }
   .s1-scroll1{
     display: none !important;
